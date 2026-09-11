@@ -1091,17 +1091,14 @@ enum NationalDexOrder
 #endif
 
 #define FOREACH_SPECIES_IN_HOENN_DEX_ORDER(F) \
-    F(TREECKO) \
-    F(GROVYLE) \
-    F(SCEPTILE) \
-    F(TORCHIC) \
-    F(COMBUSKEN) \
-    F(BLAZIKEN) \
-    F(MUDKIP) \
-    F(MARSHTOMP) \
-    F(SWAMPERT) \
-    F(POOCHYENA) \
-    F(MIGHTYENA) \
+    F(TOGEPI) \
+    F(TOGETIC) \
+    F(TOGEKISS) \
+    F(HAPPINY) \
+    F(CHANSEY) \
+    F(BLISSEY) \
+    F(ROCKRUFF) \
+    F(LYCANROC) \
     F(ZIGZAGOON) \
     F(LINOONE) \
     HOENN_DEX_IF(P_GALARIAN_FORMS, F(OBSTAGOON)) \
@@ -1116,14 +1113,37 @@ enum NationalDexOrder
     F(SEEDOT) \
     F(NUZLEAF) \
     F(SHIFTRY) \
-    F(TAILLOW) \
-    F(SWELLOW) \
+    F(SPRIGATITO) \
+    F(FLORAGATO) \
+    F(MEOWSCARADA) \
     F(WINGULL) \
     F(PELIPPER) \
+    F(HOPPIP) \
+    F(SKIPLOOM) \
+    F(JUMPLUFF) \
     F(RALTS) \
     F(KIRLIA) \
     F(GARDEVOIR) \
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(GALLADE)) \
+    F(ELECTRIKE) \
+    F(MANECTRIC) \
+    F(PLUSLE) \
+    F(MINUN) \
+    F(GULPIN) \
+    F(SWALOT) \
+    F(TREECKO) \
+    F(GROVYLE) \
+    F(SCEPTILE) \
+    F(TORCHIC) \
+    F(COMBUSKEN) \
+    F(BLAZIKEN) \
+    F(MUDKIP) \
+    F(MARSHTOMP) \
+    F(SWAMPERT) \
+    F(POOCHYENA) \
+    F(MIGHTYENA) \
+    F(TAILLOW) \
+    F(SWELLOW) \
     F(SURSKIT) \
     F(MASQUERAIN) \
     F(SHROOMISH) \
@@ -1171,10 +1191,6 @@ enum NationalDexOrder
     F(MACHAMP) \
     F(MEDITITE) \
     F(MEDICHAM) \
-    F(ELECTRIKE) \
-    F(MANECTRIC) \
-    F(PLUSLE) \
-    F(MINUN) \
     F(MAGNEMITE) \
     F(MAGNETON) \
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(MAGNEZONE)) \
@@ -1191,8 +1207,6 @@ enum NationalDexOrder
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(BUDEW)) \
     F(ROSELIA) \
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(ROSERADE)) \
-    F(GULPIN) \
-    F(SWALOT) \
     F(CARVANHA) \
     F(SHARPEDO) \
     F(WAILMER) \
