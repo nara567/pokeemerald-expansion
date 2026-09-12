@@ -9705,9 +9705,14 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Treecko
+Happiny
+Calm Nature
+Ball: Love
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+-Pound
+-Defense Curl
+-Heal Bell
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -9760,9 +9765,14 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Torchic
+Happiny
+Calm Nature
+Ball: Love
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+-Pound
+-Defense Curl
+-Heal Bell
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -9815,9 +9825,14 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Mudkip
+Happiny
+Calm Nature
+Ball: Love
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+-Pound
+-Defense Curl
+-Heal Bell
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY
