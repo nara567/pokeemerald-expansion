@@ -146091,13 +146091,13 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_ROCKRUFF"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_ROCKRUFF"
               },
               {
@@ -146112,17 +146112,17 @@
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_SEEDOT"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_ROCKRUFF_OWN_TEMPO"
               },
               {
@@ -146136,13 +146136,13 @@
                 "species": "SPECIES_LOTAD"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_RALTS"
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_SEEDOT"
               },
               {
@@ -146160,13 +146160,13 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_ROCKRUFF"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_ROCKRUFF"
               },
               {
@@ -146181,17 +146181,17 @@
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_SEEDOT"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_ROCKRUFF_OWN_TEMPO"
               },
               {
@@ -146205,13 +146205,13 @@
                 "species": "SPECIES_LOTAD"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_RALTS"
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_SEEDOT"
               },
               {
@@ -146229,13 +146229,13 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_POOCHYENA"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_POOCHYENA"
               },
               {
@@ -146250,17 +146250,17 @@
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_SEEDOT"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_POOCHYENA"
               },
               {
@@ -146280,7 +146280,7 @@
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_SEEDOT"
               },
               {
@@ -146298,13 +146298,13 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_POOCHYENA"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_POOCHYENA"
               },
               {
@@ -146319,17 +146319,17 @@
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_SEEDOT"
               },
               {
                 "min_level": 3,
-                "max_level": 3,
+                "max_level": 5,
                 "species": "SPECIES_POOCHYENA"
               },
               {
@@ -146349,7 +146349,7 @@
               },
               {
                 "min_level": 2,
-                "max_level": 2,
+                "max_level": 5,
                 "species": "SPECIES_SEEDOT"
               },
               {
