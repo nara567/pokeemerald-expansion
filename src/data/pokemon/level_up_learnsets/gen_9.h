@@ -5089,7 +5089,7 @@ static const struct LevelUpMove sTogepiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 4, MOVE_SWEET_KISS),
-    LEVEL_UP_MOVE( 8, MOVE_LIFE_DEW),
+    LEVEL_UP_MOVE( 8, MOVE_FAIRY_WIND),
     LEVEL_UP_MOVE(12, MOVE_CHARM),
     LEVEL_UP_MOVE(16, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE(20, MOVE_YAWN),
@@ -5110,7 +5110,6 @@ static const struct LevelUpMove sTogeticLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
-    LEVEL_UP_MOVE( 1, MOVE_LIFE_DEW),
     LEVEL_UP_MOVE(12, MOVE_CHARM),
     LEVEL_UP_MOVE(16, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE(20, MOVE_YAWN),
@@ -5148,7 +5147,6 @@ static const struct LevelUpMove sTogekissLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
-    LEVEL_UP_MOVE( 1, MOVE_LIFE_DEW),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
