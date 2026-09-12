@@ -1740,3 +1740,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/wild_encounter.inc"
 
 	.include "data/maps/Route103_2/scripts.inc"
+
+	.include "data/maps/SlateportCity_Gym/scripts.inc"

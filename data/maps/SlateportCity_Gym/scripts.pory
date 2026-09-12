@@ -1,0 +1,38 @@
+raw `
+SlateportCity_Gym_MapScripts::
+	.byte 0
+`
+script SlateportCity_Gym_EventScript_Gulliver {
+    trainerbattle_single(TRAINER_ROXANNE_1, SlateportCity_Gym_Text_GulliverIntro, SlateportCity_Gym_Text_GulliverDefeat, RustboroCity_Gym_EventScript_GulliverDefeated, NO_MUSIC)
+    msgbox(SlateportCity_Gym_Text_GulliverPostBattle)
+    release
+}
+
+text SlateportCity_Gym_Text_GulliverIntro {
+    format("I'm Gulliver!")
+}
+
+ text SlateportCity_Gym_Text_GulliverDefeat {
+    format("You got me!")
+}
+
+script RustboroCity_Gym_EventScript_GulliverDefeated {
+    lock
+    message(format("{PLAYER} received the Beach Badge from Gulliver."))
+    waitmessage
+    call(Common_EventScript_PlayGymBadgeFanfare)
+    msgbox(format("The Beach Badges lets you use whatever. Take this TM also."))
+    setflag(FLAG_DEFEATED_RUSTBORO_GYM)
+    setflag(FLAG_BADGE01_GET)
+    call(Common_EventScript_SetGymTrainers)
+
+    giveitem(ITEM_TM_ROCK_TOMB)
+    goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+    setflag(FLAG_RECEIVED_TM_ROCK_TOMB)
+    release
+}
+
+text SlateportCity_Gym_Text_GulliverPostBattle {
+    format("Boo hoo.")
+}
+

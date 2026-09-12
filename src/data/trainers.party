@@ -4795,72 +4795,80 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Crunch
 
 === TRAINER_ROXANNE_1 ===
-Name: ROXANNE
+Name: Gulliver
 Class: Leader
 Pic: Leader Roxanne
-Gender: Female
-Music: Female
+Gender: Male
+Music: Male
 Items: Potion / Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Geodude
+Wiglett 
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+- Aqua Jet
+- Mud Slap
+- Wrap
+- Water Gun
 
-Geodude
+Trubbish
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+- Headbutt
+- Poison Gas
+- Acid Spray
+- Rollout
 
-Nosepass @ Oran Berry
+Sandygast @ Groundium Z
 Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
+- Absorb
+- Sand Tomb
+- Infestation
+- Astonish
 
 === TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+Name: Taro
 Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Machop
+Cubone
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+- Curse
+- Headbutt
+- Bulldoze
+- Growl
 
-Meditite
+Greavard
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+- Curse
+- Shadow Sneak
+- Roar
+- Bite
 
-Makuhita @ Sitrus Berry
-Level: 19
+Gothita
+Level: 17
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+- Charm
+- Psybeam
+- Pound
+- Torment
+
+Spiritomb @ Shell Bell
+Level: 20
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Curse
+- Spite
+- Confuse Ray
+- Night Shade
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
