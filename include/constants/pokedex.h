@@ -1099,6 +1099,8 @@ enum NationalDexOrder
     F(BLISSEY) \
     F(ROCKRUFF) \
     F(LYCANROC) \
+    F(POOCHYENA) \
+    F(MIGHTYENA) \
     F(ZIGZAGOON) \
     F(LINOONE) \
     HOENN_DEX_IF(P_GALARIAN_FORMS, F(OBSTAGOON)) \
@@ -1127,10 +1129,16 @@ enum NationalDexOrder
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(GALLADE)) \
     F(ELECTRIKE) \
     F(MANECTRIC) \
+    F(MASCHIFF) \
+    F(MABOSSTIFF) \
     F(PLUSLE) \
     F(MINUN) \
+    F(MORPEKO) \
     F(GULPIN) \
     F(SWALOT) \
+    F(ZUBAT) \
+    F(GOLBAT) \
+    F(CROBAT) \
     F(TREECKO) \
     F(GROVYLE) \
     F(SCEPTILE) \
@@ -1140,8 +1148,6 @@ enum NationalDexOrder
     F(MUDKIP) \
     F(MARSHTOMP) \
     F(SWAMPERT) \
-    F(POOCHYENA) \
-    F(MIGHTYENA) \
     F(TAILLOW) \
     F(SWELLOW) \
     F(SURSKIT) \
@@ -1176,9 +1182,6 @@ enum NationalDexOrder
     HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(PROBOPASS)) \
     F(SKITTY) \
     F(DELCATTY) \
-    F(ZUBAT) \
-    F(GOLBAT) \
-    F(CROBAT) \
     F(TENTACOOL) \
     F(TENTACRUEL) \
     F(SABLEYE) \
