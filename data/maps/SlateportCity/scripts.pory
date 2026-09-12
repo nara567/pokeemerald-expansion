@@ -1223,7 +1223,25 @@ SlateportCity_Text_TakingBattleTentChallenge:
 
 script SlateportCity_EventScript_GymBlocker {
     lock
+	setflag(FLAG_LANDMARK_MR_BRINEY_HOUSE)
+	clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY)
+	clearflag(FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT)
     msgbox(format("Gulliver's visiting the museum right now! Come back later. "))
     release
 }
 
+script SlateportCity_EventScript_GaiaGrunt1{
+	lock
+	faceplayer
+	msgbox(format("I saw Gulliver walk in after Adam... Hey! We're standing guard until we hear back from our guys in Dewford! Go away!"))
+	release
+}
+
+script SlateportCity_EventScript_GaiaGrunt2{
+	lock
+	faceplayer
+	msgbox(format("Adam said Trinket should be in Granite Cave right now... Hey! We're standing guard until we hear back from our guys in Dewford! Get lost!"))
+	release
+}
+
+//FLAG_HIDE_SLATEPORT_CITY_TEAM_GAIA
