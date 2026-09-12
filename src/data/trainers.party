@@ -4871,190 +4871,224 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Night Shade
 
 === TRAINER_WATTSON_1 ===
-Name: WATTSON
+Name: Daphne
 Class: Leader
 Pic: Leader Wattson
-Gender: Male
-Music: Male
+Gender: Female
+Music: Female
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Voltorb
+Glimmet
 Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
+- Stealth Rock
+- Acid Spray
+- Ancient Power
+- Harden
 
-Electrike
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
-
-Magneton
+Skiploom @ Terrain Extender
 Level: 22
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
-- Thunder Wave
-- Sonic Boom
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Leech Seed
+- Fairy Wind
+- Grassy Terrain
+- Poison Powder
 
-Manectric @ Sitrus Berry
+Floette
 Level: 24
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+- Moonblast
+- Magical Leaf
+- Wish
+- Safeguard
+
+Floragato @ Grass Gem
+Level: 26
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Seed Bomb
+- Hone Claws
 - Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+- Grassy Glide
 
 === TRAINER_FLANNERY_1 ===
-Name: FLANNERY
+Name: Oryx
 Class: Leader
 Pic: Leader Flannery
 Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Numel
+Hippopotas @ Smooth Rock
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Take Down
-- Magnitude
-- Sunny Day
+- Crunch
+- Sand Tomb
+- Stealth Rock
+- Amnesia
 
-Slugma
+Brambleghast
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Smog
-- Light Screen
-- Sunny Day
+- Infestation
+- Rollout
+- Defense Curl
+- Absorb
 
-Camerupt
+Trapinch
+Ability: Arena Trap
 Level: 26
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Tackle
-- Sunny Day
-- Attract
+- Bulldoze
+- Mud Slap
+- Bug Bite
+- Scorching Sands
 
-Torkoal @ White Herb
+Krokorok
+Ability: Intimidate
 Level: 29
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Sunny Day
-- Body Slam
-- Attract
+- Dig
+- Crunch
+- Sand Tomb
+- Take Down
+
+Cacturne @ Mirror Herb
+Level: 32
+Tera Type: Ground
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Spiky Shield
+- Growth
+- Power Trip
+- Destiny Bond
 
 === TRAINER_NORMAN_1 ===
-Name: NORMAN
+Name: Buzz
 Class: Leader
 Pic: Leader Norman
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Spinda
+Minior
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Teeter Dance
-- Psybeam
-- Facade
-- Encore
+- Self-Destruct
+- Swift
+- Defense Curl
+- Rollout
 
-Vigoroth
+Clefable @ Metronome
+Ability: Magic Guard
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Facade
-- Encore
-- Feint Attack
+- Moonlight
+- Metronome
 
-Linoone
+Starmie
+Ability: Natural Cure
 Level: 29
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Belly Drum
-- Facade
+- Surf
+- Psybeam
+- Confuse Ray
+- Swift
+
+Elgyem
+Ability: Analytic
+Level: 29
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 0 Spe
+- Psybeam
+- Guard Split
+- Cosmic Power
 - Headbutt
 
-Slaking @ Sitrus Berry
+Orbeetle @ Sitrus Berry
+Ability: Swarm
+Gigantamax: Yes
 Level: 31
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Counter
-- Yawn
-- Facade
-- Feint Attack
+- Bug Buzz
+- Mirror Coat
+- Psybeam
+- Agility
 
 === TRAINER_WINONA_1 ===
-Name: WINONA
+Name: Kawa
 Class: Leader
 Pic: Leader Winona
 Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Basic Trainer / Risky
+AI: Smart Trainer / Ace Pokemon
 
-Swablu
+Ninjask
 Level: 29
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Perish Song
-- Mirror Move
-- Safeguard
-- Aerial Ace
+- Double Team
+- X-Scissor
+- Baton Pass
+- Protect
 
-Tropius
+Accelgor
+Ability: Unburden
 Level: 29
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Synthesis
+- Guard Swap
+- Struggle Bug
+- Giga Drain
+- Quick Attack
 
-Pelipper
+Ceruledge
 Level: 30
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Water Gun
-- Supersonic
-- Protect
-- Aerial Ace
+- Shadow Claw
+- Flame Charge
+- Will-O-Wisp
+- Swords Dance
 
-Skarmory
+Shiftry
+Ability: Pickpocket
 Level: 31
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Sand Attack
-- Fury Attack
-- Steel Wing
-- Aerial Ace
+- Leaf Blade
+- Hurricane
+- Air Cutter
+- Synthesis
 
-Altaria @ Oran Berry
-Level: 33
+Bisharp
+Ability: Pressure
+Level: 31
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 0 Spe
+- Assurance
+- Metal Burst
+- Swords Dance
+- Torment
+
+Greninja @ Greninjite
+Ability: Protean
+Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+- Water Shuriken
+- Shadow Sneak
+- Swords Dance
+- Smokescreen
 
 === TRAINER_TATE_AND_LIZA_1 ===
-Name: TATE&LIZA
+Name: Trinket
 Class: Leader
 Pic: Leader Tate And Liza
-Gender: Male
+Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion / Hyper Potion / Hyper Potion
-Double Battle: Yes
-AI: Basic Trainer
+Double Battle: No
+AI: Smart Trainer / Ace Pokemon
 
 Claydol
 Level: 41
@@ -5080,63 +5114,74 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Hypnosis
 - Calm Mind
 
-Solrock @ Sitrus Berry
-Level: 42
+Aerodactyl @ Aerodactylite
+Ability: Rock Head
+Level: 45
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
+- Dual Wingbeat
+- Stone Edge
+- Iron Head
+- Take Down
 
 === TRAINER_JUAN_1 ===
-Name: JUAN
+Name: Brendan
 Class: Leader
-Pic: Leader Juan
+Pic: Brendan
 Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Luvdisc
-Level: 41
+Aggron
+Ability: Heavy Metal
+Level: 50
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Attract
-- Sweet Kiss
-- Flail
+- Heavy Slam
+- Stone Edge
+- Iron Defense
+- Iron Head
 
-Whiscash
-Level: 41
+Milotic (F) @ Flame Orb
+Ability: Marvel Scale
+Level: 50
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rain Dance
-- Water Pulse
-- Amnesia
-- Earthquake
-
-Sealeo
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Encore
-- Body Slam
-- Aurora Beam
-- Water Pulse
-
-Crawdaunt
-Level: 43
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Water Pulse
-- Crabhammer
-- Taunt
-- Leer
-
-Kingdra @ Chesto Berry
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Water Pulse
-- Double Team
+- Recover
+- Surf
+- Dazzling Gleam
 - Ice Beam
-- Rest
+
+Metagross
+Level: 50
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Psychic Fangs
+- Magnet Bomb
+- Bullet Punch
+- Brick Break
+
+Gardevoir (F)
+Level: 50
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Moonblast
+- Psychic
+- Mystical Fire
+- Shadow Ball
+
+Latios @ Soul Dew
+Level: 50
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Aura Sphere
+- Dragon Pulse
+- Luster Purge
+- Recover
+
+Swampert @ Swampertite
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Liquidation
+- Aqua Ring
+- Ice Punch
 
 === TRAINER_JERRY_1 ===
 Name: JERRY
