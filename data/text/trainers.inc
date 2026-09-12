@@ -157,16 +157,15 @@ Route103_Text_LivRematchNotEnoughPokemon:
 	.string "It's not fair if you don't!$"
 
 Route103_Text_AndrewIntro:
-	.string "Gah! My fishing line's all snarled up!\n"
-	.string "I'm getting frustrated and mean!\l"
-	.string "That's it! Battle me!$"
+	.string "I'm practicing for contests!\n"
+	.string "I put clown makeup on one of my POKéMON!$"
 
 Route103_Text_AndrewDefeated:
-	.string "Gah! Lost it!\n"
-	.string "I'm even more annoyed now!$"
+	.string "I was just kidding...\n"
+	.string "It's a special Zigzagoon.$"
 
 Route103_Text_AndrewPostBattle:
-	.string "Gah, I'm still boiling mad…\n"
+	.string "My one Zigzagoon is kinda mean.\n"
 	.string "Grrrrr…$"
 
 Route103_Text_MiguelIntro:

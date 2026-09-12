@@ -343,8 +343,8 @@ Route103_Text_ShouldHaveBroughtPotion:
 	.string "I should have brought a POTION…$"
 
 Route103_Text_ShortcutToOldale:
-	.string "If you cross the sea from here,\n"
-	.string "it'll be a shortcut to OLDALE TOWN.\p"
+	.string "There didn't used to be a bridge here.\n"
+	.string "Gulliver built it 5 years ago!\p"
 	.string "Fufufu, that's useful, isn't it?$"
 
 Route103_Text_RouteSign:

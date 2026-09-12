@@ -632,15 +632,19 @@ Pic: Aroma Lady
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hoppip
+Sassy Nature
+Level: 6
+Ball: Nest
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Flabebe
+Gentle Nature
+Level: 6
+Ball: Nest
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_ROSE_1 ===
 Name: ROSE
@@ -5512,11 +5516,18 @@ Pic: Pokefan M
 Gender: Male
 Music: Twins
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Skitty @ Oran Berry
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rockruff Own Tempo @ Oran Berry
+Ability: Own Tempo
+Level: 9
+Ball: Friend
+Lonely Nature
+IVs: 0 HP / 6 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Leer
+- Sand Attack
+- Snarl
 
 === TRAINER_COLTON ===
 Name: COLTON
@@ -6308,17 +6319,18 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 Zigzagoon
 Ability: Gluttony
-Level: 5
+Level: 6
 Jolly Nature
 IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 5 SpD / 10 Spe
 
 Zigzagoon Galar
 Ability: Quick Feet
-Level: 6
+Level: 7
+Ball: Timer
 Lonely Nature
 IVs: 10 HP / 5 Atk / 0 Def / 5 SpA / 0 SpD / 0 Spe
 
