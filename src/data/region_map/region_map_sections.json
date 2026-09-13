@@ -1630,6 +1630,10 @@
     {
       "id": "MAPSEC_ROUTE_103B",
       "name": "Route 103B"
+    },
+    {
+      "id": "MAPSEC_LITTLEROOT_CLEARING",
+      "name": "LITTLEROOT CLEARING"
     }
   ]
 }

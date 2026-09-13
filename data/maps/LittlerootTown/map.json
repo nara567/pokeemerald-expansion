@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE101",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_LITTLEROOT_CLEARING",
+      "offset": -2,
+      "direction": "right"
     }
   ],
   "object_events": [

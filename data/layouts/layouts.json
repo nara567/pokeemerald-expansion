@@ -9388,6 +9388,16 @@
       "border_filepath": "data/layouts/LittlerootTown_RivalHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootTown_RivalHouse_2F/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_LITTLEROOT_CLEARING",
+      "name": "LittlerootClearing_Layout",
+      "width": 26,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LittlerootClearing/border.bin",
+      "blockdata_filepath": "data/layouts/LittlerootClearing/map.bin"
     }
   ]
 }
