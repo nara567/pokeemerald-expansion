@@ -870,3 +870,188 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“A replica of the luxury liner that\n"
 # 436 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	.string "circles the globe.”$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_Gulliver::
+# 440 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	lock
+# 441 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	faceplayer
+# 442 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	goto_if_set FLAG_INTERACTED_WITH_GULLIVER_OCEANIC_MUSEUM, SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_2
+SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_1:
+# 445 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	setflag FLAG_INTERACTED_WITH_GULLIVER_OCEANIC_MUSEUM
+# 446 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_Text_0
+# 447 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_Text_1
+# 448 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_Text_2
+# 449 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	setvar VAR_0x8004, ITEM_RELIC_VASE
+# 450 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	call Common_EventScript_PlayerHandedOverTheItem
+# 451 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_Text_3
+# 452 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt
+# 453 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	releaseall
+	end
+
+SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_2:
+# 443 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt
+	goto SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_1
+
+
+SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt::
+# 458 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_GULLIVER, SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_Movement_0
+# 461 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_Text_0, MSGBOX_YESNO
+# 462 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_2
+SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_1:
+# 465 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_Text_1
+# 466 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	closemessage
+# 467 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	releaseall
+	end
+
+SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_2:
+# 463 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ChoosePartyForMultiBattle
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_1
+
+
+SlateportCity_OceanicMuseum_2F_EventScript_ChoosePartyForMultiBattle::
+# 472 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	special SavePlayerParty
+# 473 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 474 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	special ChooseHalfPartyForBattle
+# 475 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_ne SlateportCity_OceanicMuseum_2F_EventScript_ChoosePartyForMultiBattle_2
+SlateportCity_OceanicMuseum_2F_EventScript_ChoosePartyForMultiBattle_1:
+# 478 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	special LoadPlayerParty
+# 479 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt
+	return
+
+SlateportCity_OceanicMuseum_2F_EventScript_ChoosePartyForMultiBattle_2:
+# 476 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	goto SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle
+	goto SlateportCity_OceanicMuseum_2F_EventScript_ChoosePartyForMultiBattle_1
+
+
+SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle::
+# 483 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	multi_2_vs_2 TRAINER_ADAM_OCEANIC_MUSEUM, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_GRUNT_GAIA_OCEANIC_MUSEUM, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_STEVEN
+# 484 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	switch VAR_RESULT
+# 485 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	case 1, SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle_3
+SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle_1:
+# 488 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 489 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	special SetCB2WhiteOut
+	return
+
+SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle_3:
+# 486 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	goto SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt
+	goto SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle_1
+
+
+SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt::
+# 493 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt_Text_0
+# 494 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	fadedefaultbgm
+# 495 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 496 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
+# 497 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	clearflag FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION
+# 498 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 499 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	removeobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2
+# 500 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	removeobject LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1
+# 501 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	removeobject LOCALID_OCEANIC_MUSEUM_2F_ARCHIE
+# 502 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	msgbox SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt_Text_1
+# 503 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 504 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	setflag FLAG_GULLIVER_TAG_BATTLE
+# 505 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	removeobject LOCALID_OCEANIC_MUSEUM_2F_GULLIVER
+# 506 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 507 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	releaseall
+	end
+
+
+# 458 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_Movement_0:
+# 459 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	faceplayer
+	step_end
+
+SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_Text_0:
+# 446 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "You're looking for Gulliver? That'd be\n"
+	.string "me, mate! Give me a sec, I gotta take\l"
+	.string "care of some business here...$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_Text_1:
+# 447 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Adam: It's no bother at all, Gully. Go\n"
+	.string "take care of your fan.$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_Text_2:
+# 448 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Gulliver: What's that vase you're\n"
+	.string "holding? From Trinket?$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_Gulliver_Text_3:
+# 451 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Gulliver: Say, if Trinket gave this to\n"
+	.string "you, you can probably handle yourself.\l"
+	.string "How about you help me out?$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_Text_0:
+# 461 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Gulliver: {PLAYER}, right? Let's battle\n"
+	.string "together! Are you ready?$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt_Text_1:
+# 465 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Gulliver: Well get to it then!$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt_Text_0:
+# 493 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Adam: Enough of this! If you refuse to\n"
+	.string "assist us with entering New Mauville,\l"
+	.string "we'll just force our way in!$"
+
+SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt_Text_1:
+# 502 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
+	.string "Gulliver: Thanks for yer help, mate. I'll\n"
+	.string "take this vase to the basement for\l"
+	.string "analysis. That was some great battling!\l"
+	.string "Why don't you come visit me at my gym\l"
+	.string "sometime?$"

@@ -140,54 +140,6 @@ SlateportCity_OceanicMuseum_1F_EventScript_MuseumPatron4::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon, MSGBOX_NPC
 	end
 
-SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGrunt::
-	lock
-	faceplayer
-	delay 8
-	playse SE_PIN
-	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, Common_Movement_Delay48
-	waitmovement 0
-	msgbox SlateportCity_OceanicMuseum_1F_Text_RememberMeTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_THIEF
-	goto_if_eq VAR_RESULT, 0, SlateportCity_OceanicMuseum_1F_EventScript_NoRoomForThief
-	setflag FLAG_RECEIVED_TM_THIEF
-	msgbox SlateportCity_OceanicMuseum_1F_Text_HopeINeverSeeYouAgain, MSGBOX_DEFAULT
-	closemessage
-	goto_if_eq VAR_FACING, DIR_NORTH, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth
-	goto_if_eq VAR_FACING, DIR_SOUTH, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitSouth
-	goto_if_eq VAR_FACING, DIR_WEST, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast
-	goto_if_eq VAR_FACING, DIR_EAST, SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast
-	end
-
-SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitNorth::
-	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitNorth
-	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth
-	waitmovement 0
-	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
-	end
-
-SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitSouth::
-	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
-	waitmovement 0
-	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
-	end
-
-SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExitWestEast::
-	applymovement LOCALID_PLAYER, SlateportCity_OceanicMuseum_1F_Movement_PlayerWatchGruntExitWestEast
-	applymovement LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT, SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit
-	waitmovement 0
-	goto SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited
-	end
-
-SlateportCity_OceanicMuseum_1F_EventScript_FamiliarGruntExited::
-	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_FAMILIAR_AQUA_GRUNT
-	playse SE_EXIT
-	removeobject LOCALID_OCEANIC_MUSEUM_FAMILIAR_GRUNT
-	release
-	end
-
 SlateportCity_OceanicMuseum_1F_EventScript_NoRoomForThief::
 	msgbox SlateportCity_OceanicMuseum_1F_Text_YouHaveToTakeThis, MSGBOX_DEFAULT
 	release
@@ -379,7 +331,7 @@ SlateportCity_OceanicMuseum_1F_Text_DepthMeasuringMachine:
 `
 
 script SlateportCity_OceanicMuseum_1F_EventScript_Grunt_Battle{
-    trainerbattle_single(TRAINER_GRUNT_PETALBURG_WOODS,SlateportCity_OceanicMuseum_1F_Text_GruntIntro,SlateportCity_OceanicMuseum_1F_Text_GruntDefeat,
+    trainerbattle_single(TRAINER_GRUNT_OCEANIC_MUSEUM_1F,SlateportCity_OceanicMuseum_1F_Text_GruntIntro,SlateportCity_OceanicMuseum_1F_Text_GruntDefeat,
     SlateportCity_OceanicMuseum_1F_EventScript_GruntDefeated,NO_MUSIC)
     msgbox(format("Bested by a child... I'm sorry Adam."))
 }
@@ -400,10 +352,7 @@ script SlateportCity_OceanicMuseum_1F_EventScript_GruntDefeated {
     ))
     playse(SE_EXIT)
     removeobject(LOCALID_OCEANIC_MUSEUM_GRUNT)
-    setflag(FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT)
+    setflag(FLAG_HIDE_OCEANIC_MUSEUM_GAIA_GRUNT)
     release
     end
 }
-
-//TRAINER_GRUNT_PETALBURG_WOODS
-//FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT

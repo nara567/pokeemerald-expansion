@@ -3105,6 +3105,7 @@ const struct ItemInfo gItemsInfo[] =
             "A fragile vase made\n"
             "by a civilization\n"
             "3,000 years ago."),
+        .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,

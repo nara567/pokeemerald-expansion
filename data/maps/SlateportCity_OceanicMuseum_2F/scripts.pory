@@ -434,5 +434,76 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“S.S. ANNE\p"
 	.string "“A replica of the luxury liner that\n"
 	.string "circles the globe.”$"
-
 `
+
+script SlateportCity_OceanicMuseum_2F_EventScript_Gulliver {
+    lock
+    faceplayer
+    if(flag(FLAG_INTERACTED_WITH_GULLIVER_OCEANIC_MUSEUM)){
+        goto(SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt)
+    }
+    setflag(FLAG_INTERACTED_WITH_GULLIVER_OCEANIC_MUSEUM)
+    msgbox(format("You're looking for Gulliver? That'd be me, mate! Give me a sec, I gotta take care of some business here..."))
+    msgbox(format("Adam: It's no bother at all, Gully. Go take care of your fan."))
+    msgbox(format("Gulliver: What's that vase you're holding? From Trinket?"))
+    setvar(VAR_0x8004, ITEM_RELIC_VASE)
+    call(Common_EventScript_PlayerHandedOverTheItem)
+    msgbox(format("Gulliver: Say, if Trinket gave this to you, you can probably handle yourself. How about you help me out?"))
+    goto(SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt)
+    releaseall
+    end
+}
+
+script SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt {
+    applymovement(LOCALID_OCEANIC_MUSEUM_2F_GULLIVER, moves(
+        faceplayer
+    ))
+    msgbox(format("Gulliver: {PLAYER}, right? Let's battle together! Are you ready?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        goto(SlateportCity_OceanicMuseum_2F_EventScript_ChoosePartyForMultiBattle)
+    }
+    msgbox(format("Gulliver: Well get to it then!"))
+    closemessage
+    releaseall
+    end
+}
+
+script SlateportCity_OceanicMuseum_2F_EventScript_ChoosePartyForMultiBattle {
+    special(SavePlayerParty)
+    fadescreen(FADE_TO_BLACK)
+    special(ChooseHalfPartyForBattle)
+    if(var(VAR_RESULT) != 0){
+        goto(SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle)
+    }
+    special(LoadPlayerParty)
+    goto(SlateportCity_OceanicMuseum_2F_EventScript_ReadyForBattlePrompt)
+}
+
+script SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle {
+    multi_2_vs_2(TRAINER_ADAM_OCEANIC_MUSEUM, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_GRUNT_GAIA_OCEANIC_MUSEUM, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_STEVEN)
+    switch(var(VAR_RESULT)){
+        case 1:
+            goto(SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt)
+    }
+    fadescreen(FADE_TO_BLACK)
+    special(SetCB2WhiteOut)
+}
+
+script SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt {
+    msgbox(format("Adam: Enough of this! If you refuse to assist us with entering New Mauville, we'll just force our way in!"))
+    fadedefaultbgm
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS)
+    clearflag(FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION)
+    fadescreen(FADE_FROM_BLACK)
+    removeobject(LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2)
+    removeobject(LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1)
+    removeobject(LOCALID_OCEANIC_MUSEUM_2F_ARCHIE)
+    msgbox(format("Gulliver: Thanks for yer help, mate. I'll take this vase to the basement for analysis. That was some great battling! Why don't you come visit me at my gym sometime?"))
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_GULLIVER_TAG_BATTLE)
+    removeobject(LOCALID_OCEANIC_MUSEUM_2F_GULLIVER)
+    fadescreen(FADE_FROM_BLACK)
+    releaseall
+    end
+}
