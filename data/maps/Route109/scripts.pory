@@ -560,7 +560,7 @@ Route109_Text_TrainerTipsSign:
 script Route109_EventScript_MrBriney{
 	lock
     faceplayer
-    if(flag(FLAG_RELIC_STATUE_FROM_TRINKET) == false){
+    if(flag(FLAG_HIDE_SLATEPORT_CITY_TEAM_GAIA) == false){
     	msgbox(format("You need to head to Dewford? As it happens, I'm headed there now!"))
     }
     goto(Route109_EventScript_DeliveredDevonGoods)

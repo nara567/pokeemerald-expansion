@@ -1121,7 +1121,7 @@ Route109_EventScript_MrBriney::
 # 562 "data/maps/Route109/scripts.pory"
 	faceplayer
 # 563 "data/maps/Route109/scripts.pory"
-	goto_if_unset FLAG_RELIC_STATUE_FROM_TRINKET, Route109_EventScript_MrBriney_2
+	goto_if_unset FLAG_HIDE_SLATEPORT_CITY_TEAM_GAIA, Route109_EventScript_MrBriney_2
 Route109_EventScript_MrBriney_1:
 # 566 "data/maps/Route109/scripts.pory"
 	goto Route109_EventScript_DeliveredDevonGoods
