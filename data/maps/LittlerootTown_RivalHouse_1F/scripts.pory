@@ -26,13 +26,13 @@ raw`
     applymovement(LOCALID_PLAYER, moves(
         face_right
     ))
-    msgbox(format("Oh, hey {PLAYER}! You're looking for my daughter? She was going to visit the grotto today. But if you're going to go see her..."))
+    msgbox(format("Oh, hey {PLAYER}! You're looking for my daughter? She was going to visit the clearing today. But if you're going to go see her..."))
     applymovement(LOCALID_RIVALS_HOUSE_1F_MOM, moves(
         walk_down
         walk_left * 5
     ))
     waitmovement
-    msgbox(format("Mr. Birch: Could you take this egg to her? It's close to hatching, but my show's about to be on..."))
+    msgbox(format("Could you take this egg to her? It's close to hatching, but my show's about to be on..."))
     playfanfare(MUS_OBTAIN_ITEM)
     message("{PLAYER} received the egg.")
     waitfanfare

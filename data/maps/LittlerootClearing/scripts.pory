@@ -1,0 +1,7 @@
+raw `LittlerootClearing_MapScripts::
+	.byte 0
+`
+
+script LittlerootClearing_EventScript_May {
+    msgbox("Hi!")
+}

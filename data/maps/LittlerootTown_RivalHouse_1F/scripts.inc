@@ -120,14 +120,14 @@ RivalsHouse_1F_EventScript_BirchIntro_Text_0:
 # 29 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	.string "Oh, hey {PLAYER}! You're looking for my\n"
 	.string "daughter? She was going to visit the\l"
-	.string "grotto today. But if you're going to go\l"
-	.string "see her...$"
+	.string "clearing today. But if you're going to\l"
+	.string "go see her...$"
 
 RivalsHouse_1F_EventScript_BirchIntro_Text_1:
 # 35 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	.string "Mr. Birch: Could you take this egg to\n"
-	.string "her? It's close to hatching, but my\l"
-	.string "show's about to be on...$"
+	.string "Could you take this egg to her? It's\n"
+	.string "close to hatching, but my show's about\l"
+	.string "to be on...$"
 
 RivalsHouse_1F_EventScript_BirchIntro_Text_2:
 # 37 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
