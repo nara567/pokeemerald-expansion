@@ -5,13 +5,9 @@ mapscripts LittlerootTown_PlayerHouse_2F_MapScripts {
         setvar(VAR_SECRET_BASE_INITIALIZED,0)
         setvar(VAR_LITTLEROOT_INTRO_STATE,4)
         setvar(VAR_LITTLEROOT_INTRO_STATE,5)
+        setflag(FLAG_RECEIVED_RUNNING_SHOES)
+        setflag(FLAG_SYS_B_DASH)
     }
-}
-
-script LittlerootTown_PlayerHouse_2F_Setup {
-    setvar(VAR_SECRET_BASE_INITIALIZED,0)
-    setvar(VAR_LITTLEROOT_INTRO_STATE,4)
-    setvar(VAR_LITTLEROOT_INTRO_STATE,5)
 }
 
 script LittlerootTown_PlayerHouse_2F_EventScript_PC {
