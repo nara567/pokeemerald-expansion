@@ -3,5 +3,35 @@ raw `LittlerootClearing_MapScripts::
 `
 
 script LittlerootClearing_EventScript_May {
-    msgbox("Hi!")
+    if(flag(FLAG_TALKED_TO_PROF)){
+        msgbox(format("I found my Munchie in a tree kinda like this..."))
+    } else {
+        call(LittlerootClearing_EventScript_MayNoDex)
+    }
+}
+
+script LittlerootClearing_EventScript_MayNoDex {
+    lock
+    faceplayer
+    msgbox(format("Professor Birch: Hi {PLAYER}! Wow, a Togepi! Did my dad give you that egg to pass to me?"))
+    applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
+        emote_heart
+    ))
+    delay(30)
+    msgbox(format("It seems to have taken a liking to you! Why don't you hold onto it, as your very first POKéMON!"))
+    playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare
+    msgbox("What am I doing here?")
+    applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
+        face_up
+    ))
+    msgbox(format("I'm studying the trees, of course! I'm scheduled to be here all day. But I think my assistant has my field book..."))
+    faceplayer
+    msgbox(format("I hate to ask you, {PLAYER}, but could you go find them on Route 103?"))
+    applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
+        emote_heart
+        face_up
+    ))
+    setflag(FLAG_TALKED_TO_PROF)
+    release
 }

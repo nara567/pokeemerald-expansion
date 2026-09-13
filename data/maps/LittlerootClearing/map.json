@@ -47,6 +47,7 @@
       "flag": "FLAG_TEMP_11"
     },
     {
+      "local_id": "LOCALID_LITTLEROOTGROTTO_PROFMAY",
       "graphics_id": "OBJ_EVENT_GFX_MAY_NORMAL",
       "x": 4,
       "y": 2,
@@ -57,7 +58,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LittlerootClearing_EventScript_May",
-      "flag": "0"
+      "flag": "FLAG_DEFEATED_RIVAL_ROUTE103"
     }
   ],
   "warp_events": [],
