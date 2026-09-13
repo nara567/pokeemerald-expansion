@@ -9433,10 +9433,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MOSSDEEP ===
 Name: TABITHA
-Class: Magma Admin
-Pic: Magma Admin
+Class: Aqua Admin
+Pic: Aqua Admin M
 Gender: Male
-Music: Magma
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 Multi Party: Half
@@ -13365,10 +13365,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_GAIA_OCEANIC_MUSEUM ===
 Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt M
+Class: Team Aqua
+Pic: Aqua Grunt M
 Gender: Male
-Music: Magma
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 Multi Party: Half
@@ -13591,8 +13591,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
 Name: TABITHA
-Class: Magma Admin
-Pic: Magma Admin
+Class: Aqua Admin
+Pic: Aqua Admin M
 Gender: Male
 Music: Magma
 Double Battle: No
@@ -13634,10 +13634,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ADAM_OCEANIC_MUSEUM ===
 Name: Adam
-Class: Magma Admin
-Pic: Magma Admin
+Class: Aqua Admin
+Pic: Aqua Admin M
 Gender: Male
-Music: Magma
+Music: Aqua
 Double Battle: No
 AI: Basic Trainer / Smart Switching / Smart Mon Choices / Omniscient
 Multi Party: Half
