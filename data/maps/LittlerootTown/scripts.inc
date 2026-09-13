@@ -83,8 +83,8 @@ LittlerootTown_EventScript_SetTwinPos::
 	return
 
 LittlerootTown_EventScript_SetTwinGuardingRoutePos::
-	setobjectxyperm LOCALID_LITTLEROOT_TWIN, 7, 2
-	setobjectmovementtype LOCALID_LITTLEROOT_TWIN, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm LOCALID_LITTLEROOT_TWIN, 9, 4
+	setobjectmovementtype LOCALID_LITTLEROOT_TWIN, MOVEMENT_TYPE_FACE_UP
 	return
 
 LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos::
@@ -310,8 +310,8 @@ LittlerootTown_Movement_TwinApproachPlayerLeft:
 	delay_8
 	walk_fast_right
 	walk_fast_right
-	walk_fast_right
-	walk_fast_right
+	walk_fast_up
+	walk_fast_up
 	walk_fast_up
 	walk_fast_up
 	walk_fast_left
@@ -326,12 +326,10 @@ LittlerootTown_Movement_TwinReturnLeft:
 	walk_right
 	walk_down
 	walk_down
+	walk_down
 	walk_left
 	walk_left
-	walk_left
-	walk_left
-	walk_up
-	walk_in_place_faster_down
+	walk_in_place_faster_up
 	step_end
 
 LittlerootTown_Movement_PushPlayerBackFromRoute:
@@ -357,8 +355,8 @@ LittlerootTown_Movement_TwinApproachPlayerRight:
 	jump_in_place_right
 	delay_8
 	walk_fast_right
-	walk_fast_right
-	walk_fast_right
+	walk_fast_up
+	walk_fast_up
 	walk_fast_up
 	walk_fast_up
 	walk_fast_right
@@ -368,10 +366,10 @@ LittlerootTown_Movement_TwinApproachPlayerRight:
 LittlerootTown_Movement_TwinReturnRight:
 	walk_left
 	walk_down
+	walk_down
+	walk_down
 	walk_left
-	walk_left
-	walk_left
-	walk_in_place_faster_down
+	walk_in_place_faster_up
 	step_end
 
 LittlerootTown_EventScript_GoSaveBirchTrigger::
