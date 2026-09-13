@@ -141,7 +141,11 @@
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab"
+    "LittlerootTown_ProfessorBirchsLab",
+    "LittlerootTown_PlayerHouse_2F",
+    "LittlerootTown_PlayerHouse_1F",
+    "LittlerootTown_RivalHouse_1F",
+    "LittlerootTown_RivalHouse_2F"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

@@ -1,0 +1,36 @@
+raw`
+`
+mapscripts LittlerootTown_PlayerHouse_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        switch(var(VAR_LITTLEROOT_INTRO_STATE)){
+            case 5: call(LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToStairs)
+            case 6: call(LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToTV)
+        }
+    }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: LittlerootTown_PlayerHouse_1F_OnFrame
+    ]
+}
+
+script LittlerootTown_PlayerHouse_1F_OnFrame {
+    switch(var(VAR_LITTLEROOT_INTRO_STATE)){
+        case 5: call(LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock)
+        case 6: call(LittlerootTown_BrendansHouse_1F_EventScript_PetalburgGymReport)
+    }
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock {
+    lockall
+    msgbox(PlayersHouse_1F_Text_GoSetTheClock)
+    applymovement(LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs)
+    applymovement(LOCALID_PLAYERS_HOUSE_1F_MOM,LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs)
+    waitmovement(0)
+    warp(MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_2F, 7, 1)
+    waitstate
+    releaseall
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock {
+    msgbox("Mom: {PLAYER}.")
+    msgbox("Go set the clock in your room, honey.")
+}

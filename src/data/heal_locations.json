@@ -12,7 +12,7 @@
     },
     {
       "id": "HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
-      "map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
+      "map": "MAP_LITTLEROOT_TOWN_RIVAL_HOUSE_2F",
       "x": 4,
       "y": 2,
       "respawn_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
@@ -349,6 +349,16 @@
       "y": 12,
       "respawn_map": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SIX_ISLAND_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LITTLEROOT_TOWN_PLAYER_HOUSE_2F",
+      "map": "MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_2F",
+      "x": 4,
+      "y": 2,
+      "respawn_map": "MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_1F",
+      "respawn_npc": "LOCALID_PLAYERS_HOUSE_1F_MOM",
+      "respawn_x": 2,
+      "respawn_y": 7
     }
   ]
 }

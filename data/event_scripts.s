@@ -1742,3 +1742,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Route103_2/scripts.inc"
 
 	.include "data/maps/SlateportCity_Gym/scripts.inc"
+
+	.include "data/maps/LittlerootTown_PlayerHouse_2F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_PlayerHouse_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_RivalHouse_1F/scripts.inc"
+
+	.include "data/maps/LittlerootTown_RivalHouse_2F/scripts.inc"

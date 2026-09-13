@@ -1,0 +1,52 @@
+raw`
+`
+ mapscripts LittlerootTown_RivalHouse_1F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_LITTLEROOT_INTRO_STATE, 7: RivalsHouse_1F_EventScript_BirchIntro
+        VAR_LITTLEROOT_INTRO_STATE, 8:
+        RivalsHouse_1F_EventScript_BirchMoveBack
+    ]
+ }
+
+ script RivalsHouse_1F_EventScript_Birch {
+    lock
+    faceplayer
+    msgbox(RivalsHouse_1F_Text_LikeChildLikeFather)
+    release
+    end
+ }
+
+ script RivalsHouse_1F_EventScript_BirchIntro {
+    lock
+    faceplayer
+    playse(SE_PIN)
+    applymovement(LOCALID_RIVALS_HOUSE_1F_MOM, moves(
+        emote_exclamation_mark
+    ))
+    applymovement(LOCALID_PLAYER, moves(
+        face_right
+    ))
+    msgbox(format("Oh, hey {PLAYER}! You're looking for my daughter? She was going to visit the grotto today. But if you're going to go see her..."))
+    applymovement(LOCALID_RIVALS_HOUSE_1F_MOM, moves(
+        walk_down
+        walk_left * 5
+    ))
+    waitmovement
+    msgbox(format("Mr. Birch: Could you take this egg to her? It's close to hatching, but my show's about to be on..."))
+    playfanfare(MUS_OBTAIN_ITEM)
+    message("{PLAYER} received the egg.")
+    waitfanfare
+    setvar(VAR_LITTLEROOT_INTRO_STATE, 8)
+    giveegg(SPECIES_TOGEPI)
+    setflag(FLAG_SYS_POKEMON_GET)
+    release
+}
+
+script RivalsHouse_1F_EventScript_BirchMoveBack {
+    applymovement(LOCALID_RIVALS_HOUSE_1F_MOM, moves(
+        walk_right * 5
+        walk_up
+        face_left
+    ))
+    setvar(VAR_LITTLEROOT_INTRO_STATE, 9)
+}

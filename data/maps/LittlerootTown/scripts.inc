@@ -18,6 +18,8 @@ LittlerootTown_MapScripts::
 	@ 5: Entered 2F to set clock
 	@ 6: Set clock
 	@ 7: Told to go meet rival
+	@ 8: Told to go meet May
+	@ 9: Given Egg
 
 	@ State descriptions for VAR_LITTLEROOT_HOUSES_STATE_MAY
 	@                    and VAR_LITTLEROOT_HOUSES_STATE_BRENDAN
