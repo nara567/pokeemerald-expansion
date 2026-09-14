@@ -4,7 +4,9 @@ raw `LittlerootClearing_MapScripts::
 
 script LittlerootClearing_EventScript_May {
     if(flag(FLAG_TALKED_TO_PROF)){
+        lock
         msgbox(format("I found my Munchie in a tree kinda like this..."))
+        release
     } else {
         call(LittlerootClearing_EventScript_MayNoDex)
     }

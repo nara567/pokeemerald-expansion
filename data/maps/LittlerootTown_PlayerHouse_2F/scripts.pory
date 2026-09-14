@@ -3,8 +3,9 @@ raw `
 mapscripts LittlerootTown_PlayerHouse_2F_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_SECRET_BASE_INITIALIZED,0)
-        setvar(VAR_LITTLEROOT_INTRO_STATE,4)
-        setvar(VAR_LITTLEROOT_INTRO_STATE,5)
+        if(var(VAR_LITTLEROOT_INTRO_STATE)<5){
+            setvar(VAR_LITTLEROOT_INTRO_STATE,5)
+        }
         setflag(FLAG_RECEIVED_RUNNING_SHOES)
         setflag(FLAG_SYS_B_DASH)
     }

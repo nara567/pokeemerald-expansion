@@ -344,7 +344,7 @@
 #define TRAINER_IVAN                        337
 #define TRAINER_CLAUDE                      338
 #define TRAINER_ELLIOT_1                    339
-#define TRAINER_NED                         340
+#define Route106_GaiaGrunt                         340
 #define TRAINER_DALE                        341
 #define TRAINER_NOLAN                       342
 #define TRAINER_BARNY                       343
