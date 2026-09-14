@@ -1115,7 +1115,7 @@ static inline u32 GetEggCycleLength(void)
         return 257;
     case GEN_8:
     default:
-        return 128;
+        return 100;
     }
 }
 
