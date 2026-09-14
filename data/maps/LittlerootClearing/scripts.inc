@@ -30,7 +30,7 @@ LittlerootClearing_EventScript_MayNoDex::
 # 19 "data/maps/LittlerootClearing/scripts.pory"
 	applymovement LOCALID_LITTLEROOTGROTTO_PROFMAY, LittlerootClearing_EventScript_MayNoDex_Movement_0
 # 22 "data/maps/LittlerootClearing/scripts.pory"
-	delay 30
+	delay 32
 # 23 "data/maps/LittlerootClearing/scripts.pory"
 	msgbox LittlerootClearing_EventScript_MayNoDex_Text_1
 # 24 "data/maps/LittlerootClearing/scripts.pory"
