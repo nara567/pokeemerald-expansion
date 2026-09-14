@@ -9,126 +9,130 @@ LittlerootTown_RivalHouse_1F_MapScripts::
 LittlerootTown_RivalHouse_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 5 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 7, RivalsHouse_1F_EventScript_BirchIntro
-# 6 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 8, RivalsHouse_1F_EventScript_BirchMoveBack
 	.2byte 0
 
 
 RivalsHouse_1F_EventScript_Birch::
-# 12 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 10 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	lock
-# 13 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 11 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	faceplayer
-# 14 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 12 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	msgbox RivalsHouse_1F_Text_LikeChildLikeFather
-# 15 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 13 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	release
 	end
 
 
 RivalsHouse_1F_EventScript_BirchIntro::
-# 20 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 18 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	lock
-# 21 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 19 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	faceplayer
-# 22 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 20 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	playse SE_PIN
-# 23 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 21 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	applymovement LOCALID_RIVALS_HOUSE_1F_MOM, RivalsHouse_1F_EventScript_BirchIntro_Movement_0
-# 26 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 24 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	applymovement LOCALID_PLAYER, RivalsHouse_1F_EventScript_BirchIntro_Movement_1
-# 29 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_EventScript_BirchIntro_Text_0
-# 30 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	applymovement LOCALID_RIVALS_HOUSE_1F_MOM, RivalsHouse_1F_EventScript_BirchIntro_Movement_2
-# 34 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	waitmovement
-# 35 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 27 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	setspeaker RivalsHouse_1F_EventScript_BirchIntro_Text_0
+# 28 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	msgbox RivalsHouse_1F_EventScript_BirchIntro_Text_1
+# 29 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	applymovement LOCALID_RIVALS_HOUSE_1F_MOM, RivalsHouse_1F_EventScript_BirchIntro_Movement_2
+# 33 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	waitmovement 0
+# 34 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	setspeaker RivalsHouse_1F_EventScript_BirchIntro_Text_0
+# 35 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	msgbox RivalsHouse_1F_EventScript_BirchIntro_Text_2
 # 36 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 37 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	message RivalsHouse_1F_EventScript_BirchIntro_Text_2
+	setspeaker NULL
 # 38 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	waitfanfare
+	message RivalsHouse_1F_EventScript_BirchIntro_Text_3
 # 39 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	setvar VAR_LITTLEROOT_INTRO_STATE, 8
+	waitfanfare
 # 40 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	applymovement LOCALID_RIVALS_HOUSE_1F_MOM, RivalsHouse_1F_EventScript_BirchIntro_Movement_3
+# 45 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	waitmovement 0
+# 46 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	setvar VAR_LITTLEROOT_INTRO_STATE, 8
+# 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	giveegg SPECIES_TOGEPI
-# 41 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 48 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
-# 42 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 49 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	release
 	return
 
 
-RivalsHouse_1F_EventScript_BirchMoveBack::
-# 46 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	applymovement LOCALID_RIVALS_HOUSE_1F_MOM, RivalsHouse_1F_EventScript_BirchMoveBack_Movement_0
-# 51 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	setvar VAR_LITTLEROOT_INTRO_STATE, 9
-	return
-
-
-# 23 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 21 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 RivalsHouse_1F_EventScript_BirchIntro_Movement_0:
-# 24 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 22 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 26 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 24 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 RivalsHouse_1F_EventScript_BirchIntro_Movement_1:
-# 27 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 25 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	face_right
 	step_end
 
-# 30 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 29 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 RivalsHouse_1F_EventScript_BirchIntro_Movement_2:
-# 31 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 30 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_down
-# 32 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 31 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_left
-# 32 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 31 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_left
-# 32 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 31 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_left
-# 32 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 31 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_left
-# 32 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 31 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_left
 	step_end
 
-# 46 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-RivalsHouse_1F_EventScript_BirchMoveBack_Movement_0:
-# 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 40 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+RivalsHouse_1F_EventScript_BirchIntro_Movement_3:
+# 41 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_right
-# 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 41 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_right
-# 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 41 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_right
-# 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 41 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_right
-# 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 41 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_right
-# 48 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 42 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	walk_up
-# 49 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 43 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	face_left
 	step_end
 
 RivalsHouse_1F_EventScript_BirchIntro_Text_0:
-# 29 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 27 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	.string "Birch$"
+
+RivalsHouse_1F_EventScript_BirchIntro_Text_1:
+# 28 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	.string "Oh, hey {PLAYER}! You're looking for my\n"
 	.string "daughter? She was going to visit the\l"
 	.string "clearing today. But if you're going to\l"
 	.string "go see her...$"
 
-RivalsHouse_1F_EventScript_BirchIntro_Text_1:
+RivalsHouse_1F_EventScript_BirchIntro_Text_2:
 # 35 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	.string "Could you take this egg to her? It's\n"
 	.string "close to hatching, but my show's about\l"
 	.string "to be on...$"
 
-RivalsHouse_1F_EventScript_BirchIntro_Text_2:
-# 37 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+RivalsHouse_1F_EventScript_BirchIntro_Text_3:
+# 38 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	.string "{PLAYER} received the egg.$"

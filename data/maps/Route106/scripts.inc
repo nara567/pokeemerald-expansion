@@ -109,11 +109,17 @@ Route106_EventScript_GruntOutsideCave_1:
 	msgbox Route106_EventScript_GruntOutsideCave_Text_0
 # 59 "data/maps/Route106/scripts.pory"
 	applymovement LOCALID_106_GAIAGRUNT, Route106_EventScript_GruntOutsideCave_Movement_1
-# 66 "data/maps/Route106/scripts.pory"
+# 63 "data/maps/Route106/scripts.pory"
 	applymovement LOCALID_PLAYER, Route106_EventScript_GruntOutsideCave_Movement_2
-# 69 "data/maps/Route106/scripts.pory"
+# 66 "data/maps/Route106/scripts.pory"
+	waitmovement 0
+# 67 "data/maps/Route106/scripts.pory"
 	msgbox Route106_EventScript_GruntOutsideCave_Text_1
-# 70 "data/maps/Route106/scripts.pory"
+# 68 "data/maps/Route106/scripts.pory"
+	applymovement LOCALID_106_GAIAGRUNT, Route106_EventScript_GruntOutsideCave_Movement_3
+# 72 "data/maps/Route106/scripts.pory"
+	waitmovement 0
+# 73 "data/maps/Route106/scripts.pory"
 	release
 	return
 
@@ -130,18 +136,20 @@ Route106_EventScript_GruntOutsideCave_Movement_1:
 	walk_fast_left
 # 61 "data/maps/Route106/scripts.pory"
 	face_down
-# 62 "data/maps/Route106/scripts.pory"
-	delay_16
-# 63 "data/maps/Route106/scripts.pory"
-	walk_right
-# 64 "data/maps/Route106/scripts.pory"
-	face_up
 	step_end
 
-# 66 "data/maps/Route106/scripts.pory"
+# 63 "data/maps/Route106/scripts.pory"
 Route106_EventScript_GruntOutsideCave_Movement_2:
-# 67 "data/maps/Route106/scripts.pory"
+# 64 "data/maps/Route106/scripts.pory"
 	walk_down
+	step_end
+
+# 68 "data/maps/Route106/scripts.pory"
+Route106_EventScript_GruntOutsideCave_Movement_3:
+# 69 "data/maps/Route106/scripts.pory"
+	walk_right
+# 70 "data/maps/Route106/scripts.pory"
+	face_up
 	step_end
 
 Route106_EventScript_GruntOutsideCave_Text_0:
@@ -149,6 +157,6 @@ Route106_EventScript_GruntOutsideCave_Text_0:
 	.string "Stop! You can't go in there!$"
 
 Route106_EventScript_GruntOutsideCave_Text_1:
-# 69 "data/maps/Route106/scripts.pory"
+# 67 "data/maps/Route106/scripts.pory"
 	.string "I'm not done with my preparations yet.\n"
 	.string "Fufufu...$"

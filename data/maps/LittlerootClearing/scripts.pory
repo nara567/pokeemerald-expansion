@@ -3,8 +3,17 @@ raw `LittlerootClearing_MapScripts::
 `
 
 script LittlerootClearing_EventScript_May {
-    if(flag(FLAG_TALKED_TO_PROF)){
+    if(flag(FLAG_SYS_POKEMON_GET) == false){
         lock
+        faceplayer
+        msgbox(format("Hi there! I'm going to be in the clearing all day, but my dad should be coming by any time now..."))
+        applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
+            face_up
+        ))
+        release
+    } elif(flag(FLAG_TALKED_TO_PROF)){
+        lock
+        faceplayer
         msgbox(format("I found my Munchie in a tree kinda like this..."))
         release
     } else {
@@ -31,9 +40,9 @@ script LittlerootClearing_EventScript_MayNoDex {
     faceplayer
     msgbox(format("I hate to ask you, {PLAYER}, but could you go find them on Route 103?"))
     applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
-        emote_heart
         face_up
     ))
+    waitmovement(0)
     setflag(FLAG_TALKED_TO_PROF)
     setvar(VAR_ROUTE101_STATE, 3)
     setvar(VAR_LITTLEROOT_TOWN_STATE, 2)

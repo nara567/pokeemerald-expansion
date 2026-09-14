@@ -59,14 +59,17 @@ script Route106_EventScript_GruntOutsideCave {
         applymovement(LOCALID_106_GAIAGRUNT,moves(
             walk_fast_left
             face_down
-            delay_16
-            walk_right
-            face_up
         ))
         applymovement(LOCALID_PLAYER,moves(
             walk_down
         ))
+		waitmovement(0)
         msgbox(format("I'm not done with my preparations yet. Fufufu..."))
+		applymovement(LOCALID_106_GAIAGRUNT,moves(
+            walk_right
+            face_up
+        ))
+		waitmovement(0)
         release
     }
 }

@@ -3011,3 +3011,8 @@
 	getbraillestringwidth \text
 	call EventScript_BrailleCursorWaitButton
 	.endm
+
+	.macro waitmove localId:req, movements:req
+	applymovement \localId, \movements
+	waitmovement \localId
+	.endm
