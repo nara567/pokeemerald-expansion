@@ -48,6 +48,10 @@ LittlerootClearing_EventScript_MayNoDex::
 # 35 "data/maps/LittlerootClearing/scripts.pory"
 	setflag FLAG_TALKED_TO_PROF
 # 36 "data/maps/LittlerootClearing/scripts.pory"
+	setvar VAR_ROUTE101_STATE, 3
+# 37 "data/maps/LittlerootClearing/scripts.pory"
+	setvar VAR_LITTLEROOT_TOWN_STATE, 2
+# 38 "data/maps/LittlerootClearing/scripts.pory"
 	release
 	return
 

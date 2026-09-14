@@ -33,5 +33,7 @@ script LittlerootClearing_EventScript_MayNoDex {
         face_up
     ))
     setflag(FLAG_TALKED_TO_PROF)
+    setvar(VAR_ROUTE101_STATE, 3)
+    setvar(VAR_LITTLEROOT_TOWN_STATE, 2)
     release
 }
