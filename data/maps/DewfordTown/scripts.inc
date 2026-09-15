@@ -11,7 +11,7 @@ DewfordTown_EventScript_Briney::
 	faceplayer
 	message DewfordTown_Text_WhereAreWeBound
 	waitmessage
-	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 2, FALSE
+	multichoicedefault 21, 6, MULTI_BRINEY_ON_DEWFORD, 1, FALSE
 	switch VAR_RESULT
 	case 0, DewfordTown_EventScript_ChooseSlateport
 	case 1, DewfordTown_EventScript_CancelSailSelect

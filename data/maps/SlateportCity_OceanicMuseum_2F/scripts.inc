@@ -997,7 +997,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt::
 # 504 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	setflag FLAG_GULLIVER_TAG_BATTLE
 # 505 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
-	removeobject LOCALID_OCEANIC_MUSEUM_2F_GULLIVER
+	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_GULLIVER
 # 506 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
 	fadescreen FADE_FROM_BLACK
 # 507 "data/maps/SlateportCity_OceanicMuseum_2F/scripts.pory"
