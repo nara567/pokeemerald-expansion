@@ -14,7 +14,7 @@ mapscripts SlateportCity_Gym_MapScripts {
 }
 
 script SlateportCity_Gym_EventScript_Gulliver {
-    trainerbattle_single(TRAINER_ROXANNE_1, SlateportCity_Gym_Text_GulliverIntro, SlateportCity_Gym_Text_GulliverDefeat, RustboroCity_Gym_EventScript_GulliverDefeated, NO_MUSIC)
+    trainerbattle_single(TRAINER_GULLIVER_1, SlateportCity_Gym_Text_GulliverIntro, SlateportCity_Gym_Text_GulliverDefeat, RustboroCity_Gym_EventScript_GulliverDefeated, NO_MUSIC)
     msgbox(SlateportCity_Gym_Text_GulliverPostBattle)
 }
 

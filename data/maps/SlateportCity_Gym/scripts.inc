@@ -27,7 +27,7 @@ SlateportCity_Gym_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 
 SlateportCity_Gym_EventScript_Gulliver::
 # 17 "data/maps/SlateportCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_ROXANNE_1, SlateportCity_Gym_Text_GulliverIntro, SlateportCity_Gym_Text_GulliverDefeat, RustboroCity_Gym_EventScript_GulliverDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_GULLIVER_1, SlateportCity_Gym_Text_GulliverIntro, SlateportCity_Gym_Text_GulliverDefeat, RustboroCity_Gym_EventScript_GulliverDefeated, NO_MUSIC
 # 18 "data/maps/SlateportCity_Gym/scripts.pory"
 	msgbox SlateportCity_Gym_Text_GulliverPostBattle
 	return
