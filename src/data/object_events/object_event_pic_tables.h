@@ -1359,6 +1359,18 @@ static const struct SpriteFrameImage sPicTable_ProfOak[] = {
     overworld_ascending_frames(gObjectEventPic_ProfOak, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_MomFrlg[] = {
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 0),
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 1),
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 2),
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 0),
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 0),
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 1),
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 1),
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 2),
+    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 2),
+};
+
 #if IS_FRLG
 
 static const struct SpriteFrameImage sPicTable_RedNormal[] = {
@@ -2479,18 +2491,6 @@ static const struct SpriteFrameImage sPicTable_Kabuto[] = {
     overworld_frame(gObjectEventPic_KabutoOld, 2, 2, 1),
     overworld_frame(gObjectEventPic_KabutoOld, 2, 2, 2),
     overworld_frame(gObjectEventPic_KabutoOld, 2, 2, 2),
-};
-
-static const struct SpriteFrameImage sPicTable_MomFrlg[] = {
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 0),
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 1),
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 2),
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 0),
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 0),
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 1),
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 1),
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 2),
-    overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 2),
 };
 
 #endif // IS_FRLG

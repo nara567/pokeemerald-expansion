@@ -19,7 +19,7 @@ LittlerootTown_PlayerHouse_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 LittlerootTown_PlayerHouse_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 # 6 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	call LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToStairs
+	call LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToStairs
 	return
 
 LittlerootTown_PlayerHouse_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
@@ -57,34 +57,45 @@ LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock::
 # 23 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	lockall
 # 24 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	msgbox PlayersHouse_1F_Text_GoSetTheClock
+	call LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock
 # 25 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	applymovement LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
-# 26 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
-# 27 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock_Movement_0
 # 28 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_2F, 7, 1
-# 29 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	waitstate
+	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock_Movement_0
 # 30 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	waitmovement 0
+# 31 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	warp MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_2F, 7, 1
+# 32 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	waitstate
+# 33 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	releaseall
 	return
 
 
 LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock::
-# 34 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 37 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 38 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	msgbox LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock_Text_0
-# 35 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	msgbox LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock_Text_1
 	return
 
 
-LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock_Text_0:
-# 34 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	.string "Mom: {PLAYER}.$"
+LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToStairs::
+# 42 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setobjectxyperm LOCALID_PLAYERS_HOUSE_1F_MOM, 8, 4
+# 43 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setobjectmovementtype LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP
+	return
 
-LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock_Text_1:
-# 35 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	.string "Go set the clock in your room, honey.$"
+
+# 25 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock_Movement_0:
+# 26 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	walk_up
+	step_end
+
+LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock_Text_0:
+# 38 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	.string "{PLAYER}, make sure you set the clock we\n"
+	.string "got you, honey.$"

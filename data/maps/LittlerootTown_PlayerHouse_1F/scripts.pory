@@ -3,7 +3,7 @@ raw`
 mapscripts LittlerootTown_PlayerHouse_1F_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         switch(var(VAR_LITTLEROOT_INTRO_STATE)){
-            case 5: call(LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToStairs)
+            case 5: call(LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToStairs)
             case 6: call(LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToTV)
         }
     }
@@ -21,9 +21,12 @@ script LittlerootTown_PlayerHouse_1F_OnFrame {
 
 script LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock {
     lockall
-    msgbox(PlayersHouse_1F_Text_GoSetTheClock)
-    applymovement(LOCALID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs)
-    applymovement(LOCALID_PLAYERS_HOUSE_1F_MOM,LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs)
+    call(LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock)
+    applymovement(LOCALID_PLAYER, moves(
+        walk_up
+    ))
+    applymovement(LOCALID_PLAYERS_HOUSE_1F_MOM, moves(
+        walk_up))
     waitmovement(0)
     warp(MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_2F, 7, 1)
     waitstate
@@ -31,6 +34,12 @@ script LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock {
 }
 
 script LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock {
-    msgbox("Mom: {PLAYER}.")
-    msgbox("Go set the clock in your room, honey.")
+    setspeaker(SP_NAME_MOM)
+    msgbox(format("{PLAYER}, make sure you set the clock we got you, honey."))
 }
+
+script LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToStairs {
+    setobjectxyperm(LOCALID_PLAYERS_HOUSE_1F_MOM, 8, 4)
+    setobjectmovementtype(LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP)
+}
+
