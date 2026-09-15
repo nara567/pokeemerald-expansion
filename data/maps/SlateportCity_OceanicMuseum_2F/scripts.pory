@@ -490,18 +490,21 @@ script SlateportCity_OceanicMuseum_2F_EventScript_DoGulliverMultiBattle {
 }
 
 script SlateportCity_OceanicMuseum_2F_EventScript_DefeatedAdamGrunt {
-    msgbox(format("Adam: Enough of this! If you refuse to assist us with entering New Mauville, we'll just force our way in!"))
+    setspeaker("Adam")
+	msgbox(format("Enough of this! If you refuse to assist us with entering New Mauville, we'll just force our way in!"))
     fadedefaultbgm
     fadescreen(FADE_TO_BLACK)
-    setflag(FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS)
-    clearflag(FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION)
-    fadescreen(FADE_FROM_BLACK)
-    removeobject(LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2)
+	removeobject(LOCALID_OCEANIC_MUSEUM_2F_GRUNT_2)
     removeobject(LOCALID_OCEANIC_MUSEUM_2F_GRUNT_1)
     removeobject(LOCALID_OCEANIC_MUSEUM_2F_ARCHIE)
-    msgbox(format("Gulliver: Thanks for yer help, mate. I'll take this vase to the basement for analysis. That was some great battling! Why don't you come visit me at my gym sometime?"))
+    fadescreen(FADE_FROM_BLACK)
+	delay(30)
+	setflag(FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS)
+    setspeaker("Gulliver")
+	msgbox(format("Thanks for yer help, mate. I'll take this vase to the basement for analysis. That was some great battling! Why don't you come visit me at my gym sometime?"))
     fadescreen(FADE_TO_BLACK)
     setflag(FLAG_GULLIVER_TAG_BATTLE)
+	removeobject(LOCALID_OCEANIC_MUSEUM_2F_GULLIVER)
 	setflag(FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_GULLIVER)
     fadescreen(FADE_FROM_BLACK)
     releaseall
