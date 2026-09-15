@@ -24,7 +24,7 @@ LittlerootTown_PlayerHouse_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
 
 LittlerootTown_PlayerHouse_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_3:
 # 7 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	call LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToTV
+	call LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToIsland
 	return
 
 LittlerootTown_PlayerHouse_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
@@ -89,10 +89,36 @@ LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToStairs::
 	return
 
 
+LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToIsland::
+# 47 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setobjectxyperm LOCALID_PLAYERS_HOUSE_1F_MOM, 3, 5
+# 48 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setobjectmovementtype LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP
+	return
+
+
+LittlerootTown_PlayerHouse_1F_EventScript_PreParty::
+# 52 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	lockall
+# 53 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setvar VAR_0x8004, LOCALID_PLAYERS_HOUSE_1F_MOM
+# 54 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setvar VAR_0x8005, LOCALID_PLAYERS_HOUSE_1F_DAD
+# 55 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	applymovement VAR_0x8005, LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_0
+	return
+
+
 # 25 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock_Movement_0:
 # 26 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	walk_up
+	step_end
+
+# 55 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_0:
+# 56 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	emote_exclamation_mark
 	step_end
 
 LittlerootTown_PlayerHouse_1F_EventScript_GoSetTheClock_Text_0:

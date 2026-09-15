@@ -67,7 +67,7 @@ LittlerootTown_PlayerHouse_2f_EventScript_SetClock_1:
 # 37 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
 	setflag FLAG_SET_WALL_CLOCK
 # 38 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
-	call PlayersHouse_2F_EventScript_MomComesUpstairsMale
+	call LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs
 # 39 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
 	playse SE_EXIT
 # 40 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
@@ -81,3 +81,48 @@ LittlerootTown_PlayerHouse_2f_EventScript_SetClock_2:
 	call PlayersHouse_2F_EventScript_CheckWallClock
 	goto LittlerootTown_PlayerHouse_2f_EventScript_SetClock_1
 
+
+LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs::
+# 45 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	setvar VAR_0x8008, LOCALID_PLAYERS_HOUSE_2F_MOM
+# 46 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	addobject VAR_0x8008
+# 47 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	applymovement VAR_0x8008, PlayersHouse_2F_Movement_MomEntersMale
+# 48 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	waitmovement 0
+# 49 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+# 50 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	waitmovement 0
+# 51 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 52 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	msgbox LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs_Text_0
+# 53 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	msgbox LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs_Text_1
+# 54 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	msgbox LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs_Text_2
+# 55 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	closemessage
+# 56 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	applymovement VAR_0x8008, PlayersHouse_2F_Movement_MomExitsMale
+# 57 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	waitmovement 0
+	return
+
+
+LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs_Text_0:
+# 52 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	.string "{PLAYER}, how do you like your clock?$"
+
+LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs_Text_1:
+# 53 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	.string "Good! I know you're excited to start\n"
+	.string "your adventure, but let's throw a party\l"
+	.string "before you go!$"
+
+LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs_Text_2:
+# 54 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+	.string "And make sure you read the card on your\n"
+	.string "desk!$"

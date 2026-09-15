@@ -4,7 +4,7 @@ mapscripts LittlerootTown_PlayerHouse_1F_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         switch(var(VAR_LITTLEROOT_INTRO_STATE)){
             case 5: call(LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToStairs)
-            case 6: call(LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToTV)
+            case 6: call(LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToIsland)
         }
     }
     MAP_SCRIPT_ON_FRAME_TABLE [
@@ -43,3 +43,23 @@ script LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToStairs {
     setobjectmovementtype(LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP)
 }
 
+script LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToIsland {
+    setobjectxyperm(LOCALID_PLAYERS_HOUSE_1F_MOM, 3, 5)
+    setobjectmovementtype(LOCALID_PLAYERS_HOUSE_1F_MOM, MOVEMENT_TYPE_FACE_UP)
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_PreParty {
+    lockall
+    setvar(VAR_0x8004, LOCALID_PLAYERS_HOUSE_1F_MOM)
+    setvar(VAR_0x8005, LOCALID_PLAYERS_HOUSE_1F_DAD)
+    playse(SE_PIN)
+    applymovement(VAR_0x8005, moves(
+        face_right
+        emote_exclamation_mark))
+    waitmovement(0)
+    setspeaker("Dad")
+    msgbox(format("{PLAYER}, happy birthday!"))
+    applymovement(LOCALID_PLAYER, moves(
+        walk_left * 6
+    ))
+}
