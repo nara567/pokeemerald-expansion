@@ -1752,3 +1752,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/LittlerootTown_RivalHouse_2F/scripts.inc"
 
 	.include "data/maps/LittlerootClearing/scripts.inc"
+
+	.include "data/maps/SlateportBeach/scripts.inc"

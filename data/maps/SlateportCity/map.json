@@ -27,6 +27,11 @@
       "map": "MAP_ROUTE134",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_SLATEPORT_BEACH",
+      "offset": 28,
+      "direction": "left"
     }
   ],
   "object_events": [
