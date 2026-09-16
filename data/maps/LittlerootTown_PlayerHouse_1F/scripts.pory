@@ -8,6 +8,7 @@ mapscripts LittlerootTown_PlayerHouse_1F_MapScripts {
             case 3: call(LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToIsland)
             case 4: call(LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToIsland)
             case 5: call(LittlerootTown_PlayerHouse_1F_EventScript_MoveMomToIsland)
+            case 6: call(LittlerootTown_PlayerHouse_1F_EventScript_Party)
         }
     }
     MAP_SCRIPT_ON_FRAME_TABLE [
@@ -147,3 +148,140 @@ script LittlerootTown_PlayerHouse_1F_EventScript_Steak {
     msgbox("This steak isn't going to make itself!")
     release
 }
+
+script LittlerootTown_PlayerHouse_1F_EventScript_Party {
+    //lockall
+    playse(SE_PIN)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_MOM, moves(
+    //     face_right
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_DAD, moves(
+    //     face_right
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_BIRCH, moves(
+    //     face_right
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_RIVAL, moves(
+    //     face_right
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    //setspeaker("Everyone")
+    //msgbox(format("HAPPY BIRTHDAY, {PLAYER}!"))
+    playfanfare(MUS_RG_DEX_RATING)
+    // setspeaker("Mom")
+    // msgbox(format("The Professor made you this Torchic cake! Come here and make a wish!"))
+    // applymovement(LOCALID_PLAYER, moves(
+    //     walk_up * 3
+    //     walk_left * 4
+    //     face_down
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_PROF, moves(
+    //     walk_left * 2
+    //     walk_down * 2
+    //     walk_right *2
+    //     face_down
+    // ))
+    // waitmovement(0)
+    // setspeaker("Prof Birch")
+    // msgbox(format("I had to get some natural syrup in the clearing for the flavor!"))
+    // setspeaker("Dad")
+    // msgbox(format("What's everyone waiting for? Let's dig in!"))
+    // fadescreen(FADE_TO_BLACK)
+    //playse(SE_M_EARTHQUAKE)
+    //removeobject(LOCALID_PLAYERS_HOUSE_1F_CAKE)
+    //setobjectxyperm(LOCALID_PLAYERS_HOUSE_1F_DEX, 4, 6)
+    // fadescreen(FADE_FROM_BLACK)
+    // setspeaker("Birch")
+    // msgbox(format("Delicious as always, May!"))
+    // setspeaker("Prof Birch")
+    // msgbox(format("Thanks dad! Now, {PLAYER}, time for the best part."))
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_PROF, moves(
+    //     jump_in_place_right
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // msgbox(format("It's gift time! Happy birthday! From my dad, {RIVAL}, and I, we want you to have a Pokédex! Think of it as a part 2 to the Togepi we gave you!"))
+    // call(LittlerootTown_PlayerHouse_1F_EventScript_ReceivePokedex)
+    // setspeaker("{RIVAL}")
+    // msgbox(format("Now you'll help advance our research while you go out and travel the region!"))
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_BIRCH, moves(
+    //     emote_heart
+    // ))
+    // waitmovement(0)
+    // setspeaker("Dad")
+    // msgbox(format("And now, from us! We know how much you've been talking about entering the leagues, so we got you something special!"))
+    // call(LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense)
+    // setspeaker("Mom")
+    // msgbox(format("Your dad and I will always be rooting for you, honey! Go show the world what you can do!"))
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_MOM, moves(
+    //     emote_heart
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_DAD, moves(
+    //     emote_heart
+    // ))
+    // waitmovement(0)
+    // setspeaker("Dad")
+    // msgbox(format("Let's get this party started!"))
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_MOM, moves(
+    //     jump_2_right
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_DAD, moves(
+    //     jump_2_left
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_BIRCH, moves(
+    //     jump_2_right
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_RIVAL, moves(
+    //     jump_2_left
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYER, moves(
+    //     jump_2_down
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // applymovement(LOCALID_PLAYERS_HOUSE_1F_PROF, moves(
+    //     jump_2_down
+    //     emote_exclamation_mark
+    // ))
+    // waitmovement(0)
+    // fadescreen(FADE_TO_BLACK)
+    setvar(VAR_LITTLEROOT_INTRO_STATE, 7)
+    // fadescreen(FADE_FROM_BLACK)
+    //releaseall
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_ReceivePokedex {
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex)
+    waitfanfare
+    setflag(FLAG_SYS_POKEDEX_GET)
+    special(SetUnlockedPokedexFlags)
+    setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+    setvar(VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
+    return
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense {
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(format("{PLAYER} received the Minor League License!"))
+    waitfanfare
+    return
+}
+
