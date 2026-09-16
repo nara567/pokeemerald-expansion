@@ -86,26 +86,28 @@ LittlerootClearing_EventScript_MayNoDex::
 # 49 "data/maps/LittlerootClearing/scripts.pory"
 	setvar VAR_ROUTE101_STATE, 3
 # 50 "data/maps/LittlerootClearing/scripts.pory"
-	setvar VAR_LITTLEROOT_INTRO_STATE, 5
+	setvar VAR_LITTLEROOT_TOWN_STATE, 2
 # 51 "data/maps/LittlerootClearing/scripts.pory"
+	setvar VAR_LITTLEROOT_INTRO_STATE, 5
+# 52 "data/maps/LittlerootClearing/scripts.pory"
 	release
 	return
 
 
 LittlerootClearing_EventScript_LookingForAsst::
-# 55 "data/maps/LittlerootClearing/scripts.pory"
-	lock
 # 56 "data/maps/LittlerootClearing/scripts.pory"
-	faceplayer
+	lock
 # 57 "data/maps/LittlerootClearing/scripts.pory"
-	setspeaker LittlerootClearing_EventScript_NoEgg_Text_0
+	faceplayer
 # 58 "data/maps/LittlerootClearing/scripts.pory"
-	msgbox LittlerootClearing_EventScript_LookingForAsst_Text_0
+	setspeaker LittlerootClearing_EventScript_NoEgg_Text_0
 # 59 "data/maps/LittlerootClearing/scripts.pory"
+	msgbox LittlerootClearing_EventScript_LookingForAsst_Text_0
+# 60 "data/maps/LittlerootClearing/scripts.pory"
 	applymovement LOCALID_LITTLEROOTGROTTO_PROFMAY, LittlerootClearing_EventScript_NoEgg_Movement_0
-# 62 "data/maps/LittlerootClearing/scripts.pory"
-	waitmovement 0
 # 63 "data/maps/LittlerootClearing/scripts.pory"
+	waitmovement 0
+# 64 "data/maps/LittlerootClearing/scripts.pory"
 	release
 	return
 
@@ -159,6 +161,6 @@ LittlerootClearing_EventScript_MayNoDex_Text_4:
 	.string "you go find them on Route 103?$"
 
 LittlerootClearing_EventScript_LookingForAsst_Text_0:
-# 58 "data/maps/LittlerootClearing/scripts.pory"
+# 59 "data/maps/LittlerootClearing/scripts.pory"
 	.string "I found my Munchie in a tree kinda like\n"
 	.string "this...$"

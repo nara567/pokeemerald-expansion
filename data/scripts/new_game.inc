@@ -275,8 +275,8 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
 	setflag FLAG_PARTY_OVER
-	setvar VAR_LITTLEROOT_INTRO_STATE 1
-	setvar VAR_SECRET_BASE_INITIALIZED 0
+	setvar VAR_LITTLEROOT_INTRO_STATE, 1
+	setvar VAR_SECRET_BASE_INITIALIZED, 0
 	call EventScript_ResetAllBerries
 	end
 
