@@ -25,7 +25,7 @@ raw`
         face_right
     ))
     setspeaker("Birch")
-    msgbox(format("Oh, hey {PLAYER}! You're looking for my daughter? She was going to visit the clearing today. But if you're going to go see her..."))
+    msgbox(format("Hey {PLAYER}! You're looking for my daughter? She was going to visit the clearing today. But if you're going to go see her..."))
     applymovement(LOCALID_RIVALS_HOUSE_1F_MOM, moves(
         walk_down
         walk_left * 5
@@ -43,6 +43,7 @@ raw`
         face_left
     ))
     waitmovement(0)
+    msgbox(format("I'll see you at the party!"))
     setvar(VAR_LITTLEROOT_INTRO_STATE, 8)
     giveegg(SPECIES_TOGEPI)
     setflag(FLAG_SYS_POKEMON_GET)

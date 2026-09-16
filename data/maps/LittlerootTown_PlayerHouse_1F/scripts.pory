@@ -15,7 +15,7 @@ mapscripts LittlerootTown_PlayerHouse_1F_MapScripts {
 script LittlerootTown_PlayerHouse_1F_OnFrame {
     switch(var(VAR_LITTLEROOT_INTRO_STATE)){
         case 5: call(LittlerootTown_PlayerHouse_1F_EventScript_GoUpstairsToSetClock)
-        case 6: call(LittlerootTown_BrendansHouse_1F_EventScript_PetalburgGymReport)
+        case 6: call(LittlerootTown_PlayerHouse_1F_EventScript_PreParty)
     }
 }
 
@@ -62,4 +62,81 @@ script LittlerootTown_PlayerHouse_1F_EventScript_PreParty {
     applymovement(LOCALID_PLAYER, moves(
         walk_left * 6
     ))
+    waitmovement(0)
+    playse(SE_PIN)
+    applymovement(VAR_0x8005, moves(
+        emote_heart))
+    waitmovement(0)
+    applymovement(VAR_0x8004, moves(
+        emote_heart))
+    waitmovement(0)
+    msgbox(format("We're still getting everything ready here. But isn't it so exciting? You're old enough to enter the leagues now!"))
+    applymovement(LOCALID_PLAYER, moves(
+        face_down
+    ))
+    waitmovement(0)
+    applymovement(VAR_0x8004, moves(
+        walk_left
+        face_up
+    ))
+    waitmovement(0)
+    setspeaker("Mom")
+    msgbox(format("It seems like just yesterday you were knee-high, dressed up as Wallace, talking about being champion. All kids leave home someday..."))
+    applymovement(VAR_0x8004, moves(
+        jump_in_place_up
+    ))
+    waitmovement(0)
+    msgbox(format("But you can't leave until we see you off!"))
+    msgbox(format("Could you go next door and see if the Professor finished making the cake?"))
+    setvar(VAR_TEMP_1, 1)
+    setvar(VAR_LITTLEROOT_INTRO_STATE, 7)
+    releaseall
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_Mom {
+    lock
+    faceplayer
+    // call(LittlerootTown_PlayerHouse_1F_EventScript_DontPushYourselfTooHard)
+    if(flag(FLAG_TALKED_TO_PROF)){
+        call(PlayersHouse_1F_EventScript_MomHealsParty)
+    }
+    if(var(VAR_LITTLEROOT_INTRO_STATE) == 7){
+        
+        goto(LittlerootTown_PlayerHouse_1F_EventScript_TalkToProf)
+    }
+    setspeaker("Mom")
+    msgbox(format("See, {PLAYER}?"))
+    msgbox(format("Isn't it nice in here, too?"))
+    release
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_DontPushYourselfTooHard{
+    setspeaker("Mom")
+    msgbox(format("Don't push yourself too hard, dear."))
+    msgbox("You can always come home.")
+    msgbox("Go for it, honey!")
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_Dad {
+    lock
+    faceplayer
+    if(var(VAR_LITTLEROOT_INTRO_STATE) == 7){
+        goto(LittlerootTown_PlayerHouse_1F_EventScript_Steak)
+    }
+    setspeaker("Dad")
+    msgbox(format("Remember to come home once in a while."))
+    msgbox(format("Your mom and I are cheering for you every day!"))
+    release
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_TalkToProf {
+    setspeaker("Mom")
+    msgbox("Did you talk to the Professor?")
+    release
+}
+
+script LittlerootTown_PlayerHouse_1F_EventScript_Steak {
+    setspeaker("Dad")
+    msgbox("This steak isn't going to make itself!")
+    release
 }

@@ -60,12 +60,14 @@ RivalsHouse_1F_EventScript_BirchIntro::
 # 45 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	setvar VAR_LITTLEROOT_INTRO_STATE, 8
+	msgbox RivalsHouse_1F_EventScript_BirchIntro_Text_4
 # 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	giveegg SPECIES_TOGEPI
+	setvar VAR_LITTLEROOT_INTRO_STATE, 8
 # 48 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	giveegg SPECIES_TOGEPI
 # 49 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 50 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	release
 	return
 
@@ -122,7 +124,7 @@ RivalsHouse_1F_EventScript_BirchIntro_Text_0:
 
 RivalsHouse_1F_EventScript_BirchIntro_Text_1:
 # 28 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	.string "Oh, hey {PLAYER}! You're looking for my\n"
+	.string "Hey {PLAYER}! You're looking for my\n"
 	.string "daughter? She was going to visit the\l"
 	.string "clearing today. But if you're going to\l"
 	.string "go see her...$"
@@ -136,3 +138,7 @@ RivalsHouse_1F_EventScript_BirchIntro_Text_2:
 RivalsHouse_1F_EventScript_BirchIntro_Text_3:
 # 38 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	.string "{PLAYER} received the egg.$"
+
+RivalsHouse_1F_EventScript_BirchIntro_Text_4:
+# 46 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	.string "I'll see you at the party!$"
