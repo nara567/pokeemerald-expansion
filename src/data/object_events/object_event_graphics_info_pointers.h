@@ -647,6 +647,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_APRICORN_TREE] =            &gObjectEventGraphicsInfo_ApricornTree,
     [OBJ_EVENT_GFX_PROF_OAK]                 = &gObjectEventGraphicsInfo_ProfOak,
     [OBJ_EVENT_GFX_MOM_FRLG]                 = &gObjectEventGraphicsInfo_MomFrlg,
+    [OBJ_EVENT_GFX_MISTY]                    = &gObjectEventGraphicsInfo_Misty,
 #if IS_FRLG
     [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_RedNormal,
     [OBJ_EVENT_GFX_RED_BIKE] =                 &gObjectEventGraphicsInfo_RedBike,
@@ -724,7 +725,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MR_FUJI]                  = &gObjectEventGraphicsInfo_MrFuji,
     [OBJ_EVENT_GFX_BRUNO]                    = &gObjectEventGraphicsInfo_Bruno,
     [OBJ_EVENT_GFX_BROCK]                    = &gObjectEventGraphicsInfo_Brock,
-    [OBJ_EVENT_GFX_MISTY]                    = &gObjectEventGraphicsInfo_Misty,
     [OBJ_EVENT_GFX_LT_SURGE]                 = &gObjectEventGraphicsInfo_LtSurge,
     [OBJ_EVENT_GFX_ERIKA]                    = &gObjectEventGraphicsInfo_Erika,
     [OBJ_EVENT_GFX_KOGA]                     = &gObjectEventGraphicsInfo_Koga,

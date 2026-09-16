@@ -2,12 +2,6 @@ raw `
 `
 mapscripts LittlerootTown_PlayerHouse_2F_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-        setvar(VAR_SECRET_BASE_INITIALIZED,0)
-        if(var(VAR_LITTLEROOT_INTRO_STATE)<5){
-            setvar(VAR_LITTLEROOT_INTRO_STATE,5)
-        }
-        setflag(FLAG_RECEIVED_RUNNING_SHOES)
-        setflag(FLAG_SYS_B_DASH)
     }
 }
 
@@ -33,7 +27,7 @@ script LittlerootTown_PlayerHouse_2f_EventScript_SetClock {
     }
     call(PlayersHouse_2F_EventScript_SetWallClock)
     delay(30)
-    setvar(VAR_LITTLEROOT_INTRO_STATE,6)
+    setvar(VAR_LITTLEROOT_INTRO_STATE,2)
     setflag(FLAG_SET_WALL_CLOCK)
     call(LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs)
     playse(SE_EXIT)

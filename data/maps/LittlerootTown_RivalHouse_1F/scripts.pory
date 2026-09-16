@@ -2,7 +2,7 @@ raw`
 `
  mapscripts LittlerootTown_RivalHouse_1F_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_LITTLEROOT_INTRO_STATE, 7: RivalsHouse_1F_EventScript_BirchIntro
+        VAR_LITTLEROOT_INTRO_STATE, 3: RivalsHouse_1F_EventScript_BirchIntro
     ]
  }
 
@@ -43,8 +43,9 @@ raw`
         face_left
     ))
     waitmovement(0)
+    setspeaker("Birch")
     msgbox(format("I'll see you at the party!"))
-    setvar(VAR_LITTLEROOT_INTRO_STATE, 8)
+    setvar(VAR_LITTLEROOT_INTRO_STATE, 4)
     giveegg(SPECIES_TOGEPI)
     setflag(FLAG_SYS_POKEMON_GET)
     release

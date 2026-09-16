@@ -8,7 +8,7 @@ LittlerootTown_RivalHouse_1F_MapScripts::
 
 LittlerootTown_RivalHouse_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 5 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 7, RivalsHouse_1F_EventScript_BirchIntro
+	map_script_2 VAR_LITTLEROOT_INTRO_STATE, 3, RivalsHouse_1F_EventScript_BirchIntro
 	.2byte 0
 
 
@@ -60,14 +60,16 @@ RivalsHouse_1F_EventScript_BirchIntro::
 # 45 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	waitmovement 0
 # 46 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	msgbox RivalsHouse_1F_EventScript_BirchIntro_Text_4
+	setspeaker RivalsHouse_1F_EventScript_BirchIntro_Text_0
 # 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	setvar VAR_LITTLEROOT_INTRO_STATE, 8
+	msgbox RivalsHouse_1F_EventScript_BirchIntro_Text_4
 # 48 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	giveegg SPECIES_TOGEPI
+	setvar VAR_LITTLEROOT_INTRO_STATE, 4
 # 49 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	giveegg SPECIES_TOGEPI
 # 50 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 51 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	release
 	return
 
@@ -140,5 +142,5 @@ RivalsHouse_1F_EventScript_BirchIntro_Text_3:
 	.string "{PLAYER} received the egg.$"
 
 RivalsHouse_1F_EventScript_BirchIntro_Text_4:
-# 46 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
+# 47 "data/maps/LittlerootTown_RivalHouse_1F/scripts.pory"
 	.string "I'll see you at the party!$"

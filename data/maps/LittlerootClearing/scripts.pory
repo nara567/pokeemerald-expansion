@@ -3,28 +3,30 @@ raw `LittlerootClearing_MapScripts::
 `
 
 script LittlerootClearing_EventScript_May {
-    if(flag(FLAG_SYS_POKEMON_GET) == false){
-        lock
-        faceplayer
-        msgbox(format("Hi there! I'm going to be in the clearing all day, but my dad should be coming by any time now..."))
-        applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
-            face_up
-        ))
-        release
-    } elif(flag(FLAG_TALKED_TO_PROF)){
-        lock
-        faceplayer
-        msgbox(format("I found my Munchie in a tree kinda like this..."))
-        release
-    } else {
-        call(LittlerootClearing_EventScript_MayNoDex)
+    switch(var(VAR_LITTLEROOT_INTRO_STATE)){
+        case 3: call(LittlerootClearing_EventScript_NoEgg)
+        case 4: call(LittlerootClearing_EventScript_MayNoDex)
+        case 5: call(LittlerootClearing_EventScript_LookingForAsst)
     }
+}
+
+script LittlerootClearing_EventScript_NoEgg {
+    lock
+    faceplayer
+    setspeaker("Birch")
+    msgbox(format("Hi there! I'm going to be in the clearing all day, but my dad should be coming by any time now..."))
+    applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
+        face_up
+    ))
+    waitmovement(0)
+    release
 }
 
 script LittlerootClearing_EventScript_MayNoDex {
     lock
     faceplayer
-    msgbox(format("Professor Birch: Hi {PLAYER}! Wow, a Togepi! Did my dad give you that egg to pass to me?"))
+    setspeaker("Birch")
+    msgbox(format("Hi {PLAYER}! Wow, a Togepi! Did my dad give you that egg to pass to me?"))
     applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
         emote_heart
     ))
@@ -45,6 +47,18 @@ script LittlerootClearing_EventScript_MayNoDex {
     waitmovement(0)
     setflag(FLAG_TALKED_TO_PROF)
     setvar(VAR_ROUTE101_STATE, 3)
-    setvar(VAR_LITTLEROOT_TOWN_STATE, 2)
+    setvar(VAR_LITTLEROOT_INTRO_STATE, 5)
+    release
+}
+
+script LittlerootClearing_EventScript_LookingForAsst {
+    lock
+    faceplayer
+    setspeaker("Birch")
+    msgbox(format("I found my Munchie in a tree kinda like this..."))
+    applymovement(LOCALID_LITTLEROOTGROTTO_PROFMAY, moves(
+        face_up
+    ))
+    waitmovement(0)
     release
 }

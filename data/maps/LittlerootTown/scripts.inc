@@ -11,13 +11,13 @@ LittlerootTown_MapScripts::
 	@ 4: Received Running Shoes
 
 	@ State descriptions for VAR_LITTLEROOT_INTRO_STATE
-	@ 1: In truck male
-	@ 2: In truck female
-	@ 3: Entered house
-	@ 4: Told to go set clock
-	@ 5: Entered 2F to set clock
-	@ 6: Set clock
-	@ 7: Told to go meet rival
+	@ 1: Start Game
+	@ 2: Set Clock
+	@ 3: Went Downstairs
+	@ 4: Talked to Birch
+	@ 5: Talked to May
+	@ 6: Beat Rival
+	@ 7: Had Party
 	@ 8: Told to go meet May
 	@ 9: Given Egg
 
