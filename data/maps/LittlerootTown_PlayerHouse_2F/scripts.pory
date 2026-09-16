@@ -3,6 +3,15 @@ raw `
 mapscripts LittlerootTown_PlayerHouse_2F_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
     }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: LittlerootTown_PlayerHouse_2F_OnFrame
+    ]
+}
+
+script LittlerootTown_PlayerHouse_2F_OnFrame {
+    switch(var(VAR_LITTLEROOT_INTRO_STATE)){
+        case 7: call(LittlerootTown_PlayerHouse_2F_EventScript_PostParty)
+    }
 }
 
 script LittlerootTown_PlayerHouse_2F_EventScript_PC {
@@ -52,3 +61,13 @@ script LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs{
     return
 }
 
+script LittlerootTown_PlayerHouse_2F_EventScript_PostParty {
+    lock
+    msgbox(format("The party went on all night, and you awaken in your room, ready for your first step out into the world."))
+    playfanfare(MUS_HEAL)
+    waitfanfare
+    call(Common_EventScript_OutOfCenterPartyHeal)
+    incrementgamestat(GAME_STAT_RESTED_AT_HOME)
+    setvar(VAR_LITTLEROOT_INTRO_STATE, 8)
+    release
+}

@@ -136,17 +136,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 8,
-      "elevation": 0,
-      "var": "VAR_LITTLEROOT_INTRO_STATE",
-      "var_value": "6",
-      "script": "LittlerootTown_PlayerHouse_1F_EventScript_Party"
-    }
-  ],
+  "coord_events": [],
   "bg_events": [],
   "region": "REGION_HOENN"
 }
