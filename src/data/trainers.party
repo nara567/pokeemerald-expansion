@@ -4800,7 +4800,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Crunch
 
-=== TRAINER_ROXANNE_1 ===
+=== TRAINER_GULLIVER_1 ===
 Name: Gulliver
 Class: Leader
 Pic: Leader Roxanne
@@ -4808,7 +4808,7 @@ Gender: Male
 Music: Male
 Items: Potion / Potion
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / Smart Switching / Smart Mon Choices
 
 Wiglett 
 Level: 14
@@ -4818,13 +4818,13 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Wrap
 - Water Gun
 
-Trubbish
+Wattrel
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Headbutt
-- Poison Gas
-- Acid Spray
-- Rollout
+- Spark
+- Pluck
+- Quick Attack
+- Growl
 
 Sandygast @ Groundium Z
 Level: 18
@@ -4842,7 +4842,7 @@ Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / Smart Switching
 
 Cubone
 Level: 16
@@ -4884,7 +4884,7 @@ Gender: Female
 Music: Female
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / Smart Switching / Prediction
 
 Glimmet
 Level: 20
@@ -4926,7 +4926,7 @@ Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / Smart Switching / Prediction
 
 Hippopotas @ Smooth Rock
 Level: 24
@@ -4979,7 +4979,7 @@ Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / Smart Switching / Prediction
 
 Minior
 Level: 27
@@ -5032,7 +5032,7 @@ Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / Smart Switching / Prediction
 
 Ninjask
 Level: 29
@@ -5094,7 +5094,7 @@ Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion / Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / Smart Switching / Prediction
 
 Claydol
 Level: 41
@@ -5137,7 +5137,7 @@ Gender: Male
 Music: Male
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer / Ace Pokemon / Smart Switching / Prediction
 
 Beaumont (Aggron) @ Leftovers
 Ability: Heavy Metal
@@ -6047,10 +6047,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 10
+Wimpod
+Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+- Defense Curl
+- Sand Attack
+- Struggle Bug
+
+Wingull
+Ability: Keen Eye
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6061,12 +6068,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 8
+Wiglett
+Level: 11
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Geodude
-Level: 8
+Binacle
+Ability: Tough Claws
+Level: 12
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_JOEY ===

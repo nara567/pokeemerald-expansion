@@ -1634,6 +1634,10 @@
     {
       "id": "MAPSEC_LITTLEROOT_CLEARING",
       "name": "LITTLEROOT CLEARING"
+    },
+    {
+      "id": "MAPSEC_SLATEPORT_GYM",
+      "name": "SLATEPORT GYM"
     }
   ]
 }

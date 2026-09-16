@@ -1,9 +1,20 @@
 raw `
-SlateportCity_Gym_MapScripts::
-	.byte 0
+// SlateportCity_Gym_MapScripts::
+// 	.byte 0
 `
+
+mapscripts SlateportCity_Gym_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == false) {
+            clearflag(FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE)
+            clearflag(FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE)
+            clearflag(FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE)
+        }
+    }
+}
+
 script SlateportCity_Gym_EventScript_Gulliver {
-    trainerbattle_single(TRAINER_ROXANNE_1, SlateportCity_Gym_Text_GulliverIntro, SlateportCity_Gym_Text_GulliverDefeat, RustboroCity_Gym_EventScript_GulliverDefeated, NO_MUSIC)
+    trainerbattle_single(TRAINER_GULLIVER_1, SlateportCity_Gym_Text_GulliverIntro, SlateportCity_Gym_Text_GulliverDefeat, RustboroCity_Gym_EventScript_GulliverDefeated, NO_MUSIC)
     msgbox(SlateportCity_Gym_Text_GulliverPostBattle)
 }
 
@@ -33,5 +44,145 @@ script RustboroCity_Gym_EventScript_GulliverDefeated {
 
 text SlateportCity_Gym_Text_GulliverPostBattle {
     format("Boo hoo.")
+}
+
+script SlateportCity_Gym_Eventscript_Sandygast_1 {
+    lock
+    faceplayer
+    setwildbattle(SPECIES_SANDYGAST, 10)
+    waitse
+    playmoncry(SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    } elif (var(VAR_RESULT) == B_OUTCOME_RAN){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    } elif (var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    }
+    setflag(FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE)
+    release
+}
+
+script SlateportCity_Gym_EventScript_DefeatedSandygast1 {
+    setflag(FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE)
+    goto(Common_EventScript_RemoveStaticPokemon)
+}
+
+script SlateportCity_Gym_Eventscript_Sandygast_2 {
+    lock
+    faceplayer
+    setwildbattle(SPECIES_SANDYGAST, 10)
+    waitse
+    playmoncry(SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    } elif (var(VAR_RESULT) == B_OUTCOME_RAN){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    } elif (var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    }
+    setflag(FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE)
+    release
+}
+
+script SlateportCity_Gym_EventScript_DefeatedSandygast2 {
+    setflag(FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE)
+    goto(Common_EventScript_RemoveStaticPokemon)
+}
+
+script SlateportCity_Gym_Eventscript_Sandygast_3 {
+    lock
+    faceplayer
+    setwildbattle(SPECIES_SANDYGAST, 10)
+    waitse
+    playmoncry(SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_WON){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    } elif (var(VAR_RESULT) == B_OUTCOME_RAN){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    } elif (var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+        call(SlateportCity_Gym_EventScript_DefeatedSandygast1)
+    }
+    setflag(FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE)
+    release
+}
+
+script SlateportCity_Gym_EventScript_DefeatedSandygast3 {
+    setflag(FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE)
+    goto(Common_EventScript_RemoveStaticPokemon)
+}
+
+script SlateportCity_Gym_EventScript_Josh {
+    //setspeaker("Josh")
+    trainerbattle_single(TRAINER_JOSH, SlateportCity_Gym_Text_JoshIntro,SlateportCity_Gym_Text_JoshDefeat, SlateportCity_Gym_Text_JoshPostBattle, NO_MUSIC)
+    setspeaker("Josh")
+    msgbox(format("Good Luck!"))
+    waitmessage
+    end
+}
+
+text SlateportCity_Gym_Text_JoshIntro{
+    format("Don't take us Gym Trainers lightly! I'll show you why we're better!")
+}
+
+text SlateportCity_Gym_Text_JoshDefeat{
+    format("You were too good for me...")
+}
+
+script SlateportCity_Gym_Text_JoshPostBattle{
+    setspeaker("Josh")
+    msgbox(format("Post battle!"))
+    release
+    end
+}
+
+text SlateportCity_Gym_Text_JoshPostDefeat{
+    format("Good Luck!")
+}
+
+script SlateportCity_Gym_EventScript_Tommy {
+    //setspeaker("Josh")
+    trainerbattle_single(TRAINER_TOMMY, SlateportCity_Gym_Text_TommyIntro,SlateportCity_Gym_Text_TommyDefeat, SlateportCity_Gym_Text_TommyPostBattle, NO_MUSIC)
+    setspeaker("Tommy")
+    msgbox(format("Good Luck!"))
+    waitmessage
+    end
+}
+
+text SlateportCity_Gym_Text_TommyIntro{
+    format("If you can't beat me, you won't stand a chance against Gulliver!")
+}
+
+text SlateportCity_Gym_Text_TommyDefeat{
+    format("Wow! You've got some potential!")
+}
+
+script SlateportCity_Gym_Text_TommyPostBattle{
+    setspeaker("Tommy")
+    msgbox(format("Gulliver is stronger than me by several times. You'd better be on your guard!"))
+    release
+    end
+}
+
+text SlateportCity_Gym_Text_TommyPostDefeat{
+    format("Good Luck!")
 }
 

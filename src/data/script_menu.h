@@ -1,7 +1,6 @@
 // multichoice lists
 static const struct MenuAction MultichoiceList_BrineyOnDewford[] =
 {
-    {COMPOUND_STRING("PETALBURG")},
     {COMPOUND_STRING("SLATEPORT")},
     {gText_Exit},
 };
