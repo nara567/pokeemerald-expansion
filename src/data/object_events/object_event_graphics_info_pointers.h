@@ -648,6 +648,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PROF_OAK]                 = &gObjectEventGraphicsInfo_ProfOak,
     [OBJ_EVENT_GFX_MOM_FRLG]                 = &gObjectEventGraphicsInfo_MomFrlg,
     [OBJ_EVENT_GFX_MISTY]                    = &gObjectEventGraphicsInfo_Misty,
+    [OBJ_EVENT_GFX_POKEDEX]                  = &gObjectEventGraphicsInfo_Pokedex,
 #if IS_FRLG
     [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_RedNormal,
     [OBJ_EVENT_GFX_RED_BIKE] =                 &gObjectEventGraphicsInfo_RedBike,
@@ -735,7 +736,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_TEACHY_TV_HOST]           = &gObjectEventGraphicsInfo_TeachyTVHost,
     [OBJ_EVENT_GFX_GYM_GUY]                  = &gObjectEventGraphicsInfo_GymGuy,
     [OBJ_EVENT_GFX_TOWN_MAP]                 = &gObjectEventGraphicsInfo_TownMap,
-    [OBJ_EVENT_GFX_POKEDEX]                  = &gObjectEventGraphicsInfo_Pokedex,
     [OBJ_EVENT_GFX_CUTTABLE_TREE_FRLG]       = &gObjectEventGraphicsInfo_CuttableTreeFrlg,
     [OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG]      = &gObjectEventGraphicsInfo_BreakableRockFrlg,
     [OBJ_EVENT_GFX_PUSHABLE_BOULDER_FRLG]    = &gObjectEventGraphicsInfo_PushableBoulderFrlg,

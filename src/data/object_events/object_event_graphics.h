@@ -478,6 +478,7 @@ const u16 gObjectEventPal_NpcPinkReflection[] = INCGFX_U16("graphics/object_even
 const u16 gObjectEventPal_NpcGreenReflection[] = INCGFX_U16("graphics/object_events/palettes/npc_green_reflection.pal", ".gbapal");
 const u16 gObjectEventPic_MomFrlg[] = INCGFX_U16("graphics/object_events/pics/people/mom_frlg.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPic_Misty[] = INCGFX_U16("graphics/object_events/pics/people/misty.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPic_Pokedex[] = INCGFX_U16("graphics/object_events/pics/misc/pokedex.png", ".4bpp");
 
 #if IS_FRLG
 
@@ -499,7 +500,6 @@ const u16 gObjectEventPic_GreenVSSeekerBike[] = INCGFX_U16("graphics/object_even
 const u16 gObjectEventPal_PlayerFrlg[] = INCGFX_U16("graphics/object_events/palettes/player_frlg.pal", ".gbapal");
 const u16 gObjectEventPal_PlayerReflectionFrlg[] = INCGFX_U16("graphics/object_events/palettes/player_reflection_frlg.pal", ".gbapal");
 
-const u16 gObjectEventPic_Pokedex[] = INCGFX_U16("graphics/object_events/pics/misc/pokedex.png", ".4bpp");
 const u16 gObjectEventPic_TownMap[] = INCGFX_U16("graphics/object_events/pics/misc/town_map.png", ".4bpp", "-mwidth 2 -mheight 2");
 const u16 gObjectEventPic_Giovanni[] = INCGFX_U16("graphics/object_events/pics/people/giovanni.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPic_Blaine[] = INCGFX_U16("graphics/object_events/pics/people/blaine.png", ".4bpp", "-mwidth 2 -mheight 4");

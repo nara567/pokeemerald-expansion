@@ -4524,6 +4524,25 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Misty = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokedex = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_BLUE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128,
+    .width = 16,
+    .height = 16,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16,
+    .subspriteTables = sOamTables_16x16,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_Pokedex,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
 #if IS_FRLG
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedNormal = {
@@ -6214,25 +6233,6 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TownMap = {
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Inanimate,
     .images = sPicTable_TownMap,
-    .affineAnims = gDummySpriteAffineAnimTable,
-};
-
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokedex = {
-    .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_BLUE,
-    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 128,
-    .width = 16,
-    .height = 16,
-    .paletteSlot = PALSLOT_NPC_1,
-    .shadowSize = SHADOW_SIZE_S,
-    .inanimate = TRUE,
-    .compressed = FALSE,
-    .tracks = TRACKS_NONE,
-    .oam = &gObjectEventBaseOam_16x16,
-    .subspriteTables = sOamTables_16x16,
-    .anims = sAnimTable_Inanimate,
-    .images = sPicTable_Pokedex,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
