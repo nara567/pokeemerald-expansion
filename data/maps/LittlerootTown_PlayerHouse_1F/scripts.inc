@@ -291,10 +291,6 @@ LittlerootTown_PlayerHouse_1F_EventScript_Party::
 	playse SE_PIN
 # 177 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	playfanfare MUS_RG_DEX_RATING
-# 178 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	setspeaker LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Text_3
-# 179 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	msgbox LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_0
 # 265 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7
 	return
@@ -460,11 +456,6 @@ LittlerootTown_PlayerHouse_1F_EventScript_TalkToProf_Text_0:
 LittlerootTown_PlayerHouse_1F_EventScript_Steak_Text_0:
 # 148 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	.string "This steak isn't going to make itself!$"
-
-LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_0:
-# 179 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	.string "The Professor made you this Torchic\n"
-	.string "cake! Come here and make a wish!$"
 
 LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense_Text_0:
 # 283 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
