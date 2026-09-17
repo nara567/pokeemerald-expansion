@@ -123,16 +123,10 @@ LittlerootTown_PlayerHouse_2F_EventScript_PostParty::
 # 66 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
 	msgbox LittlerootTown_PlayerHouse_2F_EventScript_PostParty_Text_0
 # 67 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
-	playfanfare MUS_HEAL
-# 68 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
-	waitfanfare
-# 69 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
-	call Common_EventScript_OutOfCenterPartyHeal
-# 70 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
 	incrementgamestat GAME_STAT_RESTED_AT_HOME
-# 71 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+# 68 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
 	setvar VAR_LITTLEROOT_INTRO_STATE, 8
-# 72 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
+# 69 "data/maps/LittlerootTown_PlayerHouse_2F/scripts.pory"
 	release
 	return
 

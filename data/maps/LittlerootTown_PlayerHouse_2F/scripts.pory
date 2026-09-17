@@ -64,9 +64,6 @@ script LittlerootTown_PlayerHouse_2f_EventScript_MomComesUpstairs{
 script LittlerootTown_PlayerHouse_2F_EventScript_PostParty {
     lock
     msgbox(format("The party went on all night, and you awaken in your room, ready for your first step out into the world."))
-    playfanfare(MUS_HEAL)
-    waitfanfare
-    call(Common_EventScript_OutOfCenterPartyHeal)
     incrementgamestat(GAME_STAT_RESTED_AT_HOME)
     setvar(VAR_LITTLEROOT_INTRO_STATE, 8)
     release

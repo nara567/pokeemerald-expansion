@@ -438,50 +438,54 @@ LittlerootTown_PlayerHouse_1F_EventScript_Party::
 # 293 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7
 # 294 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	setflag FLAG_PARTY_OVER
+	setvar VAR_OLDALE_TOWN_STATE, 1
 # 295 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	removeobject LOCALID_PLAYERS_HOUSE_1F_BIRCH
+	setflag FLAG_PARTY_OVER
 # 296 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	removeobject LOCALID_PLAYERS_HOUSE_1F_RIVAL
+	setflag FLAG_ADVENTURE_STARTED
 # 297 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	removeobject LOCALID_PLAYERS_HOUSE_1F_PROF
+	removeobject LOCALID_PLAYERS_HOUSE_1F_BIRCH
 # 298 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	warp MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_2F, 1, 4
+	removeobject LOCALID_PLAYERS_HOUSE_1F_RIVAL
 # 299 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	removeobject LOCALID_PLAYERS_HOUSE_1F_PROF
 # 300 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	warp MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_2F, 1, 4
+# 301 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 302 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	release
 	return
 
 
 LittlerootTown_PlayerHouse_1F_EventScript_ReceivePokedex::
-# 304 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 305 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	message LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex
 # 306 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	waitfanfare
+	playfanfare MUS_OBTAIN_ITEM
 # 307 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	removeobject LOCALID_PLAYERS_HOUSE_1F_DEX
+	message LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex
 # 308 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	setflag FLAG_SYS_POKEDEX_GET
+	waitfanfare
 # 309 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	special SetUnlockedPokedexFlags
+	removeobject LOCALID_PLAYERS_HOUSE_1F_DEX
 # 310 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	setflag FLAG_SYS_POKEDEX_GET
 # 311 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	special SetUnlockedPokedexFlags
+# 312 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+# 313 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 	return
 
 
 LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense::
-# 316 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 317 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	setspeaker NULL
 # 318 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	msgbox LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense_Text_0
+	playfanfare MUS_OBTAIN_ITEM
 # 319 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setspeaker NULL
+# 320 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	msgbox LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense_Text_0
+# 321 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitfanfare
 	return
 
@@ -785,6 +789,6 @@ LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_14:
 	.string "Let's get this party started!$"
 
 LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense_Text_0:
-# 318 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 320 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	.string "{PLAYER} received the Minor League\n"
 	.string "License!$"

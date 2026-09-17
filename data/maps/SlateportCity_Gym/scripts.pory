@@ -14,6 +14,20 @@ mapscripts SlateportCity_Gym_MapScripts {
 }
 
 script SlateportCity_Gym_EventScript_Gulliver {
+    lock
+    if (flag(FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE) && flag(FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE) && flag(FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE)){
+        call(SlateportCity_Gym_EventScript_GulliverBattle)
+    } elif (flag(FLAG_DEFEATED_RUSTBORO_GYM)){
+        msgbox(SlateportCity_Gym_Text_GulliverPostBattle)
+    } else {
+        setspeaker("Gulliver")
+        msgbox(format("Welcome {PLAYER}! You thought just because you made it to me, you'll get to battle? Ohoho, no!"))
+        msgbox(format("You have to conquer the three castles in the gym before you can face me."))
+    }
+    release
+}
+
+script SlateportCity_Gym_EventScript_GulliverBattle {
     trainerbattle_single(TRAINER_GULLIVER_1, SlateportCity_Gym_Text_GulliverIntro, SlateportCity_Gym_Text_GulliverDefeat, RustboroCity_Gym_EventScript_GulliverDefeated, NO_MUSIC)
     msgbox(SlateportCity_Gym_Text_GulliverPostBattle)
 }
