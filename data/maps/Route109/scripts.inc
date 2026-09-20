@@ -1106,14 +1106,26 @@ Route109_EventScript_MrBriney_2:
 
 
 Route109_EventScript_Huey::
+# 557 "data/maps/Route109/scripts.pory"
+	trainerbattle_single TRAINER_HUEY, Route109_Text_HueyIntro, Route109_Text_HueyDefeated
+# 558 "data/maps/Route109/scripts.pory"
+	msgbox Route109_Text_HueyPostBattle
 	return
 
 
 Route109_EventScript_Austina::
+# 562 "data/maps/Route109/scripts.pory"
+	trainerbattle_single TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated
+# 563 "data/maps/Route109/scripts.pory"
+	msgbox Route109_Text_AustinaPostBattle
 	return
 
 
 Route109_EventScript_Gwen::
+# 567 "data/maps/Route109/scripts.pory"
+	trainerbattle_single TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated
+# 568 "data/maps/Route109/scripts.pory"
+	msgbox Route109_Text_GwenPostBattle
 	return
 
 

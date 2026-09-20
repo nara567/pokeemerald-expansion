@@ -73,3 +73,20 @@ script Route106_EventScript_GruntOutsideCave {
         release
     }
 }
+
+script Route106_EventScript_Takao {
+	trainerbattle_single(TRAINER_TAKAO, Route106_Text_TakaoIntro, Route106_Text_TakaoDefeated)
+	msgbox(Route106_Text_TakaoPostBattle)
+}
+
+text Route106_Text_TakaoIntro {
+	format("Pokemon!")
+}
+
+text Route106_Text_TakaoDefeated {
+	format("Aw man!")
+}
+
+text Route106_Text_TakaoPostBattle {
+	format("I'll try harder!")
+}

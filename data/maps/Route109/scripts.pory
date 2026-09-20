@@ -554,16 +554,16 @@ script Route109_EventScript_MrBriney{
 }
 
 script Route109_EventScript_Huey {
-	// trainerbattle_single(TRAINER_HUEY,Route109_Text_HueyIntro,Route109_Text_HueyDefeated)
-	// msgbox(Route109_Text_HueyPostBattle)
+	trainerbattle_single(TRAINER_HUEY,Route109_Text_HueyIntro,Route109_Text_HueyDefeated)
+	msgbox(Route109_Text_HueyPostBattle)
 }
 
 script Route109_EventScript_Austina {
-	// trainerbattle_single(TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated)
-	// msgbox(Route109_Text_AustinaPostBattle)
+	trainerbattle_single(TRAINER_AUSTINA, Route109_Text_AustinaIntro, Route109_Text_AustinaDefeated)
+	msgbox(Route109_Text_AustinaPostBattle)
 }
 
 script Route109_EventScript_Gwen {
-	// trainerbattle_single(TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated)
-	// msgbox(Route109_Text_GwenPostBattle)
+	trainerbattle_single(TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated)
+	msgbox(Route109_Text_GwenPostBattle)
 }

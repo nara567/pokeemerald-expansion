@@ -124,6 +124,14 @@ Route106_EventScript_GruntOutsideCave_1:
 	return
 
 
+Route106_EventScript_Takao::
+# 78 "data/maps/Route106/scripts.pory"
+	trainerbattle_single TRAINER_TAKAO, Route106_Text_TakaoIntro, Route106_Text_TakaoDefeated
+# 79 "data/maps/Route106/scripts.pory"
+	msgbox Route106_Text_TakaoPostBattle
+	return
+
+
 # 55 "data/maps/Route106/scripts.pory"
 Route106_EventScript_GruntOutsideCave_Movement_0:
 # 56 "data/maps/Route106/scripts.pory"
@@ -160,3 +168,15 @@ Route106_EventScript_GruntOutsideCave_Text_1:
 # 67 "data/maps/Route106/scripts.pory"
 	.string "I'm not done with my preparations yet.\n"
 	.string "Fufufu...$"
+
+Route106_Text_TakaoIntro::
+# 82 "data/maps/Route106/scripts.pory"
+	.string "Pokemon!$"
+
+Route106_Text_TakaoDefeated::
+# 86 "data/maps/Route106/scripts.pory"
+	.string "Aw man!$"
+
+Route106_Text_TakaoPostBattle::
+# 90 "data/maps/Route106/scripts.pory"
+	.string "I'll try harder!$"
