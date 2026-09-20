@@ -52,7 +52,7 @@
 #else
 
 #define FLAG_TALKED_TO_PROF    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
+#define FLAG_UNUSED_0x021    0x21 // TOGGLES EXP SHARE ALL
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
