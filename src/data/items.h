@@ -12604,14 +12604,14 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_GIGA_DRAIN] =
+    [ITEM_TM_BULLDOZE] =
     {
         .name = ITEM_NAME("TM19"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Recovers half the\n"
-            "HP of the damage \n"
-            "this move inflicts."),
+            "Strike everything around,\n"
+            "lower the Speed of\n"
+            "all those hit."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

@@ -648,7 +648,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Flabebe
 Gentle Nature
-Level: 6
+Level: 8
 Ball: Nest
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -5579,7 +5579,7 @@ AI: Basic Trainer
 
 Rockruff Own Tempo @ Oran Berry
 Ability: Own Tempo
-Level: 9
+Level: 5
 Ball: Friend
 Lonely Nature
 IVs: 0 HP / 6 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -5754,7 +5754,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 10
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ISABEL_2 ===
@@ -6376,7 +6376,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Toxic
 
 === TRAINER_ANDREW ===
-Name: ANDREW
+Name: Andrew
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6386,13 +6386,13 @@ AI: Basic Trainer
 
 Zigzagoon
 Ability: Gluttony
-Level: 6
+Level: 5
 Jolly Nature
 IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 5 SpD / 10 Spe
 
 Zigzagoon Galar
 Ability: Quick Feet
-Level: 7
+Level: 6
 Ball: Timer
 Lonely Nature
 IVs: 10 HP / 5 Atk / 0 Def / 5 SpA / 0 SpD / 0 Spe
@@ -9027,11 +9027,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 12
+Level: 6
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Machop
-Level: 12
+Wattrel
+Level: 7
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_EDMOND ===
@@ -9044,7 +9044,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 10
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ERNEST_1 ===
@@ -13132,7 +13132,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Maschiff
-Level: 10
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSEPH ===

@@ -165,7 +165,6 @@ static const enum Item sPrizeListElixir2[]     = {ITEM_ELIXIR,           ITEM_ET
 static const enum Item sPrizeListBrickBreak[]  = {ITEM_TM_BRICK_BREAK,   ITEM_ETHER, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_FLUFFY_TAIL, ITEM_GREAT_BALL};
 static const enum Item sPrizeListTorment[]     = {ITEM_TM_TORMENT,       ITEM_ETHER, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_FLUFFY_TAIL, ITEM_GREAT_BALL};
 static const enum Item sPrizeListSkillSwap[]   = {ITEM_TM_SKILL_SWAP,    ITEM_ETHER, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_FLUFFY_TAIL, ITEM_GREAT_BALL};
-static const enum Item sPrizeListGigaDrain[]   = {ITEM_TM_GIGA_DRAIN,    ITEM_ETHER, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_FLUFFY_TAIL, ITEM_GREAT_BALL};
 static const enum Item sPrizeListAttract[]     = {ITEM_TM_ATTRACT,       ITEM_ETHER, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_FLUFFY_TAIL, ITEM_GREAT_BALL};
 
 static const enum Item *const sPrizeLists1[NUM_TRAINER_HILL_PRIZE_LISTS] =
@@ -192,7 +191,6 @@ static const enum Item *const sPrizeLists2[NUM_TRAINER_HILL_PRIZE_LISTS] =
     sPrizeListBrickBreak,
     sPrizeListTorment,
     sPrizeListSkillSwap,
-    sPrizeListGigaDrain,
     sPrizeListAttract
 };
 
@@ -1098,7 +1096,6 @@ static enum Item GetPrizeItemId(void)
     // The prizes for a time under 12 minutes are:
     // - ITEM_TM_SUNNY_DAY     (Normal)
     // - ITEM_ELIXIR           (Variety)
-    // - ITEM_TM_GIGA_DRAIN    (Unique)
     // - ITEM_TM_BRICK_BREAK   (Expert)
     // As an additional note, if players were allowed to enter a Trainer Hill challenge before
     // entering the Hall of Fame, there would be 1 additional prize possibility (ITEM_MAX_ETHER)

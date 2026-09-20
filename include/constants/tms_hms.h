@@ -20,7 +20,7 @@
     F(LIGHT_SCREEN) \
     F(PROTECT) \
     F(RAIN_DANCE) \
-    F(GIGA_DRAIN) \
+    F(BULLDOZE) \
     F(SAFEGUARD) \
     F(FRUSTRATION) \
     F(SOLAR_BEAM) \
