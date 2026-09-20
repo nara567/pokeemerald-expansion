@@ -89,6 +89,8 @@ RustboroCity_Gym_EventScript_GulliverDefeated::
 # 50 "data/maps/SlateportCity_Gym/scripts.pory"
 	setflag FLAG_BADGE01_GET
 # 51 "data/maps/SlateportCity_Gym/scripts.pory"
+	setvar VAR_0x8008, 1
+# 52 "data/maps/SlateportCity_Gym/scripts.pory"
 	call Common_EventScript_SetGymTrainers
 # 53 "data/maps/SlateportCity_Gym/scripts.pory"
 	giveitem ITEM_TM_ROCK_TOMB
@@ -97,239 +99,243 @@ RustboroCity_Gym_EventScript_GulliverDefeated::
 # 55 "data/maps/SlateportCity_Gym/scripts.pory"
 	setflag FLAG_RECEIVED_TM_ROCK_TOMB
 # 56 "data/maps/SlateportCity_Gym/scripts.pory"
+	msgbox RustboroCity_Gym_EventScript_GulliverDefeated_Text_2
+# 57 "data/maps/SlateportCity_Gym/scripts.pory"
+	giveitem ITEM_SS_TICKET
+# 58 "data/maps/SlateportCity_Gym/scripts.pory"
 	release
 	return
 
 
 SlateportCity_Gym_Eventscript_Sandygast_1::
-# 64 "data/maps/SlateportCity_Gym/scripts.pory"
-	lock
-# 65 "data/maps/SlateportCity_Gym/scripts.pory"
-	faceplayer
 # 66 "data/maps/SlateportCity_Gym/scripts.pory"
-	setwildbattle SPECIES_SANDYGAST, 10
+	lock
 # 67 "data/maps/SlateportCity_Gym/scripts.pory"
-	waitse
+	faceplayer
 # 68 "data/maps/SlateportCity_Gym/scripts.pory"
-	playmoncry SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER
+	setwildbattle SPECIES_SANDYGAST, 10
 # 69 "data/maps/SlateportCity_Gym/scripts.pory"
-	delay 40
+	waitse
 # 70 "data/maps/SlateportCity_Gym/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER
 # 71 "data/maps/SlateportCity_Gym/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	delay 40
 # 72 "data/maps/SlateportCity_Gym/scripts.pory"
-	dowildbattle
+	waitmoncry
 # 73 "data/maps/SlateportCity_Gym/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 74 "data/maps/SlateportCity_Gym/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	dowildbattle
 # 75 "data/maps/SlateportCity_Gym/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 76 "data/maps/SlateportCity_Gym/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 77 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_1_2
-# 77 "data/maps/SlateportCity_Gym/scripts.pory"
+# 79 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_1_3
-# 79 "data/maps/SlateportCity_Gym/scripts.pory"
+# 81 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_1_4
 SlateportCity_Gym_Eventscript_Sandygast_1_1:
-# 82 "data/maps/SlateportCity_Gym/scripts.pory"
+# 84 "data/maps/SlateportCity_Gym/scripts.pory"
 	setflag FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE
-# 83 "data/maps/SlateportCity_Gym/scripts.pory"
+# 85 "data/maps/SlateportCity_Gym/scripts.pory"
 	release
 	return
 
 SlateportCity_Gym_Eventscript_Sandygast_1_2:
-# 76 "data/maps/SlateportCity_Gym/scripts.pory"
-	call SlateportCity_Gym_EventScript_DefeatedSandygast1
-	goto SlateportCity_Gym_Eventscript_Sandygast_1_1
-
-SlateportCity_Gym_Eventscript_Sandygast_1_3:
 # 78 "data/maps/SlateportCity_Gym/scripts.pory"
 	call SlateportCity_Gym_EventScript_DefeatedSandygast1
 	goto SlateportCity_Gym_Eventscript_Sandygast_1_1
 
-SlateportCity_Gym_Eventscript_Sandygast_1_4:
+SlateportCity_Gym_Eventscript_Sandygast_1_3:
 # 80 "data/maps/SlateportCity_Gym/scripts.pory"
+	call SlateportCity_Gym_EventScript_DefeatedSandygast1
+	goto SlateportCity_Gym_Eventscript_Sandygast_1_1
+
+SlateportCity_Gym_Eventscript_Sandygast_1_4:
+# 82 "data/maps/SlateportCity_Gym/scripts.pory"
 	call SlateportCity_Gym_EventScript_DefeatedSandygast1
 	goto SlateportCity_Gym_Eventscript_Sandygast_1_1
 
 
 SlateportCity_Gym_EventScript_DefeatedSandygast1::
-# 87 "data/maps/SlateportCity_Gym/scripts.pory"
+# 89 "data/maps/SlateportCity_Gym/scripts.pory"
 	setflag FLAG_DEFEATED_VOLTORB_1_NEW_MAUVILLE
-# 88 "data/maps/SlateportCity_Gym/scripts.pory"
+# 90 "data/maps/SlateportCity_Gym/scripts.pory"
 	goto Common_EventScript_RemoveStaticPokemon
 	return
 
 
 SlateportCity_Gym_Eventscript_Sandygast_2::
-# 92 "data/maps/SlateportCity_Gym/scripts.pory"
-	lock
-# 93 "data/maps/SlateportCity_Gym/scripts.pory"
-	faceplayer
 # 94 "data/maps/SlateportCity_Gym/scripts.pory"
-	setwildbattle SPECIES_SANDYGAST, 10
+	lock
 # 95 "data/maps/SlateportCity_Gym/scripts.pory"
-	waitse
+	faceplayer
 # 96 "data/maps/SlateportCity_Gym/scripts.pory"
-	playmoncry SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER
+	setwildbattle SPECIES_SANDYGAST, 10
 # 97 "data/maps/SlateportCity_Gym/scripts.pory"
-	delay 40
+	waitse
 # 98 "data/maps/SlateportCity_Gym/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER
 # 99 "data/maps/SlateportCity_Gym/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	delay 40
 # 100 "data/maps/SlateportCity_Gym/scripts.pory"
-	dowildbattle
+	waitmoncry
 # 101 "data/maps/SlateportCity_Gym/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 102 "data/maps/SlateportCity_Gym/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	dowildbattle
 # 103 "data/maps/SlateportCity_Gym/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 104 "data/maps/SlateportCity_Gym/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 105 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_2_2
-# 105 "data/maps/SlateportCity_Gym/scripts.pory"
+# 107 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_2_3
-# 107 "data/maps/SlateportCity_Gym/scripts.pory"
+# 109 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_2_4
 SlateportCity_Gym_Eventscript_Sandygast_2_1:
-# 110 "data/maps/SlateportCity_Gym/scripts.pory"
+# 112 "data/maps/SlateportCity_Gym/scripts.pory"
 	setflag FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE
-# 111 "data/maps/SlateportCity_Gym/scripts.pory"
+# 113 "data/maps/SlateportCity_Gym/scripts.pory"
 	release
 	return
 
 SlateportCity_Gym_Eventscript_Sandygast_2_2:
-# 104 "data/maps/SlateportCity_Gym/scripts.pory"
-	call SlateportCity_Gym_EventScript_DefeatedSandygast1
-	goto SlateportCity_Gym_Eventscript_Sandygast_2_1
-
-SlateportCity_Gym_Eventscript_Sandygast_2_3:
 # 106 "data/maps/SlateportCity_Gym/scripts.pory"
 	call SlateportCity_Gym_EventScript_DefeatedSandygast1
 	goto SlateportCity_Gym_Eventscript_Sandygast_2_1
 
-SlateportCity_Gym_Eventscript_Sandygast_2_4:
+SlateportCity_Gym_Eventscript_Sandygast_2_3:
 # 108 "data/maps/SlateportCity_Gym/scripts.pory"
+	call SlateportCity_Gym_EventScript_DefeatedSandygast1
+	goto SlateportCity_Gym_Eventscript_Sandygast_2_1
+
+SlateportCity_Gym_Eventscript_Sandygast_2_4:
+# 110 "data/maps/SlateportCity_Gym/scripts.pory"
 	call SlateportCity_Gym_EventScript_DefeatedSandygast1
 	goto SlateportCity_Gym_Eventscript_Sandygast_2_1
 
 
 SlateportCity_Gym_EventScript_DefeatedSandygast2::
-# 115 "data/maps/SlateportCity_Gym/scripts.pory"
+# 117 "data/maps/SlateportCity_Gym/scripts.pory"
 	setflag FLAG_DEFEATED_VOLTORB_2_NEW_MAUVILLE
-# 116 "data/maps/SlateportCity_Gym/scripts.pory"
+# 118 "data/maps/SlateportCity_Gym/scripts.pory"
 	goto Common_EventScript_RemoveStaticPokemon
 	return
 
 
 SlateportCity_Gym_Eventscript_Sandygast_3::
-# 120 "data/maps/SlateportCity_Gym/scripts.pory"
-	lock
-# 121 "data/maps/SlateportCity_Gym/scripts.pory"
-	faceplayer
 # 122 "data/maps/SlateportCity_Gym/scripts.pory"
-	setwildbattle SPECIES_SANDYGAST, 10
+	lock
 # 123 "data/maps/SlateportCity_Gym/scripts.pory"
-	waitse
+	faceplayer
 # 124 "data/maps/SlateportCity_Gym/scripts.pory"
-	playmoncry SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER
+	setwildbattle SPECIES_SANDYGAST, 10
 # 125 "data/maps/SlateportCity_Gym/scripts.pory"
-	delay 40
+	waitse
 # 126 "data/maps/SlateportCity_Gym/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_SANDYGAST, CRY_MODE_ENCOUNTER
 # 127 "data/maps/SlateportCity_Gym/scripts.pory"
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	delay 40
 # 128 "data/maps/SlateportCity_Gym/scripts.pory"
-	dowildbattle
+	waitmoncry
 # 129 "data/maps/SlateportCity_Gym/scripts.pory"
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 130 "data/maps/SlateportCity_Gym/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	dowildbattle
 # 131 "data/maps/SlateportCity_Gym/scripts.pory"
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+# 132 "data/maps/SlateportCity_Gym/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 133 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_3_2
-# 133 "data/maps/SlateportCity_Gym/scripts.pory"
+# 135 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_3_3
-# 135 "data/maps/SlateportCity_Gym/scripts.pory"
+# 137 "data/maps/SlateportCity_Gym/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq SlateportCity_Gym_Eventscript_Sandygast_3_4
 SlateportCity_Gym_Eventscript_Sandygast_3_1:
-# 138 "data/maps/SlateportCity_Gym/scripts.pory"
+# 140 "data/maps/SlateportCity_Gym/scripts.pory"
 	setflag FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE
-# 139 "data/maps/SlateportCity_Gym/scripts.pory"
+# 141 "data/maps/SlateportCity_Gym/scripts.pory"
 	release
 	return
 
 SlateportCity_Gym_Eventscript_Sandygast_3_2:
-# 132 "data/maps/SlateportCity_Gym/scripts.pory"
-	call SlateportCity_Gym_EventScript_DefeatedSandygast1
-	goto SlateportCity_Gym_Eventscript_Sandygast_3_1
-
-SlateportCity_Gym_Eventscript_Sandygast_3_3:
 # 134 "data/maps/SlateportCity_Gym/scripts.pory"
 	call SlateportCity_Gym_EventScript_DefeatedSandygast1
 	goto SlateportCity_Gym_Eventscript_Sandygast_3_1
 
-SlateportCity_Gym_Eventscript_Sandygast_3_4:
+SlateportCity_Gym_Eventscript_Sandygast_3_3:
 # 136 "data/maps/SlateportCity_Gym/scripts.pory"
+	call SlateportCity_Gym_EventScript_DefeatedSandygast1
+	goto SlateportCity_Gym_Eventscript_Sandygast_3_1
+
+SlateportCity_Gym_Eventscript_Sandygast_3_4:
+# 138 "data/maps/SlateportCity_Gym/scripts.pory"
 	call SlateportCity_Gym_EventScript_DefeatedSandygast1
 	goto SlateportCity_Gym_Eventscript_Sandygast_3_1
 
 
 SlateportCity_Gym_EventScript_DefeatedSandygast3::
-# 143 "data/maps/SlateportCity_Gym/scripts.pory"
+# 145 "data/maps/SlateportCity_Gym/scripts.pory"
 	setflag FLAG_DEFEATED_VOLTORB_3_NEW_MAUVILLE
-# 144 "data/maps/SlateportCity_Gym/scripts.pory"
+# 146 "data/maps/SlateportCity_Gym/scripts.pory"
 	goto Common_EventScript_RemoveStaticPokemon
 	return
 
 
 SlateportCity_Gym_EventScript_Josh::
-# 149 "data/maps/SlateportCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_JOSH, SlateportCity_Gym_Text_JoshIntro, SlateportCity_Gym_Text_JoshDefeat, SlateportCity_Gym_Text_JoshPostBattle, NO_MUSIC
-# 150 "data/maps/SlateportCity_Gym/scripts.pory"
-	setspeaker SlateportCity_Gym_EventScript_Josh_Text_0
 # 151 "data/maps/SlateportCity_Gym/scripts.pory"
-	msgbox SlateportCity_Gym_EventScript_Josh_Text_1
+	trainerbattle_single TRAINER_JOSH, SlateportCity_Gym_Text_JoshIntro, SlateportCity_Gym_Text_JoshDefeat, SlateportCity_Gym_Text_JoshPostBattle, NO_MUSIC
 # 152 "data/maps/SlateportCity_Gym/scripts.pory"
+	setspeaker SlateportCity_Gym_EventScript_Josh_Text_0
+# 153 "data/maps/SlateportCity_Gym/scripts.pory"
+	msgbox SlateportCity_Gym_EventScript_Josh_Text_1
+# 154 "data/maps/SlateportCity_Gym/scripts.pory"
 	waitmessage
 	end
 
 
 SlateportCity_Gym_Text_JoshPostBattle::
-# 165 "data/maps/SlateportCity_Gym/scripts.pory"
-	setspeaker SlateportCity_Gym_EventScript_Josh_Text_0
-# 166 "data/maps/SlateportCity_Gym/scripts.pory"
-	msgbox SlateportCity_Gym_Text_JoshPostBattle_Text_0
 # 167 "data/maps/SlateportCity_Gym/scripts.pory"
+	setspeaker SlateportCity_Gym_EventScript_Josh_Text_0
+# 168 "data/maps/SlateportCity_Gym/scripts.pory"
+	msgbox SlateportCity_Gym_Text_JoshPostBattle_Text_0
+# 169 "data/maps/SlateportCity_Gym/scripts.pory"
 	release
 	end
 
 
 SlateportCity_Gym_EventScript_Tommy::
-# 177 "data/maps/SlateportCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_TOMMY, SlateportCity_Gym_Text_TommyIntro, SlateportCity_Gym_Text_TommyDefeat, SlateportCity_Gym_Text_TommyPostBattle, NO_MUSIC
-# 178 "data/maps/SlateportCity_Gym/scripts.pory"
-	setspeaker SlateportCity_Gym_EventScript_Tommy_Text_0
 # 179 "data/maps/SlateportCity_Gym/scripts.pory"
-	msgbox SlateportCity_Gym_EventScript_Josh_Text_1
+	trainerbattle_single TRAINER_TOMMY, SlateportCity_Gym_Text_TommyIntro, SlateportCity_Gym_Text_TommyDefeat, SlateportCity_Gym_Text_TommyPostBattle, NO_MUSIC
 # 180 "data/maps/SlateportCity_Gym/scripts.pory"
+	setspeaker SlateportCity_Gym_EventScript_Tommy_Text_0
+# 181 "data/maps/SlateportCity_Gym/scripts.pory"
+	msgbox SlateportCity_Gym_EventScript_Josh_Text_1
+# 182 "data/maps/SlateportCity_Gym/scripts.pory"
 	waitmessage
 	end
 
 
 SlateportCity_Gym_Text_TommyPostBattle::
-# 193 "data/maps/SlateportCity_Gym/scripts.pory"
-	setspeaker SlateportCity_Gym_EventScript_Tommy_Text_0
-# 194 "data/maps/SlateportCity_Gym/scripts.pory"
-	msgbox SlateportCity_Gym_Text_TommyPostBattle_Text_0
 # 195 "data/maps/SlateportCity_Gym/scripts.pory"
+	setspeaker SlateportCity_Gym_EventScript_Tommy_Text_0
+# 196 "data/maps/SlateportCity_Gym/scripts.pory"
+	msgbox SlateportCity_Gym_Text_TommyPostBattle_Text_0
+# 197 "data/maps/SlateportCity_Gym/scripts.pory"
 	release
 	end
 
@@ -359,24 +365,30 @@ RustboroCity_Gym_EventScript_GulliverDefeated_Text_1:
 	.string "The Beach Badges lets you use\n"
 	.string "whatever. Take this TM also.$"
 
+RustboroCity_Gym_EventScript_GulliverDefeated_Text_2:
+# 56 "data/maps/SlateportCity_Gym/scripts.pory"
+	.string "I also never properly thanked you for\n"
+	.string "helping me out in the Museum! Take this\l"
+	.string "as a token of my appreciation.$"
+
 SlateportCity_Gym_EventScript_Josh_Text_0:
-# 150 "data/maps/SlateportCity_Gym/scripts.pory"
+# 152 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Josh$"
 
 SlateportCity_Gym_EventScript_Josh_Text_1:
-# 151 "data/maps/SlateportCity_Gym/scripts.pory"
+# 153 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Good Luck!$"
 
 SlateportCity_Gym_Text_JoshPostBattle_Text_0:
-# 166 "data/maps/SlateportCity_Gym/scripts.pory"
+# 168 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Post battle!$"
 
 SlateportCity_Gym_EventScript_Tommy_Text_0:
-# 178 "data/maps/SlateportCity_Gym/scripts.pory"
+# 180 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Tommy$"
 
 SlateportCity_Gym_Text_TommyPostBattle_Text_0:
-# 194 "data/maps/SlateportCity_Gym/scripts.pory"
+# 196 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Gulliver is stronger than me by several\n"
 	.string "times. You'd better be on your guard!$"
 
@@ -389,31 +401,31 @@ SlateportCity_Gym_Text_GulliverDefeat::
 	.string "You got me!$"
 
 SlateportCity_Gym_Text_GulliverPostBattle::
-# 59 "data/maps/SlateportCity_Gym/scripts.pory"
+# 61 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Boo hoo.$"
 
 SlateportCity_Gym_Text_JoshIntro::
-# 156 "data/maps/SlateportCity_Gym/scripts.pory"
+# 158 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Don't take us Gym Trainers lightly! I'll\n"
 	.string "show you why we're better!$"
 
 SlateportCity_Gym_Text_JoshDefeat::
-# 160 "data/maps/SlateportCity_Gym/scripts.pory"
+# 162 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "You were too good for me...$"
 
 SlateportCity_Gym_Text_JoshPostDefeat::
-# 171 "data/maps/SlateportCity_Gym/scripts.pory"
+# 173 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Good Luck!$"
 
 SlateportCity_Gym_Text_TommyIntro::
-# 184 "data/maps/SlateportCity_Gym/scripts.pory"
+# 186 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "If you can't beat me, you won't stand a\n"
 	.string "chance against Gulliver!$"
 
 SlateportCity_Gym_Text_TommyDefeat::
-# 188 "data/maps/SlateportCity_Gym/scripts.pory"
+# 190 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Wow! You've got some potential!$"
 
 SlateportCity_Gym_Text_TommyPostDefeat::
-# 199 "data/maps/SlateportCity_Gym/scripts.pory"
+# 201 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Good Luck!$"

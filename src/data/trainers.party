@@ -1164,13 +1164,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 13
+Slowpoke
+Level: 10
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
-- Headbutt
-- Tail Whip
-- Surf
+- Confusion
+- Water Gun
+- Curse
+- Growl
 
 === TRAINER_SIMON ===
 Name: SIMON
@@ -9044,7 +9044,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 13
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ERNEST_1 ===
@@ -13101,8 +13101,8 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 13
+Wattrel
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANDLER ===
