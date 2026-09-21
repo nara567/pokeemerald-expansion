@@ -1173,7 +1173,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Growl
 
 === TRAINER_SIMON ===
-Name: SIMON
+Name: Simon
 Class: Tuber M
 Pic: Tuber M
 Gender: Male
@@ -1182,12 +1182,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Azurill
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 8
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Marill
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 10
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_CHARLIE ===
 Name: CHARLIE
@@ -9077,7 +9077,7 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DWAYNE ===
-Name: DWAYNE
+Name: Dwayne
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -9086,15 +9086,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 11
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Machop
-Level: 11
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
-Level: 11
+Corsola
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PHILLIP ===
@@ -11983,7 +11983,7 @@ Level: 39
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_JOHANNA ===
-Name: JOHANNA
+Name: Johanna
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -11991,9 +11991,9 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Goldeen
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mareanie
+Level: 11
+IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 20 SpD / 0 Spe
 
 === TRAINER_GERALD ===
 Name: GERALD
