@@ -4,7 +4,7 @@
   "layout": "LAYOUT_GRANITE_CAVE_B1F",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_GRANITE_CAVE",
-  "requires_flash": true,
+  "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
@@ -56,23 +56,23 @@
   ],
   "warp_events": [
     {
-      "x": 21,
-      "y": 4,
-      "elevation": 3,
+      "x": 26,
+      "y": 11,
+      "elevation": 4,
       "dest_map": "MAP_GRANITE_CAVE_1F",
       "dest_warp_id": "1"
     },
     {
       "x": 4,
       "y": 17,
-      "elevation": 3,
+      "elevation": 4,
       "dest_map": "MAP_GRANITE_CAVE_1F",
       "dest_warp_id": "2"
     },
     {
-      "x": 26,
-      "y": 11,
-      "elevation": 3,
+      "x": 21,
+      "y": 4,
+      "elevation": 4,
       "dest_map": "MAP_GRANITE_CAVE_B2F",
       "dest_warp_id": "0"
     },
