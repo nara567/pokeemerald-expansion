@@ -380,112 +380,112 @@ LittlerootTown_PlayerHouse_1F_EventScript_Party::
 # 238 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	msgbox LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_11
 # 239 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	applymovement LOCALID_PLAYERS_HOUSE_1F_BIRCH, LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_2
-# 242 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	waitmovement 0
-# 243 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	setspeaker LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Text_0
-# 244 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	msgbox LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_12
-# 245 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	applymovement LOCALID_PLAYER, LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_3
-# 248 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	waitmovement 0
-# 249 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	call LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense
-# 250 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	setspeaker LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Text_3
-# 251 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	msgbox LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_13
-# 252 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_2
-# 255 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	waitmovement 0
-# 256 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	applymovement LOCALID_PLAYERS_HOUSE_1F_DAD, LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_2
-# 259 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
-	waitmovement 0
-# 260 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 240 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	giveitem ITEM_POKE_BALL, 5
+# 241 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setspeaker LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Text_0
-# 261 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 242 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	msgbox LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_13
+# 243 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	applymovement LOCALID_PLAYER, LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_3
+# 246 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	waitmovement 0
+# 247 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	call LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense
+# 248 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setspeaker LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Text_3
+# 249 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	msgbox LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_14
-# 262 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 250 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_2
+# 253 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	waitmovement 0
+# 254 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	applymovement LOCALID_PLAYERS_HOUSE_1F_DAD, LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Movement_2
+# 257 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	waitmovement 0
+# 258 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	setspeaker LittlerootTown_PlayerHouse_1F_EventScript_PreParty_Text_0
+# 259 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	msgbox LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_15
+# 260 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_5
-# 266 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 264 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitmovement 0
-# 267 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 265 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	applymovement LOCALID_PLAYERS_HOUSE_1F_DAD, LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_7
-# 271 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 269 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitmovement 0
-# 272 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 270 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	applymovement LOCALID_PLAYERS_HOUSE_1F_BIRCH, LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_5
-# 276 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 274 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitmovement 0
-# 277 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 275 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	applymovement LOCALID_PLAYERS_HOUSE_1F_RIVAL, LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_7
-# 281 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 279 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitmovement 0
-# 282 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 280 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	applymovement LOCALID_PLAYER, LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_8
-# 286 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 284 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitmovement 0
-# 287 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 285 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	applymovement LOCALID_PLAYERS_HOUSE_1F_PROF, LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_8
-# 291 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 289 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitmovement 0
-# 292 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 290 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 293 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 291 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setvar VAR_LITTLEROOT_INTRO_STATE, 7
-# 294 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 292 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setvar VAR_OLDALE_TOWN_STATE, 1
-# 295 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 293 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setflag FLAG_PARTY_OVER
-# 296 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 294 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setflag FLAG_ADVENTURE_STARTED
-# 297 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 295 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	removeobject LOCALID_PLAYERS_HOUSE_1F_BIRCH
-# 298 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 296 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	removeobject LOCALID_PLAYERS_HOUSE_1F_RIVAL
-# 299 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 297 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	removeobject LOCALID_PLAYERS_HOUSE_1F_PROF
-# 300 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 298 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	warp MAP_LITTLEROOT_TOWN_PLAYER_HOUSE_2F, 1, 4
-# 301 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 299 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 302 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 300 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	release
 	return
 
 
 LittlerootTown_PlayerHouse_1F_EventScript_ReceivePokedex::
-# 306 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 304 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 307 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 305 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	message LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex
-# 308 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 306 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitfanfare
-# 309 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 307 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	removeobject LOCALID_PLAYERS_HOUSE_1F_DEX
-# 310 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 308 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setflag FLAG_SYS_POKEDEX_GET
-# 311 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 309 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	special SetUnlockedPokedexFlags
-# 312 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 310 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
-# 313 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 311 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setvar VAR_CABLE_CLUB_TUTORIAL_STATE, 1
 	return
 
 
 LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense::
-# 318 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 316 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 319 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 317 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	setspeaker NULL
-# 320 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 318 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	msgbox LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense_Text_0
-# 321 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 319 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	waitfanfare
 	return
 
@@ -622,19 +622,19 @@ LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_6:
 	face_left
 	step_end
 
-# 267 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 265 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_7:
-# 268 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 266 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	jump_in_place_left
-# 269 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 267 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 282 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 280 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 LittlerootTown_PlayerHouse_1F_EventScript_Party_Movement_8:
-# 283 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 281 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	jump_in_place_down
-# 284 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 282 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
@@ -772,23 +772,28 @@ LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_11:
 	.string "while you go out and travel the region!$"
 
 LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_12:
-# 244 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 239 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+	.string "I have something extra for you too.\n"
+	.string "Here!$"
+
+LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_13:
+# 242 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	.string "And now, from us! We know how much\n"
 	.string "you've been talking about entering the\l"
 	.string "leagues, so we got you something\l"
 	.string "special!$"
 
-LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_13:
-# 251 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_14:
+# 249 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	.string "Your dad and I will always be rooting\n"
 	.string "for you, honey! Go show the world what\l"
 	.string "you can do!$"
 
-LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_14:
-# 261 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+LittlerootTown_PlayerHouse_1F_EventScript_Party_Text_15:
+# 259 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	.string "Let's get this party started!$"
 
 LittlerootTown_PlayerHouse_1F_EventScript_ReceiveLicense_Text_0:
-# 320 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
+# 318 "data/maps/LittlerootTown_PlayerHouse_1F/scripts.pory"
 	.string "{PLAYER} received the Minor League\n"
 	.string "License!$"

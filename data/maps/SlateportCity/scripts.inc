@@ -2451,49 +2451,63 @@ SlateportCity_EventScript_GymBlocker::
 # 1228 "data/maps/SlateportCity/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
 # 1229 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_GymBlocker_Text_0
+	setspeaker SlateportCity_EventScript_GymBlocker_Text_0
 # 1230 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_GymBlocker_Text_1
+# 1231 "data/maps/SlateportCity/scripts.pory"
 	release
 	return
 
 
 SlateportCity_EventScript_GaiaGrunt1::
-# 1234 "data/maps/SlateportCity/scripts.pory"
-	lock
 # 1235 "data/maps/SlateportCity/scripts.pory"
-	faceplayer
+	lock
 # 1236 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_GaiaGrunt1_Text_0
+	faceplayer
 # 1237 "data/maps/SlateportCity/scripts.pory"
+	setspeaker SlateportCity_EventScript_GaiaGrunt1_Text_0
+# 1238 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_GaiaGrunt1_Text_1
+# 1239 "data/maps/SlateportCity/scripts.pory"
 	release
 	return
 
 
 SlateportCity_EventScript_GaiaGrunt2::
-# 1241 "data/maps/SlateportCity/scripts.pory"
-	lock
-# 1242 "data/maps/SlateportCity/scripts.pory"
-	faceplayer
 # 1243 "data/maps/SlateportCity/scripts.pory"
-	msgbox SlateportCity_EventScript_GaiaGrunt2_Text_0
+	lock
 # 1244 "data/maps/SlateportCity/scripts.pory"
+	faceplayer
+# 1245 "data/maps/SlateportCity/scripts.pory"
+	setspeaker SlateportCity_EventScript_GaiaGrunt1_Text_0
+# 1246 "data/maps/SlateportCity/scripts.pory"
+	msgbox SlateportCity_EventScript_GaiaGrunt2_Text_0
+# 1247 "data/maps/SlateportCity/scripts.pory"
 	release
 	return
 
 
 SlateportCity_EventScript_GymBlocker_Text_0:
 # 1229 "data/maps/SlateportCity/scripts.pory"
+	.string "Gym Guide$"
+
+SlateportCity_EventScript_GymBlocker_Text_1:
+# 1230 "data/maps/SlateportCity/scripts.pory"
 	.string "Gulliver's visiting the museum right\n"
 	.string "now! Come back later.$"
 
 SlateportCity_EventScript_GaiaGrunt1_Text_0:
-# 1236 "data/maps/SlateportCity/scripts.pory"
+# 1237 "data/maps/SlateportCity/scripts.pory"
+	.string "Grunt$"
+
+SlateportCity_EventScript_GaiaGrunt1_Text_1:
+# 1238 "data/maps/SlateportCity/scripts.pory"
 	.string "I saw Gulliver walk in after Adam... Hey!\n"
 	.string "We're standing guard until we hear back\l"
 	.string "from our guys in Dewford! Go away!$"
 
 SlateportCity_EventScript_GaiaGrunt2_Text_0:
-# 1243 "data/maps/SlateportCity/scripts.pory"
+# 1246 "data/maps/SlateportCity/scripts.pory"
 	.string "Adam said Trinket should be in Granite\n"
 	.string "Cave right now... Hey! We're standing\l"
 	.string "guard until we hear back from our guys\l"

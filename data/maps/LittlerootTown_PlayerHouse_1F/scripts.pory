@@ -236,10 +236,8 @@ script LittlerootTown_PlayerHouse_1F_EventScript_Party {
     call(LittlerootTown_PlayerHouse_1F_EventScript_ReceivePokedex)
     setspeaker("{RIVAL}")
     msgbox(format("Now you'll help advance our research while you go out and travel the region!"))
-    applymovement(LOCALID_PLAYERS_HOUSE_1F_BIRCH, moves(
-        emote_heart
-    ))
-    waitmovement(0)
+    msgbox(format("I have something extra for you too. Here!"))
+    giveitem(ITEM_POKE_BALL, 5)
     setspeaker("Dad")
     msgbox(format("And now, from us! We know how much you've been talking about entering the leagues, so we got you something special!"))
     applymovement(LOCALID_PLAYER, moves(

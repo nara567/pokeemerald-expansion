@@ -2,8 +2,6 @@ raw `
 @ NOTE: Route 109's sail to Dewford script references local IDs from Dewford's map.
 @  These are labeled in DewfordTown/scripts.inc
 
-Route109_MapScripts::
-	.byte 0
 
 Route109_EventScript_StartDepartForDewford::
 	call EventScript_BackupMrBrineyLocation
@@ -306,10 +304,6 @@ Route109_EventScript_ChoseNotToSail::
 	release
 	end
 
-Route109_EventScript_SeashoreHouseGirl::
-	msgbox Route109_Text_ChillAtMyPapasSpot, MSGBOX_NPC
-	end
-
 Route109_EventScript_SandCastleBoy::
 	lock
 	faceplayer
@@ -542,6 +536,15 @@ Route109_Text_TrainerTipsSign:
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
 `
+
+mapscripts Route109_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION{
+		if(flag(FLAG_HIDE_SLATEPORT_CITY_TEAM_GAIA)){
+			call(Route109_EventScript_Move_SeashoreHouseGirl)
+		}
+	}
+}
+
 script Route109_EventScript_MrBriney{
 	lock
     faceplayer
@@ -566,4 +569,23 @@ script Route109_EventScript_Austina {
 script Route109_EventScript_Gwen {
 	trainerbattle_single(TRAINER_GWEN, Route109_Text_GwenIntro, Route109_Text_GwenDefeated)
 	msgbox(Route109_Text_GwenPostBattle)
+}
+
+script Route109_EventScript_SeashoreHouseGirl {
+	setspeaker("Little Girl")
+	if(flag(FLAG_HIDE_SLATEPORT_CITY_TEAM_GAIA)){
+		faceplayer
+		msgbox(Route109_Text_ChillAtMyPapasSpot)
+		release
+	} else {
+		faceplayer
+		msgbox(format("We're still getting everything ready!"))
+		msgbox(format("Come back later please!"))
+		release
+	}
+}
+
+script Route109_EventScript_Move_SeashoreHouseGirl {
+	setobjectxyperm(LOCALID_ROUTE109_SEASHOREHOUSE_GIRL, 11, 6)
+	setobjectmovementtype(LOCALID_ROUTE109_SEASHOREHOUSE_GIRL, MOVEMENT_TYPE_FACE_DOWN)
 }
