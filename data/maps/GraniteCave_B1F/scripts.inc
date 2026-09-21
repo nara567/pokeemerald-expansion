@@ -26,13 +26,17 @@ GraniteCave_EventScript_Laura::
 	trainerbattle_single TRAINER_LAURA, DewfordTown_Gym_Text_LauraIntro, DewfordTown_Gym_Text_LauraDefeat
 # 17 "data/maps/GraniteCave_B1F/scripts.pory"
 	msgbox DewfordTown_Gym_Text_LauraPostBattle
+# 18 "data/maps/GraniteCave_B1F/scripts.pory"
+	release
 	return
 
 
 GraniteCave_EventScript_Brenden::
-# 21 "data/maps/GraniteCave_B1F/scripts.pory"
-	trainerbattle_single TRAINER_BRENDEN, DewfordTown_Gym_Text_BrendenIntro, DewfordTown_Gym_Text_BrendenDefeat
 # 22 "data/maps/GraniteCave_B1F/scripts.pory"
+	trainerbattle_single TRAINER_BRENDEN, DewfordTown_Gym_Text_BrendenIntro, DewfordTown_Gym_Text_BrendenDefeat
+# 23 "data/maps/GraniteCave_B1F/scripts.pory"
 	msgbox DewfordTown_Gym_Text_BrendenPostBattle
+# 24 "data/maps/GraniteCave_B1F/scripts.pory"
+	release
 	return
 

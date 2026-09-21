@@ -82,5 +82,7 @@ GraniteCave_EventScript_Jocelyn::
 	trainerbattle_single TRAINER_JOCELYN, DewfordTown_Gym_Text_JocelynIntro, DewfordTown_Gym_Text_JocelynDefeat
 # 45 "data/maps/GraniteCave_1F/scripts.pory"
 	msgbox DewfordTown_Gym_Text_JocelynPostBattle
+# 46 "data/maps/GraniteCave_1F/scripts.pory"
+	release
 	return
 

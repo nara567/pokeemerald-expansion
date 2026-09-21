@@ -10,13 +10,17 @@ GraniteCave_EventScript_Lilith::
 	trainerbattle_single TRAINER_LILITH, DewfordTown_Gym_Text_LilithIntro, DewfordTown_Gym_Text_LilithDefeat
 # 9 "data/maps/GraniteCave_B2F/scripts.pory"
 	msgbox DewfordTown_Gym_Text_LilithPostBattle
+# 10 "data/maps/GraniteCave_B2F/scripts.pory"
+	release
 	return
 
 
 GraniteCave_EventScript_Cristian::
-# 13 "data/maps/GraniteCave_B2F/scripts.pory"
-	trainerbattle_single TRAINER_CRISTIAN, DewfordTown_Gym_Text_CristianIntro, DewfordTown_Gym_Text_CristianDefeat
 # 14 "data/maps/GraniteCave_B2F/scripts.pory"
+	trainerbattle_single TRAINER_CRISTIAN, DewfordTown_Gym_Text_CristianIntro, DewfordTown_Gym_Text_CristianDefeat
+# 15 "data/maps/GraniteCave_B2F/scripts.pory"
 	msgbox DewfordTown_Gym_Text_CristianPostBattle
+# 16 "data/maps/GraniteCave_B2F/scripts.pory"
+	release
 	return
 
