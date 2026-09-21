@@ -15,9 +15,11 @@ GraniteCave_B1F_SetHoleWarp:
 script GraniteCave_EventScript_Laura {
     trainerbattle_single(TRAINER_LAURA, DewfordTown_Gym_Text_LauraIntro, DewfordTown_Gym_Text_LauraDefeat)
     msgbox(DewfordTown_Gym_Text_LauraPostBattle)
+	release
 }
 
 script GraniteCave_EventScript_Brenden {
     trainerbattle_single(TRAINER_BRENDEN, DewfordTown_Gym_Text_BrendenIntro, DewfordTown_Gym_Text_BrendenDefeat)
     msgbox(DewfordTown_Gym_Text_BrendenPostBattle)
+	release
 }

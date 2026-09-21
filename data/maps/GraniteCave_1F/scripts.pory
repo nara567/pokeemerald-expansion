@@ -43,4 +43,5 @@ GraniteCave_1F_Text_ExplainFlash:
 script GraniteCave_EventScript_Jocelyn {
     trainerbattle_single(TRAINER_JOCELYN, DewfordTown_Gym_Text_JocelynIntro, DewfordTown_Gym_Text_JocelynDefeat)
     msgbox(DewfordTown_Gym_Text_JocelynPostBattle)
+	release
 }

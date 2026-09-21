@@ -7,9 +7,11 @@ GraniteCave_B2F_MapScripts::
 script GraniteCave_EventScript_Lilith {
     trainerbattle_single(TRAINER_LILITH, DewfordTown_Gym_Text_LilithIntro, DewfordTown_Gym_Text_LilithDefeat)
     msgbox(DewfordTown_Gym_Text_LilithPostBattle)
+    release
 }
 
 script GraniteCave_EventScript_Cristian {
     trainerbattle_single(TRAINER_CRISTIAN, DewfordTown_Gym_Text_CristianIntro, DewfordTown_Gym_Text_CristianDefeat)
     msgbox(DewfordTown_Gym_Text_CristianPostBattle)
+    release
 }
