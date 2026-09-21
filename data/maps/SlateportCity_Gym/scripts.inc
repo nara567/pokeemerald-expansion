@@ -93,11 +93,11 @@ RustboroCity_Gym_EventScript_GulliverDefeated::
 # 52 "data/maps/SlateportCity_Gym/scripts.pory"
 	call Common_EventScript_SetGymTrainers
 # 53 "data/maps/SlateportCity_Gym/scripts.pory"
-	giveitem ITEM_TM_ROCK_TOMB
+	giveitem ITEM_TM_BULLDOZE
 # 54 "data/maps/SlateportCity_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 55 "data/maps/SlateportCity_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_TM_ROCK_TOMB
+	setflag FLAG_RECEIVED_TM_BULLDOZE
 # 56 "data/maps/SlateportCity_Gym/scripts.pory"
 	msgbox RustboroCity_Gym_EventScript_GulliverDefeated_Text_2
 # 57 "data/maps/SlateportCity_Gym/scripts.pory"
