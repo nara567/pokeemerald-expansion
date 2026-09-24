@@ -2217,7 +2217,7 @@ Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_NAOMI ===
-Name: NAOMI
+Name: Naomi
 Class: Lady
 Pic: Lady
 Gender: Female
@@ -2226,8 +2226,8 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Roselia @ Nugget
-Level: 45
+Treecko @ Nugget
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CINDY_3 ===
@@ -2561,7 +2561,7 @@ Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_GARRET ===
-Name: GARRET
+Name: Garret
 Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
@@ -2570,8 +2570,8 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Azumarill @ Nugget
-Level: 45
+Tadbulb @ Nugget
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WINSTON_2 ===
@@ -4476,7 +4476,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MICAH ===
-Name: MICAH
+Name: Micah
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
@@ -4484,16 +4484,16 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Manectric
-Level: 44
+Salandit
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Manectric
-Level: 44
+Spoink
+Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_THOMAS ===
-Name: THOMAS
+Name: Thomas
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
@@ -4502,7 +4502,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Zangoose
-Level: 45
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALTER_2 ===
@@ -5593,37 +5593,13 @@ IVs: 0 HP / 6 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Snarl
 
 === TRAINER_COLTON ===
-Name: COLTON
+Name: Colton
 Class: Pokefan
 Pic: Pokefan M
 Gender: Male
 Music: Twins
 Double Battle: No
 AI: Check Bad Move
-
-Skitty @ Oran Berry
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
-
-Skitty @ Oran Berry
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
-
-Skitty @ Oran Berry
-Level: 40
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
 
 Skitty @ Oran Berry
 Level: 12
@@ -5633,8 +5609,32 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Feint Attack
 - Heal Bell
 
+Sprigatito @ Oran Berry
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Leafage
+- Scratch
+- Bite
+- Sucker Punch
+
+Meowth
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pay Day
+- Fake Out
+- Scratch
+- Covet
+
+Eevee @ Oran Berry
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Quick Attack
+- Double Kick
+- Tail Whip
+- Growl
+
 Skitty @ Oran Berry
-Level: 30
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
 - Charm
@@ -5642,7 +5642,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Heal Bell
 
 Delcatty @ Oran Berry
-Level: 42
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
 - Charm
@@ -11881,7 +11881,7 @@ Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LEA_AND_JED ===
-Name: LEA & JED
+Name: Lea & Jed
 Class: Young Couple
 Pic: Young Couple
 Gender: Male
@@ -11889,12 +11889,12 @@ Music: Girl
 Double Battle: Yes
 AI: Check Bad Move
 
-Luvdisc
-Level: 45
+Volbeat
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Luvdisc
-Level: 45
+Illumise
+Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KIRA_AND_DAN_1 ===
