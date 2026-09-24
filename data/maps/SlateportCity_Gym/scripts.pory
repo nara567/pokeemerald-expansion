@@ -152,7 +152,7 @@ script SlateportCity_Gym_EventScript_Josh {
     setspeaker("Josh")
     msgbox(format("Good Luck!"))
     waitmessage
-    end
+    release
 }
 
 text SlateportCity_Gym_Text_JoshIntro{
@@ -167,7 +167,6 @@ script SlateportCity_Gym_Text_JoshPostBattle{
     setspeaker("Josh")
     msgbox(format("Post battle!"))
     release
-    end
 }
 
 text SlateportCity_Gym_Text_JoshPostDefeat{
@@ -180,7 +179,7 @@ script SlateportCity_Gym_EventScript_Tommy {
     setspeaker("Tommy")
     msgbox(format("Good Luck!"))
     waitmessage
-    end
+    release
 }
 
 text SlateportCity_Gym_Text_TommyIntro{
@@ -195,7 +194,6 @@ script SlateportCity_Gym_Text_TommyPostBattle{
     setspeaker("Tommy")
     msgbox(format("Gulliver is stronger than me by several times. You'd better be on your guard!"))
     release
-    end
 }
 
 text SlateportCity_Gym_Text_TommyPostDefeat{
