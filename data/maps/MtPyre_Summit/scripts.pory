@@ -618,7 +618,16 @@ MtPyre_Summit_Text_HoennTrioTale:
 `
 
 script MtPyre_Summit_EventScript_Phoebe {
-    trainerbattle_single(TRAINER_BRAWLY_1, MtPyre_Summit_Text_PhoebeIntro, MtPyre_Summit_Text_PhoebeDefeat, MtPyre_Summit_EventScript_PhoebeDefeated, FALSE)
+    if(flag(FLAG_TALKED_TO_PHOEBE_BEFORE_BATTLE) == false){
+        call(MtPyre_Summit_EventScript_PhoebeCatch)
+        release
+    }
+    getcaughtmon(SPECIES_DREEPY)
+    if(var(VAR_RESULT) == FALSE){
+        call(MtPyre_Summit_Text_NoDreepy)
+    } else {
+        trainerbattle_single(TRAINER_BRAWLY_1, MtPyre_Summit_Text_PhoebeIntro, MtPyre_Summit_Text_PhoebeDefeat, MtPyre_Summit_EventScript_PhoebeDefeated, FALSE)
+    }
     if(flag(FLAG_RECEIVED_TM_BULK_UP) == false){
         call(MtPyre_Summit_EventScript_GiveTM)
     } else {
@@ -629,7 +638,7 @@ script MtPyre_Summit_EventScript_Phoebe {
 }
 
 text MtPyre_Summit_Text_PhoebeIntro {
-    format("You did it! Good luck!")
+    format("You caught a Dreepy! Now you have a right to challenge me, Phoebe, the second Minor League Gym Leader!")
 }
 
 text MtPyre_Summit_Text_PhoebeDefeat {
@@ -677,3 +686,15 @@ text MtPyre_Summit_Text_GhostBadgeInfoTakeThis {
 text MtPyre_Summit_Text_ExplainTM {
     format("That's a TM!")
 }
+
+script MtPyre_Summit_EventScript_PhoebeCatch {
+    setspeaker("Phoebe")
+    msgbox(format("Welcome to Mt Pyre! I'm Phoebe! I used to be a member of the Elite Four, but I retired. I'm the second Minor League Gym Leader now!"))
+    msgbox(format("You have to pass the gym test before we battle! You need to have a Dreepy caught in your Pokedex. They like to hide at the top floor inside the mountain."))
+    setflag(FLAG_TALKED_TO_PHOEBE_BEFORE_BATTLE)
+}
+
+text MtPyre_Summit_Text_NoDreepy {
+    format("You still haven't caught a Dreepy! They're at the top floor inside the mountain.")
+}
+
