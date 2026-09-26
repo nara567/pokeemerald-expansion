@@ -201,28 +201,28 @@ Double Battle: No
 AI: Check Bad Move
 
 Skitty
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Poochyena
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Zigzagoon
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Lotad
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Seedot
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Taillow
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_GRUNT_OCEANIC_MUSEUM_1F ===
 Name: GRUNT
@@ -244,7 +244,7 @@ Level: 12
 IVs: 21 HP / 3 Atk / 15 Def / 22 SpA / 23 SpD / 6 Spe
 
 === TRAINER_MARCEL ===
-Name: MARCEL
+Name: Marcel
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -252,13 +252,32 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Electrike
-Level: 14
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Yamper
+Ability: Rattled
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Nuzzle
+- Roar
+- Bite
+- Tail Whip
 
 Voltorb-Hisui
-Level: 15
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ability: Static
+Level: 18
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bullet Seed
+- Charge Beam
+- Charge
+- Stun Spore
+
+Roggenrola
+Ability: Sturdy
+Level: 20
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Iron Defense
+- Smack Down
+- Mud Slap
+- Rock Tomb
 
 === TRAINER_ALBERTO ===
 Name: ALBERTO
@@ -278,7 +297,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ED ===
-Name: ED
+Name: Ed
 Class: Collector
 Pic: Collector
 Gender: Male
@@ -287,12 +306,29 @@ Double Battle: No
 AI: Check Bad Move
 
 Minun
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 17
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Spark
+- Quick Attack
+- Helping Hand
+- Switcheroo
 
 Karrablast
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Shed Skin
+Level: 17
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Peck
+- Fury Cutter
+- Acid Spray
+- Leer
+
+Combusken
+Level: 17
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Flame Charge
+- Double Kick
+- Detect
+- Quick Attack
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
 Name: GRUNT
@@ -549,7 +585,7 @@ Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ZANDER ===
-Name: ZANDER
+Name: Zander
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -558,8 +594,21 @@ Double Battle: No
 AI: Check Bad Move
 
 Greavard
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Smokescreen
+- Lick
+- Bite
+- Roar
+
+Makuhita
+Ability: Thick Fat
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Knock Off
+- Force Palm
+- Whirlwind
+- Fake Out
 
 === TRAINER_SHELLY_WEATHER_INSTITUTE ===
 Name: SHELLY
@@ -618,7 +667,7 @@ Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_LEAH ===
-Name: LEAH
+Name: Leah
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -627,8 +676,21 @@ Double Battle: No
 AI: Check Bad Move
 
 Spoink
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Thick Fat
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Psybeam
+- Psych Up
+- Growl
+- Confusion
+
+Sableye
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Fake Out
+- Shadow Sneak
+- Detect
+- Scratch
 
 === TRAINER_DAISY ===
 Name: DAISY
@@ -1993,7 +2055,7 @@ Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KINDRA ===
-Name: KINDRA
+Name: Kindra
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -2002,12 +2064,29 @@ Double Battle: No
 AI: Check Bad Move
 
 Plusle
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 17
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Swift
+- Helping Hand
+- Spark
+- Growl
 
 Shelmet
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 17
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Yawn
+- Struggle Bug
+- Acid
+- Protect
+
+Shuppet
+Ability: Insomnia
+Level: 17
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Will-o-Wisp
+- Spite
+- Night Shade
+- Screech
 
 === TRAINER_TAMMY ===
 Name: TAMMY
@@ -2027,7 +2106,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VALERIE_1 ===
-Name: VALERIE
+Name: Valerie
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -2036,16 +2115,20 @@ Double Battle: No
 AI: Check Bad Move
 
 Sableye
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Dreepy
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
-Greavard
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shedinja
+Level: 20
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Shadow Claw
+- Metal Claw
+- Mud-Slap
+- Confuse Ray
 
 === TRAINER_TASHA ===
 Name: Tasha
@@ -2057,11 +2140,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Shuppet
-Level: 15
+Level: 19
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Duskull
-Level: 15
+Level: 19
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Sandygast
+Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VALERIE_2 ===
@@ -3369,7 +3456,7 @@ Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ATSUSHI ===
-Name: ATSUSHI
+Name: Atsushi
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -3378,15 +3465,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 16
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Timburr
-Level: 16
+Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Monferno
-Level: 16
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KIRK ===
@@ -4187,7 +4274,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WILLIAM ===
-Name: WILLIAM
+Name: William
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -4196,16 +4283,22 @@ Double Battle: No
 AI: Check Bad Move
 
 Ralts
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Trace
+Level: 16
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Draining Kiss
+- Confusion
+- Hypnosis
+- Double Team
 
 Elgyem
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Synchronize
+Level: 17
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Kadabra
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_JOSHUA ===
 Name: JOSHUA
@@ -4359,7 +4452,7 @@ Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_KAYLA ===
-Name: KAYLA
+Name: Kayla
 Class: Psychic
 Pic: Psychic F
 Gender: Female
@@ -4368,16 +4461,29 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 16
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Force Palm
+- Confusion
+- Detect
+- Endure
 
 Gothita
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Competitive
+Level: 17
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Charm
+- Psybeam
+- Tickle
+- Confusion
 
 Espeon
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Confusion
+- Bite
+- Covet
+- Take Down
 
 === TRAINER_ALEXIS ===
 Name: ALEXIS
@@ -4482,7 +4588,7 @@ Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_WALTER_1 ===
-Name: WALTER
+Name: Walter
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
@@ -4491,8 +4597,20 @@ Double Battle: No
 AI: Check Bad Move
 
 Kadabra
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 20
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Reflect
+- Disable
+- Confusion
+- Kinesis
+
+Roselia
+Level: 20
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Magical Leaf
+- Leech Seed
+- Poison Sting
+- Stun Spore
 
 === TRAINER_MICAH ===
 Name: Micah
@@ -8767,16 +8885,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Dottler
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Spoink
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Chimecho
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 20
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_IRENE ===
 Name: IRENE
@@ -11887,7 +12005,7 @@ Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_DEZ_AND_LUKE ===
-Name: DEZ & LUKE
+Name: Dez & Luke
 Class: Young Couple
 Pic: Young Couple
 Gender: Male
@@ -11895,13 +12013,18 @@ Music: Girl
 Double Battle: Yes
 AI: Check Bad Move
 
-Maschiff
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mightyena
+Ability: Intimidate
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+- Crunch
+- Howl
+- Snarl
+- Roar
 
 Yamper
-Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_LEA_AND_JED ===
 Name: Lea & Jed
@@ -14212,7 +14335,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MYLES ===
-Name: MYLES
+Name: Myles
 Class: Pkmn Breeder
 Pic: Pokemon Breeder M
 Gender: Male
@@ -14221,31 +14344,58 @@ Double Battle: No
 AI: Check Bad Move
 
 Nincada
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Gust
+- Night Slash
+- Scratch
 
 Shelmet
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ability: Shell Armor
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Struggle Bug
+- Mega Drain
+- Curse
+- Acid
 
-Meowth
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Poochyena
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Poison Fang
+- Covet
+- Astonish
+- Bite
 
 Shroomish
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ability: Effect Spore
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Fake Tears
+- Leech Seed
+- Headbutt
+- Stun Spore
 
 Zigzagoon-Galar
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ability: Gluttony
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Tickle
+- Snarl
+- Baby-Doll Eyes
+- Lick
 
 Beautifly
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Gust
+- Poison Sting
+- Bug Bite
+- Absorb
 
 === TRAINER_PAT ===
-Name: PAT
+Name: Pat
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -14253,32 +14403,59 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Maschiff
+Ability: Intimidate
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Endeavor
+- Hone Claws
+- Bite
+- Lick
 
-Gulpin
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Gulpin @ Grepa Berry
+Ability: Liquid Ooze
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Smog
+- Stuff Cheeks
+- Yawn
+- Sludge
 
 Froakie
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Spikes
+- Water Pulse
+- Lick
+- Quick Attack
 
 Tadbulb
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ability: Static
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Soak
+- Thunder Shock
+- Tackle
+- Mud-Slap
 
 Slakoth
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Slack Off
+- Yawn
+- Encore
+- Headbutt
 
 Dustox
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 16
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Gust
+- Confusion
+- Poison Powder
+- Bug Bite
 
 === TRAINER_CRISTIN_1 ===
-Name: CRISTIN
+Name: Cristin
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -14287,12 +14464,30 @@ Double Battle: No
 AI: Basic Trainer
 
 Meowth
-Level: 14
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ability: Technician
+Level: 17
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Taunt
+- Bite
+- Pay Day
+- Headbutt
 
 Taillow
-Level: 15
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ability: Scrappy
+Level: 17
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Wing Attack
+- Double Team
+- Focus Energy
+- Steel Wing
+
+Lombre
+Level: 18
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Mega Drain
+- Water Gun
+- Rain Dance
+- Teeter Dance
 
 === TRAINER_MAY_RUSTBORO_TREECKO ===
 Name: MAY
