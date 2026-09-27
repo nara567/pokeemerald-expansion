@@ -263,7 +263,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Voltorb-Hisui
 Ability: Static
-Level: 18
+Level: 17
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Bullet Seed
 - Charge Beam
@@ -272,7 +272,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Roggenrola
 Ability: Sturdy
-Level: 20
+Level: 18
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Iron Defense
 - Smack Down
@@ -4597,7 +4597,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Kadabra
-Level: 20
+Level: 18
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Reflect
 - Disable
@@ -4605,7 +4605,7 @@ IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Kinesis
 
 Roselia
-Level: 20
+Level: 18
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Magical Leaf
 - Leech Seed

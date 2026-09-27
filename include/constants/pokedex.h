@@ -1099,11 +1099,13 @@ enum NationalDexOrder
     F(BLISSEY) \
     F(ROCKRUFF) \
     F(LYCANROC) \
-    F(POOCHYENA) \
-    F(MIGHTYENA) \
     F(ZIGZAGOON) \
     F(LINOONE) \
-    HOENN_DEX_IF(P_GALARIAN_FORMS, F(OBSTAGOON)) \
+    F(OBSTAGOON) \
+    F(POOCHYENA) \
+    F(MIGHTYENA) \
+    F(MASCHIFF) \
+    F(MABOSSTIFF) \
     F(WURMPLE) \
     F(SILCOON) \
     F(BEAUTIFLY) \
@@ -1112,215 +1114,288 @@ enum NationalDexOrder
     F(LOTAD) \
     F(LOMBRE) \
     F(LUDICOLO) \
-    F(SEEDOT) \
-    F(NUZLEAF) \
-    F(SHIFTRY) \
-    F(SPRIGATITO) \
-    F(FLORAGATO) \
-    F(MEOWSCARADA) \
-    F(WINGULL) \
-    F(PELIPPER) \
-    F(HOPPIP) \
-    F(SKIPLOOM) \
-    F(JUMPLUFF) \
+    F(SURSKIT) \
+    F(MASQUERAIN) \
     F(RALTS) \
     F(KIRLIA) \
     F(GARDEVOIR) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(GALLADE)) \
-    F(ELECTRIKE) \
-    F(MANECTRIC) \
-    F(MASCHIFF) \
-    F(MABOSSTIFF) \
+    F(GALLADE) \
     F(PLUSLE) \
     F(MINUN) \
     F(MORPEKO) \
+    F(ELECTRIKE) \
+    F(MANECTRIC) \
+    F(YAMPER) \
+    F(BOLTUND) \
     F(GULPIN) \
     F(SWALOT) \
+    F(SPRIGATITO) \
+    F(FLORAGATO) \
+    F(MEOWSCARADA) \
+    F(SLOWPOKE) \
+    F(SLOWBRO) \
+    F(SLOWKING) \
+    F(WIGLETT) \
+    F(WUGTRIO) \
+    F(WIMPOD) \
+    F(GOLISOPOD) \
+    F(PYUKUMUKU) \
+    F(SANDYGAST) \
+    F(PALOSSAND) \
+    F(WINGULL) \
+    F(PELIPPER) \
     F(ZUBAT) \
     F(GOLBAT) \
     F(CROBAT) \
+    F(ROGGENROLA) \
+    F(BOLDORE) \
+    F(GIGALITH) \
+    F(NOSEPASS) \
+    F(PROBOPASS) \
+    F(ARON) \
+    F(LAIRON) \
+    F(AGGRON) \
+    F(PAWNIARD) \
+    F(BISHARP) \
+    F(KINGAMBIT) \
+    F(GLIMMET) \
+    F(GLIMMORA) \
+    F(MAKUHITA) \
+    F(HARIYAMA) \
+    F(SABLEYE) \
+    F(NINCADA) \
+    F(NINJASK) \
+    F(SHEDINJA) \
+    F(SHELMET) \
+    F(ACCELGOR) \
+    F(MEOWTH) \
+    F(PERSIAN) \
+    F(TAILLOW) \
+    F(SWELLOW) \
+    F(PIKIPEK) \
+    F(TRUMBEAK) \
+    F(TOUCANNON) \
+    F(CHARCADET) \
+    F(ARMAROUGE) \
+    F(CERULEDGE) \
+    F(AZURILL) \
+    F(MARILL) \
+    F(AZUMARILL) \
+    F(CUBONE) \
+    F(MAROWAK) \
+    F(SHUPPET) \
+    F(BANETTE) \
+    F(DUSKULL) \
+    F(DUSCLOPS) \
+    F(DUSKNOIR) \
+    F(GREAVARD) \
+    F(HOUNDSTONE) \
+    F(ZORUA) \
+    F(ZOROARK) \
+    F(SPIRITOMB) \
+    F(DREEPY) \
+    F(DRAKLOAK) \
+    F(DRAGAPULT) \
+    F(CHINGLING) \
+    F(CHIMECHO) \
+    F(GOTHITA) \
+    F(GOTHORITA) \
+    F(GOTHITELLE) \
+    F(MAGNEMITE) \
+    F(MAGNETON) \
+    F(MAGNEZONE) \
+    F(VOLTORB) \
+    F(ELECTRODE) \
+    F(MAREEP) \
+    F(FLAAFFY) \
+    F(AMPHAROS) \
+    F(FLABEBE) \
+    F(FLOETTE) \
+    F(FLORGES) \
+    F(VOLBEAT) \
+    F(ILLUMISE) \
+    F(BUDEW) \
+    F(ROSELIA) \
+    F(ROSERADE) \
+    F(HOPPIP) \
+    F(SKIPLOOM) \
+    F(JUMPLUFF) \
+    F(SPRITZEE) \
+    F(AROMATISSE) \
+    F(BLIPBUG) \
+    F(DOTTLER) \
+    F(ORBEETLE) \
+    F(ABRA) \
+    F(KADABRA) \
+    F(ALAKAZAM) \
+    F(EEVEE) \
+    F(VAPOREON) \
+    F(JOLTEON) \
+    F(FLAREON) \
+    F(ESPEON) \
+    F(UMBREON) \
+    F(LEAFEON) \
+    F(GLACEON) \
+    F(SYLVEON) \
+    F(CACNEA) \
+    F(CACTURNE) \
+    F(BRAMBLIN) \
+    F(BRAMBLEGHAST) \
+    F(HIPPOPOTAS) \
+    F(HIPPOWDON) \
+    F(DRILBUR) \
+    F(EXCADRILL) \
+    F(TRAPINCH) \
+    F(VIBRAVA) \
+    F(FLYGON) \
+    F(SANDILE) \
+    F(KROKOROK) \
+    F(KROOKODILE) \
+    F(CLEFFA) \
+    F(CLEFAIRY) \
+    F(CLEFABLE) \
+    F(MINIOR) \
+    F(ELGYEM) \
+    F(BEHEEYEM) \
+    F(STARYU) \
+    F(STARMIE) \
+    F(FROAKIE) \
+    F(FROGADIER) \
+    F(GRENINJA) \
+    F(CROAGUNK) \
+    F(TOXICROAK) \
+    F(KARRABLAST) \
+    F(ESCAVALIER) \
+    F(SEEDOT) \
+    F(NUZLEAF) \
+    F(SHIFTRY) \
+    F(RELICANTH) \
+    F(BERGMITE) \
+    F(AVALUGG) \
+    F(BALTOY) \
+    F(CLAYDOL) \
+    F(TYRUNT) \
+    F(TYRANTRUM) \
+    F(AERODACTYL) \
+    F(MUDKIP) \
+    F(MARSHTOMP) \
+    F(SWAMPERT) \
+    F(RHYHORN) \
+    F(RHYDON) \
+    F(RHYPERIOR) \
+    F(FEEBAS) \
+    F(MILOTIC) \
     F(TREECKO) \
     F(GROVYLE) \
     F(SCEPTILE) \
     F(TORCHIC) \
     F(COMBUSKEN) \
     F(BLAZIKEN) \
-    F(MUDKIP) \
-    F(MARSHTOMP) \
-    F(SWAMPERT) \
-    F(TAILLOW) \
-    F(SWELLOW) \
-    F(SURSKIT) \
-    F(MASQUERAIN) \
     F(SHROOMISH) \
     F(BRELOOM) \
     F(SLAKOTH) \
     F(VIGOROTH) \
     F(SLAKING) \
-    F(ABRA) \
-    F(KADABRA) \
-    F(ALAKAZAM) \
-    F(NINCADA) \
-    F(NINJASK) \
-    F(SHEDINJA) \
     F(WHISMUR) \
     F(LOUDRED) \
     F(EXPLOUD) \
-    F(MAKUHITA) \
-    F(HARIYAMA) \
-    F(GOLDEEN) \
-    F(SEAKING) \
     F(MAGIKARP) \
     F(GYARADOS) \
-    F(AZURILL) \
-    F(MARILL) \
-    F(AZUMARILL) \
-    F(GEODUDE) \
-    F(GRAVELER) \
-    F(GOLEM) \
-    F(NOSEPASS) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(PROBOPASS)) \
     F(SKITTY) \
     F(DELCATTY) \
     F(TENTACOOL) \
     F(TENTACRUEL) \
-    F(SABLEYE) \
+    F(TOEDSCOOL) \
+    F(TOEDSCRUEL) \
     F(MAWILE) \
-    F(ARON) \
-    F(LAIRON) \
-    F(AGGRON) \
-    F(MACHOP) \
-    F(MACHOKE) \
-    F(MACHAMP) \
+    F(TIMBURR) \
+    F(GURDURR) \
+    F(CONKELDURR) \
+    F(GEODUDE) \
+    F(GRAVELER) \
+    F(GOLEM) \
     F(MEDITITE) \
     F(MEDICHAM) \
-    F(MAGNEMITE) \
-    F(MAGNETON) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(MAGNEZONE)) \
-    F(VOLTORB) \
-    F(ELECTRODE) \
-    F(VOLBEAT) \
-    F(ILLUMISE) \
-    F(ODDISH) \
-    F(GLOOM) \
-    F(VILEPLUME) \
-    F(BELLOSSOM) \
-    F(DODUO) \
-    F(DODRIO) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(BUDEW)) \
-    F(ROSELIA) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(ROSERADE)) \
+    F(TADBULB) \
+    F(BELLIBOLT) \
     F(CARVANHA) \
     F(SHARPEDO) \
     F(WAILMER) \
     F(WAILORD) \
+    F(TORKOAL) \
     F(NUMEL) \
     F(CAMERUPT) \
-    F(SLUGMA) \
-    F(MAGCARGO) \
-    F(TORKOAL) \
-    F(GRIMER) \
-    F(MUK) \
-    F(KOFFING) \
-    F(WEEZING) \
+    F(FUECOCO) \
+    F(CROCALOR) \
+    F(SKELEDIRGE) \
+    F(SALANDIT) \
+    F(SALAZZLE) \
+    F(CHIMCHAR) \
+    F(MONFERNO) \
+    F(INFERNAPE) \
     F(SPOINK) \
     F(GRUMPIG) \
-    F(SANDSHREW) \
-    F(SANDSLASH) \
     F(SPINDA) \
     F(SKARMORY) \
-    F(TRAPINCH) \
-    F(VIBRAVA) \
-    F(FLYGON) \
-    F(CACNEA) \
-    F(CACTURNE) \
     F(SWABLU) \
     F(ALTARIA) \
     F(ZANGOOSE) \
     F(SEVIPER) \
-    F(LUNATONE) \
-    F(SOLROCK) \
     F(BARBOACH) \
     F(WHISCASH) \
     F(CORPHISH) \
     F(CRAWDAUNT) \
-    F(BALTOY) \
-    F(CLAYDOL) \
-    F(LILEEP) \
-    F(CRADILY) \
-    F(ANORITH) \
-    F(ARMALDO) \
-    F(IGGLYBUFF) \
-    F(JIGGLYPUFF) \
-    F(WIGGLYTUFF) \
-    F(FEEBAS) \
-    F(MILOTIC) \
     F(CASTFORM) \
-    F(STARYU) \
-    F(STARMIE) \
+    F(CUTIEFLY) \
+    F(RIBOMBEE) \
+    F(EMOLGA) \
     F(KECLEON) \
-    F(SHUPPET) \
-    F(BANETTE) \
-    F(DUSKULL) \
-    F(DUSCLOPS) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(DUSKNOIR)) \
+    F(SHROODLE) \
+    F(GRAFAIAI) \
+    F(CRABRAWLER) \
+    F(CRABOMINABLE) \
+    F(PANCHAM) \
+    F(PANGORO) \
     F(TROPIUS) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(CHINGLING)) \
-    F(CHIMECHO) \
     F(ABSOL) \
-    F(VULPIX) \
-    F(NINETALES) \
-    F(PICHU) \
-    F(PIKACHU) \
-    F(RAICHU) \
-    F(PSYDUCK) \
-    F(GOLDUCK) \
     F(WYNAUT) \
     F(WOBBUFFET) \
-    F(NATU) \
-    F(XATU) \
-    F(GIRAFARIG) \
-    HOENN_DEX_IF(P_GEN_9_CROSS_EVOS, F(FARIGIRAF)) \
-    F(PHANPY) \
-    F(DONPHAN) \
-    F(PINSIR) \
-    F(HERACROSS) \
-    F(RHYHORN) \
-    F(RHYDON) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(RHYPERIOR)) \
     F(SNORUNT) \
     F(GLALIE) \
-    HOENN_DEX_IF(P_GEN_4_CROSS_EVOS, F(FROSLASS)) \
+    F(FROSLASS) \
     F(SPHEAL) \
     F(SEALEO) \
     F(WALREIN) \
     F(CLAMPERL) \
     F(HUNTAIL) \
     F(GOREBYSS) \
-    F(RELICANTH) \
-    F(CORSOLA) \
-    HOENN_DEX_IF(P_GALARIAN_FORMS, F(CURSOLA)) \
-    F(CHINCHOU) \
-    F(LANTURN) \
+    F(MAREANIE) \
+    F(TOXAPEX) \
+    F(CLAUNCHER) \
+    F(CLAWITZER) \
+    F(CLOBBOPUS) \
+    F(GRAPPLOCT) \
+    F(PINCURCHIN) \
+    F(CETODDLE) \
+    F(CETITAN) \
     F(LUVDISC) \
-    F(HORSEA) \
-    F(SEADRA) \
-    F(KINGDRA) \
     F(BAGON) \
     F(SHELGON) \
     F(SALAMENCE) \
     F(BELDUM) \
     F(METANG) \
     F(METAGROSS) \
+    F(GOOMY) \
+    F(SLIGGOO) \
+    F(GOODRA) \
+    F(LATIAS) \
+    F(LATIOS) \
     F(REGIROCK) \
     F(REGICE) \
     F(REGISTEEL) \
-    F(LATIAS) \
-    F(LATIOS) \
-    F(KYOGRE) \
-    F(GROUDON) \
-    F(RAYQUAZA) \
-    F(JIRACHI) \
+    F(REGIELEKI) \
+    F(REGIDRAGO) \
+    F(REGIGIGAS) \
     F(DEOXYS)
 
 // Hoenn Pokédex order
@@ -1544,7 +1619,7 @@ enum KantoDexOrder
 #define KANTO_DEX_COUNT (KANTO_DEX_MEW + 1)
 #define HOENN_DEX_COUNT (HOENN_DEX_DEOXYS + 1)
 
-#define REGIONAL_DEX_COUNT (IS_FRLG ? KANTO_DEX_COUNT : HOENN_DEX_COUNT)
+#define REGIONAL_DEX_COUNT (HOENN_DEX_COUNT)
 
 #define DECAGRAMS_IN_POUND             453592
 #define CM_PER_INCH                    2.54
