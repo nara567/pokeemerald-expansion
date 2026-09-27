@@ -359,12 +359,16 @@ SSTidalRooms_EventScript_EXP_Share::
 # 182 "data/maps/SSTidalRooms/scripts.pory"
 	msgbox SSTidalRooms_EventScript_EXP_Share_Text_2
 # 183 "data/maps/SSTidalRooms/scripts.pory"
-	giveitem ITEM_EXP_SHARE
+	msgbox SSTidalRooms_EventScript_EXP_Share_Text_3
 # 184 "data/maps/SSTidalRooms/scripts.pory"
-	setflag FLAG_RECEIVED_EXP_SHARE
+	setspeaker NULL
 # 185 "data/maps/SSTidalRooms/scripts.pory"
-	removeobject LOCALID_EXPSHARE
+	giveitem ITEM_EXP_SHARE
 # 186 "data/maps/SSTidalRooms/scripts.pory"
+	setflag FLAG_RECEIVED_EXP_SHARE
+# 187 "data/maps/SSTidalRooms/scripts.pory"
+	removeobject LOCALID_EXPSHARE
+# 188 "data/maps/SSTidalRooms/scripts.pory"
 	release
 	return
 
@@ -382,3 +386,7 @@ SSTidalRooms_EventScript_EXP_Share_Text_2:
 	.string "{PLAYER}, congratulations on receiving\n"
 	.string "your first Gym Badge! I hope this will\l"
 	.string "help you in the future!$"
+
+SSTidalRooms_EventScript_EXP_Share_Text_3:
+# 183 "data/maps/SSTidalRooms/scripts.pory"
+	.string "Make sure you turn it on in your bag!$"
