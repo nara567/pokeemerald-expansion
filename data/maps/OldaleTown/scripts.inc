@@ -445,7 +445,7 @@ OldaleTown_EventScript_Rival::
 # 223 "data/maps/OldaleTown/scripts.pory"
 	setvar VAR_0x8009, 0
 # 224 "data/maps/OldaleTown/scripts.pory"
-	goto OldaleTown_EventScript_ShowRivalMessage
+	goto OldaleTown_EventScript_ShowMessage
 # 225 "data/maps/OldaleTown/scripts.pory"
 	end
 # 226 "data/maps/OldaleTown/scripts.pory"
@@ -465,7 +465,7 @@ OldaleTown_EventScript_RivalTrigger1::
 # 233 "data/maps/OldaleTown/scripts.pory"
 	setvar VAR_0x8009, 1
 # 234 "data/maps/OldaleTown/scripts.pory"
-	goto OldaleTown_EventScript_ShowRivalMessage
+	goto OldaleTown_EventScript_ShowMessage
 # 235 "data/maps/OldaleTown/scripts.pory"
 	end
 # 236 "data/maps/OldaleTown/scripts.pory"
@@ -485,7 +485,7 @@ OldaleTown_EventScript_RivalTrigger2::
 # 243 "data/maps/OldaleTown/scripts.pory"
 	setvar VAR_0x8009, 1
 # 244 "data/maps/OldaleTown/scripts.pory"
-	goto OldaleTown_EventScript_ShowRivalMessage
+	goto OldaleTown_EventScript_ShowMessage
 # 245 "data/maps/OldaleTown/scripts.pory"
 	end
 # 246 "data/maps/OldaleTown/scripts.pory"
@@ -505,7 +505,7 @@ OldaleTown_EventScript_RivalTrigger3::
 # 253 "data/maps/OldaleTown/scripts.pory"
 	setvar VAR_0x8009, 1
 # 254 "data/maps/OldaleTown/scripts.pory"
-	goto OldaleTown_EventScript_ShowRivalMessage
+	goto OldaleTown_EventScript_ShowMessage
 # 255 "data/maps/OldaleTown/scripts.pory"
 	end
 # 256 "data/maps/OldaleTown/scripts.pory"
@@ -619,17 +619,17 @@ OldaleTown_Movement_RivalApproachPlayer3:
 # 310 "data/maps/OldaleTown/scripts.pory"
 OldaleTown_Movement_RivalExit:
 # 311 "data/maps/OldaleTown/scripts.pory"
-	walk_down
+	walk_fast_down
 # 312 "data/maps/OldaleTown/scripts.pory"
-	walk_down
+	walk_fast_down
 # 313 "data/maps/OldaleTown/scripts.pory"
-	walk_down
+	walk_fast_down
 # 314 "data/maps/OldaleTown/scripts.pory"
-	walk_down
+	walk_fast_down
 # 315 "data/maps/OldaleTown/scripts.pory"
-	walk_down
+	walk_fast_down
 # 316 "data/maps/OldaleTown/scripts.pory"
-	walk_down
+	walk_fast_down
 # 317 "data/maps/OldaleTown/scripts.pory"
 	step_end
 # 318 "data/maps/OldaleTown/scripts.pory"
@@ -798,3 +798,50 @@ OldaleTown_EventScript_MoveFootprintGuy::
 	setobjectxyperm LOCALID_FOOTPRINTS_MAN, 9, 8
 	return
 
+
+OldaleTown_EventScript_ShowMessage::
+# 406 "data/maps/OldaleTown/scripts.pory"
+	setspeaker OldaleTown_EventScript_ShowMessage_Text_0
+# 407 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_ShowMessage_Text_1
+# 408 "data/maps/OldaleTown/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 409 "data/maps/OldaleTown/scripts.pory"
+	setspeaker NULL
+# 410 "data/maps/OldaleTown/scripts.pory"
+	message RustboroCity_DevonCorp_3F_Text_ReceivedPokenav
+# 411 "data/maps/OldaleTown/scripts.pory"
+	waitfanfare
+# 412 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_SYS_POKENAV_GET
+# 413 "data/maps/OldaleTown/scripts.pory"
+	setflag FLAG_RECEIVED_POKENAV
+# 414 "data/maps/OldaleTown/scripts.pory"
+	setspeaker OldaleTown_EventScript_ShowMessage_Text_0
+# 415 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_ShowMessage_Text_2
+# 416 "data/maps/OldaleTown/scripts.pory"
+	msgbox OldaleTown_EventScript_ShowMessage_Text_3
+# 417 "data/maps/OldaleTown/scripts.pory"
+	call OldaleTown_EventScript_RivalFinish
+	return
+
+
+OldaleTown_EventScript_ShowMessage_Text_0:
+# 406 "data/maps/OldaleTown/scripts.pory"
+	.string "Rival$"
+
+OldaleTown_EventScript_ShowMessage_Text_1:
+# 407 "data/maps/OldaleTown/scripts.pory"
+	.string "{PLAYER}! Before we head to the party, I\n"
+	.string "have something to give you!$"
+
+OldaleTown_EventScript_ShowMessage_Text_2:
+# 415 "data/maps/OldaleTown/scripts.pory"
+	.string "It's a PokeNav! The professor always\n"
+	.string "had me carrying two, so now I'm giving\l"
+	.string "one to you.$"
+
+OldaleTown_EventScript_ShowMessage_Text_3:
+# 416 "data/maps/OldaleTown/scripts.pory"
+	.string "Race you to your house!$"

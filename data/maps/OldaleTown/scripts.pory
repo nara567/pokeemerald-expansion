@@ -221,7 +221,7 @@ OldaleTown_EventScript_Rival::
 	applymovement LOCALID_OLDALE_RIVAL, Common_Movement_FacePlayer
 	waitmovement 0
 	setvar VAR_0x8009, 0
-	goto OldaleTown_EventScript_ShowRivalMessage
+	goto OldaleTown_EventScript_ShowMessage
 	end
 
 OldaleTown_EventScript_RivalTrigger1::
@@ -231,7 +231,7 @@ OldaleTown_EventScript_RivalTrigger1::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	setvar VAR_0x8009, 1
-	goto OldaleTown_EventScript_ShowRivalMessage
+	goto OldaleTown_EventScript_ShowMessage
 	end
 
 OldaleTown_EventScript_RivalTrigger2::
@@ -241,7 +241,7 @@ OldaleTown_EventScript_RivalTrigger2::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	setvar VAR_0x8009, 1
-	goto OldaleTown_EventScript_ShowRivalMessage
+	goto OldaleTown_EventScript_ShowMessage
 	end
 
 OldaleTown_EventScript_RivalTrigger3::
@@ -251,7 +251,7 @@ OldaleTown_EventScript_RivalTrigger3::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	setvar VAR_0x8009, 1
-	goto OldaleTown_EventScript_ShowRivalMessage
+	goto OldaleTown_EventScript_ShowMessage
 	end
 
 OldaleTown_EventScript_ShowRivalMessage::
@@ -308,12 +308,12 @@ OldaleTown_Movement_RivalApproachPlayer3:
 	step_end
 
 OldaleTown_Movement_RivalExit:
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
 	step_end
 
 OldaleTown_Movement_WatchRivalExit:
@@ -400,4 +400,19 @@ OldaleTown_Text_TownSign:
 
 script OldaleTown_EventScript_MoveFootprintGuy {
 	setobjectxyperm(LOCALID_FOOTPRINTS_MAN, 9, 8)
+}
+
+script OldaleTown_EventScript_ShowMessage {
+	setspeaker("Rival")
+	msgbox(format("{PLAYER}! Before we head to the party, I have something to give you!"))
+	playfanfare(MUS_OBTAIN_ITEM)
+	setspeaker(NULL)
+	message(RustboroCity_DevonCorp_3F_Text_ReceivedPokenav)
+	waitfanfare
+	setflag(FLAG_SYS_POKENAV_GET)
+	setflag(FLAG_RECEIVED_POKENAV)
+	setspeaker("Rival")
+	msgbox(format("It's a PokeNav! The professor always had me carrying two, so now I'm giving one to you."))
+	msgbox(format("Race you to your house!"))
+	call(OldaleTown_EventScript_RivalFinish)
 }
