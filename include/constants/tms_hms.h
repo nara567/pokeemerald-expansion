@@ -9,7 +9,7 @@
     F(ROAR) \
     F(TOXIC) \
     F(HAIL) \
-    F(BULK_UP) \
+    F(HEX) \
     F(BULLET_SEED) \
     F(HIDDEN_POWER) \
     F(SUNNY_DAY) \

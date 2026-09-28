@@ -180,6 +180,8 @@ script SSTidalRooms_EventScript_EXP_Share {
     msgbox(format("It's a gift from the Professor!"))
     setspeaker("Prof Birch")
     msgbox(format("{PLAYER}, congratulations on receiving your first Gym Badge! I hope this will help you in the future!"))
+	msgbox(format("Make sure you turn it on in your bag!"))
+	setspeaker(NULL)
     giveitem(ITEM_EXP_SHARE)
     setflag(FLAG_RECEIVED_EXP_SHARE)
     removeobject(LOCALID_EXPSHARE)

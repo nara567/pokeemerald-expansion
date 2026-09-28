@@ -168,19 +168,19 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	end
 
 DewfordTown_Gym_EventScript_GiveBulkUp::
-	giveitem ITEM_TM_BULK_UP
-	goto_if_eq VAR_RESULT, 0, Common_EventScript_BagIsFull
-	msgbox DewfordTown_Gym_Text_ExplainBulkUp, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM_BULK_UP
-	return
+	// giveitem ITEM_TM_BULK_UP
+	// goto_if_eq VAR_RESULT, 0, Common_EventScript_BagIsFull
+	// msgbox DewfordTown_Gym_Text_ExplainBulkUp, MSGBOX_DEFAULT
+	// setflag FLAG_RECEIVED_TM_BULK_UP
+	// return
 
 DewfordTown_Gym_EventScript_GiveBulkUp2:
-	giveitem ITEM_TM_BULK_UP
-	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
-	msgbox DewfordTown_Gym_Text_ExplainBulkUp, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_TM_BULK_UP
-	release
-	end
+	// giveitem ITEM_TM_BULK_UP
+	// goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
+	// msgbox DewfordTown_Gym_Text_ExplainBulkUp, MSGBOX_DEFAULT
+	// setflag FLAG_RECEIVED_TM_BULK_UP
+	// release
+	// end
 
 DewfordTown_Gym_EventScript_BrawlyRematch::
 	trainerbattle_rematch_double TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyPreRematch, DewfordTown_Gym_Text_BrawlyRematchDefeat, DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons

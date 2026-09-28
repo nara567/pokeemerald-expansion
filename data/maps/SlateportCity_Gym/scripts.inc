@@ -305,7 +305,9 @@ SlateportCity_Gym_EventScript_Josh::
 	msgbox SlateportCity_Gym_EventScript_Josh_Text_1
 # 154 "data/maps/SlateportCity_Gym/scripts.pory"
 	waitmessage
-	end
+# 155 "data/maps/SlateportCity_Gym/scripts.pory"
+	release
+	return
 
 
 SlateportCity_Gym_Text_JoshPostBattle::
@@ -315,29 +317,31 @@ SlateportCity_Gym_Text_JoshPostBattle::
 	msgbox SlateportCity_Gym_Text_JoshPostBattle_Text_0
 # 169 "data/maps/SlateportCity_Gym/scripts.pory"
 	release
-	end
+	return
 
 
 SlateportCity_Gym_EventScript_Tommy::
-# 179 "data/maps/SlateportCity_Gym/scripts.pory"
+# 178 "data/maps/SlateportCity_Gym/scripts.pory"
 	trainerbattle_single TRAINER_TOMMY, SlateportCity_Gym_Text_TommyIntro, SlateportCity_Gym_Text_TommyDefeat, SlateportCity_Gym_Text_TommyPostBattle, NO_MUSIC
-# 180 "data/maps/SlateportCity_Gym/scripts.pory"
+# 179 "data/maps/SlateportCity_Gym/scripts.pory"
 	setspeaker SlateportCity_Gym_EventScript_Tommy_Text_0
-# 181 "data/maps/SlateportCity_Gym/scripts.pory"
+# 180 "data/maps/SlateportCity_Gym/scripts.pory"
 	msgbox SlateportCity_Gym_EventScript_Josh_Text_1
-# 182 "data/maps/SlateportCity_Gym/scripts.pory"
+# 181 "data/maps/SlateportCity_Gym/scripts.pory"
 	waitmessage
-	end
+# 182 "data/maps/SlateportCity_Gym/scripts.pory"
+	release
+	return
 
 
 SlateportCity_Gym_Text_TommyPostBattle::
-# 195 "data/maps/SlateportCity_Gym/scripts.pory"
+# 194 "data/maps/SlateportCity_Gym/scripts.pory"
 	setspeaker SlateportCity_Gym_EventScript_Tommy_Text_0
-# 196 "data/maps/SlateportCity_Gym/scripts.pory"
+# 195 "data/maps/SlateportCity_Gym/scripts.pory"
 	msgbox SlateportCity_Gym_Text_TommyPostBattle_Text_0
-# 197 "data/maps/SlateportCity_Gym/scripts.pory"
+# 196 "data/maps/SlateportCity_Gym/scripts.pory"
 	release
-	end
+	return
 
 
 SlateportCity_Gym_EventScript_Gulliver_Text_0:
@@ -384,11 +388,11 @@ SlateportCity_Gym_Text_JoshPostBattle_Text_0:
 	.string "Post battle!$"
 
 SlateportCity_Gym_EventScript_Tommy_Text_0:
-# 180 "data/maps/SlateportCity_Gym/scripts.pory"
+# 179 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Tommy$"
 
 SlateportCity_Gym_Text_TommyPostBattle_Text_0:
-# 196 "data/maps/SlateportCity_Gym/scripts.pory"
+# 195 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Gulliver is stronger than me by several\n"
 	.string "times. You'd better be on your guard!$"
 
@@ -414,18 +418,18 @@ SlateportCity_Gym_Text_JoshDefeat::
 	.string "You were too good for me...$"
 
 SlateportCity_Gym_Text_JoshPostDefeat::
-# 173 "data/maps/SlateportCity_Gym/scripts.pory"
+# 172 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Good Luck!$"
 
 SlateportCity_Gym_Text_TommyIntro::
-# 186 "data/maps/SlateportCity_Gym/scripts.pory"
+# 185 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "If you can't beat me, you won't stand a\n"
 	.string "chance against Gulliver!$"
 
 SlateportCity_Gym_Text_TommyDefeat::
-# 190 "data/maps/SlateportCity_Gym/scripts.pory"
+# 189 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Wow! You've got some potential!$"
 
 SlateportCity_Gym_Text_TommyPostDefeat::
-# 201 "data/maps/SlateportCity_Gym/scripts.pory"
+# 199 "data/maps/SlateportCity_Gym/scripts.pory"
 	.string "Good Luck!$"
