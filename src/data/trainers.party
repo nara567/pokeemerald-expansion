@@ -756,7 +756,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Earthquake
 
 === TRAINER_VIOLET ===
-Name: VIOLET
+Name: Violet
 Class: Aroma Lady
 Pic: Aroma Lady
 Gender: Female
@@ -765,12 +765,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Roselia
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Gloom
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 23
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_ROSE_2 ===
 Name: ROSE
@@ -1399,7 +1399,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Slash
 
 === TRAINER_BRAXTON ===
-Name: BRAXTON
+Name: Braxton
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -1409,44 +1409,44 @@ Double Battle: No
 AI: Basic Trainer
 
 Swellow
-Level: 28
+Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Energy
 - Quick Attack
 - Wing Attack
 - Endeavor
 
-Trapinch
-Level: 28
+Drilbur
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bite
-- Dig
-- Feint Attack
-- Sand Tomb
+- Metal Claw
+- Hone Claws
+- Fury Swipes
+- Rapid Spin
 
 Wailmer
-Level: 28
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rollout
 - Whirlpool
 - Astonish
 - Water Pulse
 
-Magneton
-Level: 28
+Emolga
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunderbolt
-- Supersonic
-- Thunder Wave
-- Sonic Boom
+- Acrobatics
+- Thunder Shock
+- Nuzzle
+- Charge
 
-Shiftry
-Level: 28
+Lycanroc-Midnight
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Giga Drain
-- Feint Attack
-- Double Team
-- Swagger
+- Counter
+- Bite
+- Rock Tomb
+- Howl
 
 === TRAINER_VINCENT ===
 Name: VINCENT
@@ -1772,7 +1772,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Slash
 
 === TRAINER_WENDY ===
-Name: WENDY
+Name: Wendy
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -1782,7 +1782,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
 Mawile
-Level: 29
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Baton Pass
 - Feint Attack
@@ -1790,20 +1790,20 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bite
 
 Roselia
-Level: 29
+Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Mega Drain
 - Magical Leaf
 - Grass Whistle
 - Leech Seed
 
-Pelipper
-Level: 29
+Kilowattrel
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fly
-- Water Gun
-- Mist
-- Protect
+- Roost
+- Electro Ball
+- Uproar
 
 === TRAINER_KEIRA ===
 Name: KEIRA
@@ -3565,7 +3565,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DALTON_1 ===
-Name: DALTON
+Name: Dalton
 Class: Guitarist
 Pic: Guitarist
 Gender: Male
@@ -3574,11 +3574,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnemite
-Level: 15
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Morpeko
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Whismur
-Level: 15
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DALTON_2 ===
@@ -6657,7 +6661,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BARNY ===
-Name: BARNY
+Name: Barny
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -6665,13 +6669,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+Arrokuda
 Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Carvanha
 Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_WADE ===
 Name: WADE
@@ -9049,7 +9053,7 @@ Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIU_AND_YUKI ===
-Name: MIU & YUKI
+Name: Miu & Yuki
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -9057,13 +9061,13 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Beautifly
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nuzleaf
+Level: 24
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
-Dustox
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Lombre
+Level: 24
+IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_AMY_AND_LIV_3 ===
 Name: AMY & LIV
