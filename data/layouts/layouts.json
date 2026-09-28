@@ -9400,16 +9400,6 @@
       "blockdata_filepath": "data/layouts/LittlerootClearing/map.bin"
     },
     {
-      "id": "LAYOUT_SLATEPORT_BEACH",
-      "name": "SlateportBeach_Layout",
-      "width": 30,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
-      "border_filepath": "data/layouts/SlateportBeach/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportBeach/map.bin"
-    },
-    {
       "id": "LAYOUT_GRANITE_CAVE_B1F_COPY",
       "name": "GraniteCave_B1F_COPY_Layout",
       "width": 32,
