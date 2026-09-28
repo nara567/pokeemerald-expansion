@@ -2936,13 +2936,16 @@ bool8 FldEff_FieldMoveShowMon(void)
 
 bool8 FldEff_FieldMoveShowMonInit(void)
 {
-    struct Pokemon *pokemon;
-    bool32 noDucking = gFieldEffectArguments[0] & SHOW_MON_CRY_NO_DUCKING;
-    pokemon = &gParties[B_TRAINER_PLAYER][(u8)gFieldEffectArguments[0]];
-    gFieldEffectArguments[0] = GetMonData(pokemon, MON_DATA_SPECIES);
-    gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_IS_SHINY);
-    gFieldEffectArguments[2] = GetMonData(pokemon, MON_DATA_PERSONALITY);
-    gFieldEffectArguments[0] |= noDucking;
+    // struct Pokemon *pokemon;
+    // bool32 noDucking = gFieldEffectArguments[0] & SHOW_MON_CRY_NO_DUCKING;
+    // pokemon = &gParties[B_TRAINER_PLAYER][(u8)gFieldEffectArguments[0]];
+    // gFieldEffectArguments[0] = GetMonData(pokemon, MON_DATA_SPECIES);
+    // gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_IS_SHINY);
+    // gFieldEffectArguments[2] = GetMonData(pokemon, MON_DATA_PERSONALITY);
+    // gFieldEffectArguments[0] |= noDucking;
+    gFieldEffectArguments[0] = SPECIES_ZIGZAGOON;
+    gFieldEffectArguments[1] = 0; //Assume non-shiny
+    gFieldEffectArguments[2] = 0; //default personality 
     FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON);
     FieldEffectActiveListRemove(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
     return FALSE;
