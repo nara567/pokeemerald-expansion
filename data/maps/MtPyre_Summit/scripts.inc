@@ -1234,154 +1234,168 @@ MtPyre_Summit_Text_HoennTrioTale:
 MtPyre_Summit_EventScript_Phoebe::
 # 621 "data/maps/MtPyre_Summit/scripts.pory"
 	goto_if_unset FLAG_TALKED_TO_PHOEBE_BEFORE_BATTLE, MtPyre_Summit_EventScript_Phoebe_2
-MtPyre_Summit_EventScript_Phoebe_1:
 # 625 "data/maps/MtPyre_Summit/scripts.pory"
 	getcaughtmon SPECIES_DREEPY
 # 626 "data/maps/MtPyre_Summit/scripts.pory"
-	compare VAR_RESULT, FALSE
-	goto_if_eq MtPyre_Summit_EventScript_Phoebe_5
+	compare VAR_RESULT, 0
+	goto_if_eq MtPyre_Summit_EventScript_Phoebe_6
 # 629 "data/maps/MtPyre_Summit/scripts.pory"
 	trainerbattle_single TRAINER_BRAWLY_1, MtPyre_Summit_Text_PhoebeIntro, MtPyre_Summit_Text_PhoebeDefeat, MtPyre_Summit_EventScript_PhoebeDefeated, FALSE
-MtPyre_Summit_EventScript_Phoebe_4:
-# 631 "data/maps/MtPyre_Summit/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_BULK_UP, MtPyre_Summit_EventScript_Phoebe_9
-# 634 "data/maps/MtPyre_Summit/scripts.pory"
-	setspeaker MtPyre_Summit_EventScript_Phoebe_Text_0
-# 635 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_PhoebePostBattle
-MtPyre_Summit_EventScript_Phoebe_8:
-# 637 "data/maps/MtPyre_Summit/scripts.pory"
+MtPyre_Summit_EventScript_Phoebe_5:
+# 632 "data/maps/MtPyre_Summit/scripts.pory"
+	goto_if_set FLAG_BADGE02_GET, MtPyre_Summit_EventScript_Phoebe_9
+MtPyre_Summit_EventScript_Phoebe_1:
+# 641 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 	return
 
 MtPyre_Summit_EventScript_Phoebe_2:
 # 622 "data/maps/MtPyre_Summit/scripts.pory"
 	call MtPyre_Summit_EventScript_PhoebeCatch
-# 623 "data/maps/MtPyre_Summit/scripts.pory"
-	release
 	goto MtPyre_Summit_EventScript_Phoebe_1
 
-MtPyre_Summit_EventScript_Phoebe_5:
+MtPyre_Summit_EventScript_Phoebe_6:
 # 627 "data/maps/MtPyre_Summit/scripts.pory"
-	call MtPyre_Summit_Text_NoDreepy
-	goto MtPyre_Summit_EventScript_Phoebe_4
+	call MtPyre_Summit_EventScript_NoDreepy
+	goto MtPyre_Summit_EventScript_Phoebe_5
 
 MtPyre_Summit_EventScript_Phoebe_9:
-# 632 "data/maps/MtPyre_Summit/scripts.pory"
+# 633 "data/maps/MtPyre_Summit/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_TM_BULK_UP, MtPyre_Summit_EventScript_Phoebe_11
+# 636 "data/maps/MtPyre_Summit/scripts.pory"
+	setspeaker MtPyre_Summit_EventScript_Phoebe_Text_0
+# 637 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_Text_PhoebePostBattle
+	goto MtPyre_Summit_EventScript_Phoebe_1
+
+MtPyre_Summit_EventScript_Phoebe_11:
+# 634 "data/maps/MtPyre_Summit/scripts.pory"
 	call MtPyre_Summit_EventScript_GiveTM
-	goto MtPyre_Summit_EventScript_Phoebe_8
+	goto MtPyre_Summit_EventScript_Phoebe_1
 
 
 MtPyre_Summit_EventScript_PhoebeDefeated::
-# 653 "data/maps/MtPyre_Summit/scripts.pory"
-	message MtPyre_Summit_Text_ReceivedGhostBadge
-# 654 "data/maps/MtPyre_Summit/scripts.pory"
-	waitmessage
-# 655 "data/maps/MtPyre_Summit/scripts.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
-# 656 "data/maps/MtPyre_Summit/scripts.pory"
-	setspeaker MtPyre_Summit_EventScript_Phoebe_Text_0
 # 657 "data/maps/MtPyre_Summit/scripts.pory"
-	msgbox MtPyre_Summit_Text_GhostBadgeInfoTakeThis
+	message MtPyre_Summit_Text_ReceivedGhostBadge
 # 658 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_DEFEATED_DEWFORD_GYM
+	waitmessage
 # 659 "data/maps/MtPyre_Summit/scripts.pory"
-	setflag FLAG_BADGE02_GET
+	call Common_EventScript_PlayGymBadgeFanfare
 # 660 "data/maps/MtPyre_Summit/scripts.pory"
-	setspeaker NULL
+	setspeaker MtPyre_Summit_EventScript_Phoebe_Text_0
 # 661 "data/maps/MtPyre_Summit/scripts.pory"
-	call MtPyre_Summit_EventScript_GiveTM
+	msgbox MtPyre_Summit_Text_GhostBadgeInfoTakeThis
 # 662 "data/maps/MtPyre_Summit/scripts.pory"
-	closemessage
+	setflag FLAG_DEFEATED_DEWFORD_GYM
 # 663 "data/maps/MtPyre_Summit/scripts.pory"
-	delay 30
+	setflag FLAG_BADGE02_GET
 # 664 "data/maps/MtPyre_Summit/scripts.pory"
+	setspeaker NULL
+# 665 "data/maps/MtPyre_Summit/scripts.pory"
+	call MtPyre_Summit_EventScript_GiveTM
+# 666 "data/maps/MtPyre_Summit/scripts.pory"
+	closemessage
+# 667 "data/maps/MtPyre_Summit/scripts.pory"
+	delay 30
+# 668 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 	return
 
 
 MtPyre_Summit_EventScript_GiveTM::
-# 668 "data/maps/MtPyre_Summit/scripts.pory"
-	giveitem ITEM_TM_BULK_UP
-# 669 "data/maps/MtPyre_Summit/scripts.pory"
+# 672 "data/maps/MtPyre_Summit/scripts.pory"
+	giveitem ITEM_TM_HEX
+# 673 "data/maps/MtPyre_Summit/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MtPyre_Summit_EventScript_GiveTM_2
-# 672 "data/maps/MtPyre_Summit/scripts.pory"
+# 676 "data/maps/MtPyre_Summit/scripts.pory"
 	msgbox MtPyre_Summit_Text_ExplainTM
-# 673 "data/maps/MtPyre_Summit/scripts.pory"
+# 677 "data/maps/MtPyre_Summit/scripts.pory"
 	setflag FLAG_RECEIVED_TM_BULK_UP
 MtPyre_Summit_EventScript_GiveTM_1:
-# 675 "data/maps/MtPyre_Summit/scripts.pory"
+# 679 "data/maps/MtPyre_Summit/scripts.pory"
 	release
 	return
 
 MtPyre_Summit_EventScript_GiveTM_2:
-# 670 "data/maps/MtPyre_Summit/scripts.pory"
+# 674 "data/maps/MtPyre_Summit/scripts.pory"
 	call Common_EventScript_BagIsFull
 	goto MtPyre_Summit_EventScript_GiveTM_1
 
 
 MtPyre_Summit_EventScript_PhoebeCatch::
-# 691 "data/maps/MtPyre_Summit/scripts.pory"
+# 695 "data/maps/MtPyre_Summit/scripts.pory"
 	setspeaker MtPyre_Summit_EventScript_Phoebe_Text_0
-# 692 "data/maps/MtPyre_Summit/scripts.pory"
+# 696 "data/maps/MtPyre_Summit/scripts.pory"
 	msgbox MtPyre_Summit_EventScript_PhoebeCatch_Text_0
-# 693 "data/maps/MtPyre_Summit/scripts.pory"
+# 697 "data/maps/MtPyre_Summit/scripts.pory"
 	msgbox MtPyre_Summit_EventScript_PhoebeCatch_Text_1
-# 694 "data/maps/MtPyre_Summit/scripts.pory"
+# 698 "data/maps/MtPyre_Summit/scripts.pory"
 	setflag FLAG_TALKED_TO_PHOEBE_BEFORE_BATTLE
+# 699 "data/maps/MtPyre_Summit/scripts.pory"
+	release
+	return
+
+
+MtPyre_Summit_EventScript_NoDreepy::
+# 703 "data/maps/MtPyre_Summit/scripts.pory"
+	setspeaker MtPyre_Summit_EventScript_Phoebe_Text_0
+# 704 "data/maps/MtPyre_Summit/scripts.pory"
+	msgbox MtPyre_Summit_EventScript_NoDreepy_Text_0
+# 705 "data/maps/MtPyre_Summit/scripts.pory"
+	release
 	return
 
 
 MtPyre_Summit_EventScript_Phoebe_Text_0:
-# 634 "data/maps/MtPyre_Summit/scripts.pory"
+# 636 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Phoebe$"
 
 MtPyre_Summit_EventScript_PhoebeCatch_Text_0:
-# 692 "data/maps/MtPyre_Summit/scripts.pory"
+# 696 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Welcome to Mt Pyre! I'm Phoebe! I used\n"
 	.string "to be a member of the Elite Four, but I\l"
 	.string "retired. I'm the second Minor League\l"
 	.string "Gym Leader now!$"
 
 MtPyre_Summit_EventScript_PhoebeCatch_Text_1:
-# 693 "data/maps/MtPyre_Summit/scripts.pory"
+# 697 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "You have to pass the gym test before\n"
 	.string "we battle! You need to have a Dreepy\l"
 	.string "caught in your Pokedex. They like to\l"
 	.string "hide at the top floor inside the\l"
 	.string "mountain.$"
 
+MtPyre_Summit_EventScript_NoDreepy_Text_0:
+# 704 "data/maps/MtPyre_Summit/scripts.pory"
+	.string "You still haven't caught a Dreepy!\n"
+	.string "They're at the top floor inside the\l"
+	.string "mountain.$"
+
 MtPyre_Summit_Text_PhoebeIntro::
-# 640 "data/maps/MtPyre_Summit/scripts.pory"
+# 644 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "You caught a Dreepy! Now you have a\n"
 	.string "right to challenge me, Phoebe, the\l"
 	.string "second Minor League Gym Leader!$"
 
 MtPyre_Summit_Text_PhoebeDefeat::
-# 644 "data/maps/MtPyre_Summit/scripts.pory"
+# 648 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Aw snap.$"
 
 MtPyre_Summit_Text_PhoebePostBattle::
-# 648 "data/maps/MtPyre_Summit/scripts.pory"
+# 652 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "Post battle!$"
 
 MtPyre_Summit_Text_ReceivedGhostBadge::
-# 678 "data/maps/MtPyre_Summit/scripts.pory"
+# 682 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "{PLAYER} received the Ghost Badge from\n"
 	.string "Phoebe.$"
 
 MtPyre_Summit_Text_GhostBadgeInfoTakeThis::
-# 682 "data/maps/MtPyre_Summit/scripts.pory"
+# 686 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "The Ghost Badge lets you use Cut\n"
 	.string "outside of battle! Take this TM, too!$"
 
 MtPyre_Summit_Text_ExplainTM::
-# 686 "data/maps/MtPyre_Summit/scripts.pory"
+# 690 "data/maps/MtPyre_Summit/scripts.pory"
 	.string "That's a TM!$"
-
-MtPyre_Summit_Text_NoDreepy::
-# 697 "data/maps/MtPyre_Summit/scripts.pory"
-	.string "You still haven't caught a Dreepy!\n"
-	.string "They're at the top floor inside the\l"
-	.string "mountain.$"

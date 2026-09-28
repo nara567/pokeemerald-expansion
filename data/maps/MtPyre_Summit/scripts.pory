@@ -618,23 +618,27 @@ MtPyre_Summit_Text_HoennTrioTale:
 `
 
 script MtPyre_Summit_EventScript_Phoebe {
-    if(flag(FLAG_TALKED_TO_PHOEBE_BEFORE_BATTLE) == false){
+    if(!flag(FLAG_TALKED_TO_PHOEBE_BEFORE_BATTLE)){
         call(MtPyre_Summit_EventScript_PhoebeCatch)
-        release
     }
-    getcaughtmon(SPECIES_DREEPY)
-    if(var(VAR_RESULT) == FALSE){
-        call(MtPyre_Summit_Text_NoDreepy)
-    } else {
-        trainerbattle_single(TRAINER_BRAWLY_1, MtPyre_Summit_Text_PhoebeIntro, MtPyre_Summit_Text_PhoebeDefeat, MtPyre_Summit_EventScript_PhoebeDefeated, FALSE)
-    }
-    if(flag(FLAG_RECEIVED_TM_BULK_UP) == false){
-        call(MtPyre_Summit_EventScript_GiveTM)
-    } else {
-        setspeaker("Phoebe")
-        msgbox(MtPyre_Summit_Text_PhoebePostBattle)
-    }
-    release
+	else {
+		getcaughtmon(SPECIES_DREEPY)
+		if(!var(VAR_RESULT)){
+			call(MtPyre_Summit_EventScript_NoDreepy)
+		} else {
+			trainerbattle_single(TRAINER_BRAWLY_1, MtPyre_Summit_Text_PhoebeIntro, MtPyre_Summit_Text_PhoebeDefeat, MtPyre_Summit_EventScript_PhoebeDefeated, FALSE)
+		}
+
+		if (flag(FLAG_BADGE02_GET)){
+			if(!flag(FLAG_RECEIVED_TM_BULK_UP)){
+				call(MtPyre_Summit_EventScript_GiveTM)
+			} else {
+				setspeaker("Phoebe")
+				msgbox(MtPyre_Summit_Text_PhoebePostBattle)
+			}
+		}
+	}
+	release
 }
 
 text MtPyre_Summit_Text_PhoebeIntro {
@@ -665,7 +669,7 @@ script MtPyre_Summit_EventScript_PhoebeDefeated {
 }
 
 script MtPyre_Summit_EventScript_GiveTM {
-    giveitem(ITEM_TM_BULK_UP)
+    giveitem(ITEM_TM_HEX)
     if(var(VAR_RESULT) == 0){
         call(Common_EventScript_BagIsFull)
     } else {
@@ -692,9 +696,12 @@ script MtPyre_Summit_EventScript_PhoebeCatch {
     msgbox(format("Welcome to Mt Pyre! I'm Phoebe! I used to be a member of the Elite Four, but I retired. I'm the second Minor League Gym Leader now!"))
     msgbox(format("You have to pass the gym test before we battle! You need to have a Dreepy caught in your Pokedex. They like to hide at the top floor inside the mountain."))
     setflag(FLAG_TALKED_TO_PHOEBE_BEFORE_BATTLE)
+	release
 }
 
-text MtPyre_Summit_Text_NoDreepy {
-    format("You still haven't caught a Dreepy! They're at the top floor inside the mountain.")
+script MtPyre_Summit_EventScript_NoDreepy {
+	setspeaker("Phoebe")
+    msgbox(format("You still haven't caught a Dreepy! They're at the top floor inside the mountain."))
+	release
 }
 
