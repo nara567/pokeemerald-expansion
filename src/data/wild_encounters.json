@@ -15516,7 +15516,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_HORSEA"
               },
               {
                 "min_level": 10,
@@ -15605,7 +15605,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_HORSEA"
               },
               {
                 "min_level": 10,
@@ -15694,7 +15694,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_HORSEA"
               },
               {
                 "min_level": 10,
@@ -15783,7 +15783,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_CORPHISH"
+                "species": "SPECIES_HORSEA"
               },
               {
                 "min_level": 10,
@@ -15931,13 +15931,13 @@
             "mons": [
               {
                 "min_level": 5,
-                "max_level": 10,
+                "max_level": 15,
                 "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "max_level": 15,
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 10,
@@ -16085,13 +16085,13 @@
             "mons": [
               {
                 "min_level": 5,
-                "max_level": 10,
+                "max_level": 15,
                 "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "max_level": 15,
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 10,
@@ -16239,13 +16239,13 @@
             "mons": [
               {
                 "min_level": 5,
-                "max_level": 10,
+                "max_level": 15,
                 "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "max_level": 15,
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 10,
@@ -16393,13 +16393,13 @@
             "mons": [
               {
                 "min_level": 5,
-                "max_level": 10,
+                "max_level": 15,
                 "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "max_level": 15,
+                "species": "SPECIES_CLAUNCHER"
               },
               {
                 "min_level": 10,
