@@ -12,18 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_SLATEPORT_CITY",
-      "offset": -28,
-      "direction": "right"
-    },
-    {
-      "map": "MAP_ROUTE109",
-      "offset": 32,
-      "direction": "right"
-    }
-  ],
+  "connections": null,
   "object_events": [],
   "warp_events": [],
   "coord_events": [],
