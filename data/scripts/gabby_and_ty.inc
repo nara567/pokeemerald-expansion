@@ -24,7 +24,8 @@ GabbyAndTy_EventScript_UpdateLocation::
 	end
 
 GabbyAndTy_EventScript_MoveForBattle1::
-	call GabbyAndTy_EventScript_ShowAtRoute111_1
+	//call GabbyAndTy_EventScript_ShowAtRoute111_1
+	call GabbyAndTy_EventScript_ShowAtRoute118_1
 	return
 
 GabbyAndTy_EventScript_MoveForBattle2::
