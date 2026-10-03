@@ -10777,22 +10777,27 @@ Golbat
 Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_GRUNT_UNUSED ===
+=== TRAINER_NEWMAUVILLE_GRUNT1 ===
 Name: GRUNT
 Class: Team Magma
-Pic: Aqua Grunt F
-Gender: Female
+Pic: Aqua Grunt M
+Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Wailmer
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Marowak
+Level: 26
+IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Trapinch
+Level: 26
+IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+
+Kilowattrel
+Ability: Volt Absorb
+Level: 26
+IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: GRUNT
