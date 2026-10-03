@@ -1035,6 +1035,11 @@ static void Cmd_printattackstring(void)
 
     PrepareStringBattle(STRINGID_USEDMOVE, gBattlerAttacker);
     gBattleCommunication[MSG_DISPLAY] = MSG_DISPLAY_CONTINUE;
+    if (gBattleMoveEffects[GetMoveEffect(gCurrentMove)].twoTurnEffect
+     && !gBattleMons[gBattlerAttacker].volatiles.multipleTurns)
+    {
+        gBattleCommunication[MSG_DISPLAY] = MSG_DISPLAY_WAIT;
+    }
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
@@ -5416,7 +5421,7 @@ static void Cmd_twoturnmoveschargestringandanimation(void)
 
     // TODO: saved string id is not needed
     gBattleScripting.savedStringId = GetMoveTwoTurnAttackStringId(gCurrentMove);
-    if (B_UPDATED_MOVE_DATA < GEN_5 || MoveHasChargeTurnAdditionalEffect(gCurrentMove))
+    if (MoveHasChargeTurnAdditionalEffect(gCurrentMove))
         gBattlescriptCurrInstr = cmd->animationThenStringPtr;
     else
         gBattlescriptCurrInstr = cmd->nextInstr;
@@ -8792,9 +8797,6 @@ static void Cmd_tryoverwriteability(void)
     }
     else
     {
-        if (gBattleMons[gBattlerTarget].volatiles.neutralizingGas)
-            gSpecialStatuses[gBattlerTarget].neutralizingGasRemoved = TRUE;
-
         RemoveAbilityFlags(gBattlerTarget);
         gBattleScripting.abilityPopupOverwrite = gBattleMons[gBattlerTarget].ability;
         gBattleMons[gBattlerTarget].ability = gBattleMons[gBattlerTarget].volatiles.overwrittenAbility = GetMoveOverwriteAbility(gCurrentMove);
@@ -9922,7 +9924,11 @@ void BS_TryWindRiderPower(void)
         switch (ability)
         {
         case ABILITY_WIND_RIDER:
-            AbilityBattleEffects(ABILITYEFFECT_ON_SWITCHIN, battler, ABILITY_WIND_RIDER, MOVE_NONE, TRUE);
+            // Starting Status Tailwind causes the Wind Rider boost to go off twice
+            if (gBattleStruct->eventState.beforeFirstTurn != FIRST_TURN_EVENTS_STARTING_STATUS)
+            {            
+                AbilityBattleEffects(ABILITYEFFECT_ON_SWITCHIN, battler, ABILITY_WIND_RIDER, MOVE_NONE, TRUE);
+            }
             break;
         case ABILITY_WIND_POWER:
             gBattlerAbility = battler;
@@ -11877,17 +11883,31 @@ void BS_TryToClearPrimalWeather(void)
 
 void BS_TryEndNeutralizingGas(void)
 {
-    NATIVE_ARGS();
-    if (gSpecialStatuses[gBattlerTarget].neutralizingGasRemoved)
+    NATIVE_ARGS(u8 battler);
+    enum BattlerId battler = GetBattlerForBattleScript(cmd->battler);
+
+    if (gSpecialStatuses[battler].neutralizingGasRemoved)
     {
-        gSpecialStatuses[gBattlerTarget].neutralizingGasRemoved = FALSE;
-        gBattleMons[gBattlerTarget].volatiles.neutralizingGas = FALSE;
-        if (!IsNeutralizingGasOnField())
+        if (gBattleMons[battler].volatiles.neutralizingGas)
         {
-            BattleScriptPush(cmd->nextInstr);
-            gBattlescriptCurrInstr = BattleScript_NeutralizingGasExits;
-            return;
+            gBattleMons[battler].volatiles.neutralizingGas = FALSE;
+            if (!IsNeutralizingGasOnField())
+            {
+                // Other Abilities resume before this battler gains its replacement
+                // so we have to keep the old Ability during their effects and restore the
+                // new one when this command resumes, before its switch-in effects run.
+                gBattleMons[battler].ability = ABILITY_NEUTRALIZING_GAS;
+                BattleScriptPush(gBattlescriptCurrInstr);
+                gBattlescriptCurrInstr = BattleScript_NeutralizingGasExits;
+                return;
+            }
         }
+        else if (!gBattleMons[battler].volatiles.gastroAcid)
+        {
+            gBattleMons[battler].ability = gBattleMons[battler].volatiles.overwrittenAbility;
+        }
+
+        gSpecialStatuses[battler].neutralizingGasRemoved = FALSE;
     }
 
     gBattlescriptCurrInstr = cmd->nextInstr;
