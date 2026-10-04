@@ -13355,26 +13355,6 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
                 "min_level": 23,
                 "max_level": 23,
                 "species": "SPECIES_VOLTORB"
@@ -13385,13 +13365,13 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 24,
                 "species": "SPECIES_VOLTORB"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 24,
                 "species": "SPECIES_MAGNEMITE"
               },
               {
@@ -13405,13 +13385,33 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
                 "species": "SPECIES_ELECTRODE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 25,
+                "max_level": 25,
                 "species": "SPECIES_MAGNETON"
               }
             ]
@@ -13424,26 +13424,6 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
                 "min_level": 23,
                 "max_level": 23,
                 "species": "SPECIES_VOLTORB"
@@ -13454,13 +13434,13 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 24,
                 "species": "SPECIES_VOLTORB"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 24,
                 "species": "SPECIES_MAGNEMITE"
               },
               {
@@ -13474,13 +13454,33 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
                 "species": "SPECIES_ELECTRODE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 25,
+                "max_level": 25,
                 "species": "SPECIES_MAGNETON"
               }
             ]
@@ -13493,26 +13493,6 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
                 "min_level": 23,
                 "max_level": 23,
                 "species": "SPECIES_VOLTORB"
@@ -13523,13 +13503,13 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 24,
                 "species": "SPECIES_VOLTORB"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 24,
                 "species": "SPECIES_MAGNEMITE"
               },
               {
@@ -13543,13 +13523,33 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
                 "species": "SPECIES_ELECTRODE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 25,
+                "max_level": 25,
                 "species": "SPECIES_MAGNETON"
               }
             ]
@@ -13562,26 +13562,6 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
                 "min_level": 23,
                 "max_level": 23,
                 "species": "SPECIES_VOLTORB"
@@ -13592,13 +13572,13 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 24,
                 "species": "SPECIES_VOLTORB"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 24,
+                "max_level": 24,
                 "species": "SPECIES_MAGNEMITE"
               },
               {
@@ -13612,13 +13592,33 @@
                 "species": "SPECIES_MAGNEMITE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
                 "species": "SPECIES_ELECTRODE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 25,
+                "max_level": 25,
                 "species": "SPECIES_MAGNETON"
               }
             ]

@@ -287,7 +287,7 @@ NewMauville_Inside_EventScript_RedButton::
 # 144 "data/maps/NewMauville_Inside/scripts.pory"
 	lockall
 # 145 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped, MSGBOX_DEFAULT
+	msgbox gText_DoorOpenedFarAway, MSGBOX_DEFAULT
 # 146 "data/maps/NewMauville_Inside/scripts.pory"
 	call NewMauville_Inside_EventScript_SetGeneratorOffMetatiles
 # 147 "data/maps/NewMauville_Inside/scripts.pory"
@@ -528,5 +528,47 @@ NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
 NewMauville_Inside_EventScript_GaiaGrunt1::
 # 267 "data/maps/NewMauville_Inside/scripts.pory"
 	trainerbattle_single TRAINER_NEWMAUVILLE_GRUNT1, Route106_Text_NedIntro, Route106_Text_NedDefeated
+	return
+
+
+NewMauville_Inside_EventScript_GaiaGrunt2::
+# 271 "data/maps/NewMauville_Inside/scripts.pory"
+	trainerbattle_single TRAINER_NEWMAUVILLE_GRUNT2, Route106_Text_NedIntro, Route106_Text_NedDefeated
+	return
+
+
+NewMauville_Inside_EventScript_GaiaGrunt3::
+# 275 "data/maps/NewMauville_Inside/scripts.pory"
+	trainerbattle_single TRAINER_NEWMAUVILLE_GRUNT3, Route106_Text_NedIntro, Route106_Text_NedDefeated
+	return
+
+
+NewMauville_Inside_EventScript_GaiaGrunt4::
+# 279 "data/maps/NewMauville_Inside/scripts.pory"
+	trainerbattle_single TRAINER_NEWMAUVILLE_GRUNT4, Route106_Text_NedIntro, Route106_Text_NedDefeated
+	return
+
+
+NewMauville_Inside_EventScript_GaiaGrunt5::
+# 283 "data/maps/NewMauville_Inside/scripts.pory"
+	trainerbattle_single TRAINER_NEWMAUVILLE_GRUNT5, Route106_Text_NedIntro, Route106_Text_NedDefeated
+	return
+
+
+NewMauville_Inside_EventScript_GaiaGrunt6::
+# 287 "data/maps/NewMauville_Inside/scripts.pory"
+	trainerbattle_single TRAINER_NEWMAUVILLE_GRUNT6, Route106_Text_NedIntro, Route106_Text_NedDefeated
+	return
+
+
+NewMauville_Inside_EventScript_GaiaGrunt7::
+# 291 "data/maps/NewMauville_Inside/scripts.pory"
+	trainerbattle_single TRAINER_NEWMAUVILLE_GRUNT7, Route106_Text_NedIntro, Route106_Text_NedDefeated
+	return
+
+
+NewMauville_Inside_EventScript_GaiaGrunt8::
+# 295 "data/maps/NewMauville_Inside/scripts.pory"
+	trainerbattle_single TRAINER_NEWMAUVILLE_GRUNT8, Route106_Text_NedIntro, Route106_Text_NedDefeated
 	return
 
