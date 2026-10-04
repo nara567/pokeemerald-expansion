@@ -1,0 +1,19 @@
+raw`
+// OldaleRuins_MapScripts::
+// 	.byte 0
+`
+
+mapscripts OldaleRuins_MapScripts {
+    MAP_SCRIPT_ON_LOAD: OldaleRuins_OnLoad
+}
+
+script OldaleRuins_OnLoad {
+    if(!flag(FLAG_REGI_DOORS_OPENED)){
+        call(OldaleRuins_EventScript_CloseVoltaicTomb)
+    }
+}
+
+script OldaleRuins_EventScript_CloseVoltaicTomb {
+    setmetatile(30,7,METATILE_General_RockWall_RockBase,TRUE)
+    setmetatile(30,8,METATILE_General_RockWall_SandBase,TRUE)
+}

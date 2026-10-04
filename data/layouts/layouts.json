@@ -9409,6 +9409,16 @@
       "border_filepath": "data/layouts/GraniteCave_B1F_COPY/border.bin",
       "blockdata_filepath": "data/layouts/GraniteCave_B1F_COPY/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_OLDALE_RUINS",
+      "name": "OldaleRuins_Layout",
+      "width": 40,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/OldaleRuins/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleRuins/map.bin"
     }
   ]
 }

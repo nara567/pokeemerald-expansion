@@ -1642,6 +1642,10 @@
     {
       "id": "MAPSEC_SLATEPORT_BEACH",
       "name": "SLATEPORT BEACH"
+    },
+    {
+      "id": "MAPSEC_OLDALE_RUINS",
+      "name": "Oldale Ruins"
     }
   ]
 }
