@@ -1646,6 +1646,9 @@
     {
       "id": "MAPSEC_OLDALE_RUINS",
       "name": "Oldale Ruins"
+    },
+    {
+      "id": "MAPSEC_VOLTAIC_CAVE"
     }
   ]
 }

@@ -9413,12 +9413,23 @@
     {
       "id": "LAYOUT_OLDALE_RUINS",
       "name": "OldaleRuins_Layout",
-      "width": 40,
-      "height": 22,
+      "width": 42,
+      "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/OldaleRuins/border.bin",
       "blockdata_filepath": "data/layouts/OldaleRuins/map.bin"
+    },
+    {
+      "id": "LAYOUT_VOLTAIC_CAVE",
+      "name": "VoltaicCave_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VoltaicCave/border.bin",
+      "blockdata_filepath": "data/layouts/VoltaicCave/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

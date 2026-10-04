@@ -1336,3 +1336,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/LittlerootClearing/scripts.inc"
 
 	.include "data/maps/OldaleRuins/scripts.inc"
+
+	.include "data/maps/VoltaicCave/scripts.inc"
