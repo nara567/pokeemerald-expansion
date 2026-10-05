@@ -148,10 +148,10 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "FLAG_REGIELEKI_ENCOUNTERED",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "MauvilleCity_EventScript_GaiaGenericText",
+      "flag": "FLAG_REGIELEKI_ENCOUNTERED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
@@ -161,10 +161,10 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "FLAG_REGIELEKI_ENCOUNTERED",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "MauvilleCity_EventScript_GaiaGenericText",
+      "flag": "FLAG_REGIELEKI_ENCOUNTERED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
@@ -174,10 +174,10 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "FLAG_REGIELEKI_ENCOUNTERED",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "MauvilleCity_EventScript_GaiaGenericText",
+      "flag": "FLAG_REGIELEKI_ENCOUNTERED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
@@ -189,14 +189,27 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "MauvilleCity_EventScript_GaiaGenericText",
       "flag": "FLAG_REGIELEKI_ENCOUNTERED"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "x": 35,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MauvilleCity_EventScript_GaiaBlockBikeShop",
+      "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     }
   ],
   "warp_events": [
     {
       "x": 8,
-      "y": 5,
+      "y": 4,
       "elevation": 0,
       "dest_map": "MAP_MAUVILLE_CITY_GYM",
       "dest_warp_id": "0"

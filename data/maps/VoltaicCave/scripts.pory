@@ -1,4 +1,74 @@
 raw`
 VoltaicCave_MapScripts::
-	.byte 0
+	//.byte 0
 `
+
+mapscripts VoltaticCave_MapScripts {
+	MAP_SCRIPT_ON_RESUME{call(VoltaicCave_OnResume)}
+	MAP_SCRIPT_ON_LOAD{call(VoltaicCave_OnLoad)}
+	MAP_SCRIPT_ON_TRANSITION{call(VoltaicCave_OnTransition)}
+}
+
+script VoltaicCave_OnResume {
+	if(flag(FLAG_SYS_CTRL_OBJ_DELETE)){
+		call(VoltaicCave_EventScript_TryRemoveRegieleki)
+	}
+}
+
+script VoltaicCave_OnLoad {
+	if(flag(FLAG_SYS_REGIELEKI_PUZZLE_COMPLETED) == false){
+		call(VoltaicCave_EventScript_HideRegiEntrance)
+	}
+}
+
+script VoltaicCave_OnTransition {
+	if(!flag(FLAG_DEFEATED_REGIELEKI)){
+		call(VoltaicCave_EventScript_ShowRegieleki)
+	}
+}
+
+script VoltaicCave_EventScript_HideRegiEntrance {
+	setmetatile(7, 19, METATILE_Cave_EntranceCover, TRUE)
+	setmetatile(8, 19, METATILE_Cave_EntranceCover, TRUE)
+	setmetatile(9, 19, METATILE_Cave_EntranceCover, TRUE)
+	setmetatile(7, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+	setmetatile(8, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+	setmetatile(9, 20, METATILE_Cave_SealedChamberBraille_Mid, TRUE)
+}
+
+script VoltaicCave_EventScript_TryRemoveRegieleki {
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) != B_OUTCOME_CAUGHT){
+		call(Common_EventScript_NopReturn)
+	}
+	removeobject(VAR_LAST_TALKED)
+	return
+}
+
+script VoltaicCave_EventScript_ShowRegieleki {
+	clearflag(FLAG_HIDE_REGIELEKI)
+	return
+}
+
+script VoltaicCave_EventScript_CaveEntranceSide {
+	lock
+	braillemsgbox(VoltaicCave_Braille_SpeedAhead)
+	release
+}
+
+script VoltaicCave_EventScript_CaveEntranceMiddle {
+	lock
+	if(flag(FLAG_SYS_REGIELEKI_PUZZLE_COMPLETED)){
+		call(VoltaticCave_EventScript_BigHoleInWall)
+	}
+	braillemsgbox(VoltaicCave_Braille_SpeedAhead)
+	release
+}
+
+script VoltaticCave_EventScript_BigHoleInWall {
+	msgbox(gText_BigHoleInTheWall)
+	release
+}
+
+script VoltaicCave_EventScript_CheckPuzzle {
+}

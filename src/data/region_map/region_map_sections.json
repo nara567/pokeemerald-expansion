@@ -1648,7 +1648,8 @@
       "name": "Oldale Ruins"
     },
     {
-      "id": "MAPSEC_VOLTAIC_CAVE"
+      "id": "MAPSEC_VOLTAIC_CAVE",
+      "name": "Voltaic Cave"
     }
   ]
 }

@@ -30,7 +30,17 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_NEW_MAUVILLE_STATE",
+      "var_value": "2",
+      "script": "NewMauville_Entrance_EventScript_Door"
+    }
+  ],
   "bg_events": [],
   "region": "REGION_HOENN"
 }

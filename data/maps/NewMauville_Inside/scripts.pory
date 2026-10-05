@@ -344,6 +344,7 @@ script NewMauville_Inside_EventScript_SierraBattle {
 	trainerbattle_no_intro(TRAINER_SIERRA_NEW_MAUVILLE, Route106_Text_NedDefeated)
 	switch(var(VAR_RESULT)){
 		case 1: goto(NewMauville_Inside_EventScript_DefeatedSierra)
+		case 2: setvar(VAR_NEW_MAUVILLE_STATE, 1)
 	}
 	fadescreen(FADE_TO_BLACK)
     special(SetCB2WhiteOut)
@@ -358,5 +359,6 @@ script NewMauville_Inside_EventScript_DefeatedSierra{
     fadescreen(FADE_FROM_BLACK)
 	delay(30)
 	setflag(FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA)
+	setflag(FLAG_REGI_DOORS_OPENED)
 	release
 }

@@ -642,10 +642,12 @@ NewMauville_Inside_EventScript_SierraBattle::
 	switch VAR_RESULT
 # 346 "data/maps/NewMauville_Inside/scripts.pory"
 	case 1, NewMauville_Inside_EventScript_SierraBattle_3
+# 347 "data/maps/NewMauville_Inside/scripts.pory"
+	case 2, NewMauville_Inside_EventScript_SierraBattle_4
 NewMauville_Inside_EventScript_SierraBattle_1:
-# 348 "data/maps/NewMauville_Inside/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 349 "data/maps/NewMauville_Inside/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 350 "data/maps/NewMauville_Inside/scripts.pory"
 	special SetCB2WhiteOut
 	return
 
@@ -654,25 +656,32 @@ NewMauville_Inside_EventScript_SierraBattle_3:
 	goto NewMauville_Inside_EventScript_DefeatedSierra
 	goto NewMauville_Inside_EventScript_SierraBattle_1
 
+NewMauville_Inside_EventScript_SierraBattle_4:
+# 347 "data/maps/NewMauville_Inside/scripts.pory"
+	setvar VAR_NEW_MAUVILLE_STATE, 1
+	goto NewMauville_Inside_EventScript_SierraBattle_1
+
 
 NewMauville_Inside_EventScript_DefeatedSierra::
-# 353 "data/maps/NewMauville_Inside/scripts.pory"
-	setspeaker NewMauville_Inside_EventScript_Sierra_Text_0
 # 354 "data/maps/NewMauville_Inside/scripts.pory"
-	msgbox NewMauville_Inside_EventScript_DefeatedSierra_Text_0
+	setspeaker NewMauville_Inside_EventScript_Sierra_Text_0
 # 355 "data/maps/NewMauville_Inside/scripts.pory"
-	fadedefaultbgm
+	msgbox NewMauville_Inside_EventScript_DefeatedSierra_Text_0
 # 356 "data/maps/NewMauville_Inside/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadedefaultbgm
 # 357 "data/maps/NewMauville_Inside/scripts.pory"
-	removeobject LOCALID_SIERRA
+	fadescreen FADE_TO_BLACK
 # 358 "data/maps/NewMauville_Inside/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	removeobject LOCALID_SIERRA
 # 359 "data/maps/NewMauville_Inside/scripts.pory"
-	delay 30
+	fadescreen FADE_FROM_BLACK
 # 360 "data/maps/NewMauville_Inside/scripts.pory"
-	setflag FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA
+	delay 30
 # 361 "data/maps/NewMauville_Inside/scripts.pory"
+	setflag FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA
+# 362 "data/maps/NewMauville_Inside/scripts.pory"
+	setflag FLAG_REGI_DOORS_OPENED
+# 363 "data/maps/NewMauville_Inside/scripts.pory"
 	release
 	return
 
@@ -716,7 +725,7 @@ NewMauville_Inside_EventScript_Sierra_Text_3:
 	.string "Now, let's deal with the rabble.$"
 
 NewMauville_Inside_EventScript_DefeatedSierra_Text_0:
-# 354 "data/maps/NewMauville_Inside/scripts.pory"
+# 355 "data/maps/NewMauville_Inside/scripts.pory"
 	.string "It matters not! I stalled you enough\n"
 	.string "for Adam to do what he needs. Later,\l"
 	.string "loser.$"

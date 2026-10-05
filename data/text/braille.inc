@@ -116,6 +116,12 @@ AncientTomb_Braille_ShineInTheMiddle:
 	.braille "WILL, SHINE\n"
 	.braille "IN THE MIDDLE.$"
 
+VoltaicCave_Braille_SpeedAhead:
+	brailleformat 3, 0, 25, 19, 6, 3
+	.braille "SPEED AHEAD\n"
+	.braille "THEN LEAP\n"
+	.braille "THE SKY.$"
+
 @ FRLG
 Braille_Text_Up::
 	brailleformat 3, 0, 25, 19, 6, 3

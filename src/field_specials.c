@@ -80,6 +80,7 @@
 #include "naming_screen.h"
 #include "chooseboxmon.h"
 #include "pokedex.h"
+#include "bike.h"
 
 #define TAG_ITEM_ICON 5500
 
@@ -5776,4 +5777,40 @@ bool8 GetSeenMon(void)
 bool8 GetCaughtMon(void)
 {
     return GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_GET_CAUGHT);
+}
+
+bool8 IsLeadPokemonFastest(void)
+{
+    u8 i;
+    u16 leadSpeed, currentSpeed;
+    u8 partyCount = CalculatePlayerPartyCount();
+
+    if (partyCount <= 1)
+        return TRUE;
+
+    leadSpeed = GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPEED, NULL);
+
+    for (i = 1; i < partyCount; i++)
+    {
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES, NULL) != SPECIES_NONE && !GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG, NULL))
+            {
+                currentSpeed = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPEED, NULL);
+                if (currentSpeed > leadSpeed)
+                    return FALSE;
+            }
+    }
+
+    return TRUE;
+}
+
+bool8 IsPlayerAcroHopping(void)
+{
+    if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_ACRO_BIKE)
+    {
+        if (gPlayerAvatar.acroBikeState == ACRO_STATE_BUNNY_HOP)
+        {
+            return TRUE;
+        }
+    }
+    return FALSE;
 }
