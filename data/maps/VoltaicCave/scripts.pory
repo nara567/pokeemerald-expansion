@@ -16,7 +16,7 @@ script VoltaicCave_OnResume {
 }
 
 script VoltaicCave_OnLoad {
-	if(flag(FLAG_SYS_REGIELEKI_PUZZLE_COMPLETED) == false){
+	if(flag(FLAG_SYS_REGIELEKI_PUZZLE_COMPLETED) == FALSE){
 		call(VoltaicCave_EventScript_HideRegiEntrance)
 	}
 }
@@ -68,20 +68,4 @@ script VoltaicCave_EventScript_CaveEntranceMiddle {
 script VoltaticCave_EventScript_BigHoleInWall {
 	msgbox(gText_BigHoleInTheWall)
 	release
-}
-
-script(global) VoltaicCave_EventScript_OnPuzzleSolved {
-	lock
-	playse(SE_BANG)
-	setvar(VAR_0x8004, 1) // intensity
-    setvar(VAR_0x8005, 1) // duration
-    setvar(VAR_0x8006, 8) // frequency
-    special(ShakeCamera)
-    waitstate
-	playse(SE_DOOR)
-    setflag(FLAG_SYS_REGIELEKI_PUZZLE_COMPLETED)
-    setmetatile(7, 2, METATILE_Cave_SealedChamberEntrance, FALSE)
-    special(DrawWholeMapView)
-    releaseall
-    end
 }

@@ -6,6 +6,7 @@ bool8 ShouldDoBrailleRegirockEffect(void);
 bool8 ShouldDoBrailleRegielekiEffect(void);
 bool8 ShouldDoBrailleDigEffect(void);
 void DoBrailleDigEffect(void);
+void DoBrailleRegielekiEffect(void);
 void SetUpPuzzleEffectRegisteel(void);
 void SetUpPuzzleEffectRegirock(void);
 

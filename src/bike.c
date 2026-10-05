@@ -14,8 +14,6 @@
 #include "braille_puzzles.h"
 #include "script.h"
 
-extern const u8 VoltaicCave_EventScript_OnPuzzleSolved[];
-
 // this file's functions
 static void MovePlayerOnMachBike(enum Direction, u16, u16);
 static enum MachTransition GetMachBikeTransition(enum Direction *);
@@ -703,7 +701,29 @@ static enum AcroTransition AcroBikeHandleInputBunnyHop(enum Direction *newDirect
     {
         if(ShouldDoBrailleRegielekiEffect())
         {
-            ScriptContext_SetupScript(VoltaicCave_EventScript_OnPuzzleSolved);
+            // 1. Store the direction the player was facing before halting
+            enum Direction currentDir = GetPlayerMovementDirection();
+
+            // 2. Lock controls and freeze event updates
+            LockPlayerFieldControls();
+            FreezeObjectEvents();
+
+            // 3. Clear movement but maintain facing direction
+            *newDirection = currentDir;
+            gPlayerAvatar.runningState = NOT_MOVING;
+            gPlayerAvatar.tileTransitionState = NOT_MOVING;
+            gPlayerAvatar.acroBikeState = ACRO_STATE_NORMAL;
+
+            // 4. Force object event graphics to face currentDir
+            MoveObjectEventToMapCoords(&gObjectEvents[gPlayerAvatar.objectEventId], 
+                                    gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x, 
+                                    gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y);
+            SetObjectEventDirection(&gObjectEvents[gPlayerAvatar.objectEventId], currentDir);
+
+            // 5. Run puzzle effect
+            DoBrailleRegielekiEffect();
+
+            return ACRO_TRANS_WHEELIE_TO_NORMAL;
         }
         // we did not move, so keep hopping in place without moving.
         *newDirection = direction;
