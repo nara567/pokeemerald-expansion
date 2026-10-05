@@ -606,7 +606,7 @@
 #define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599
 #define TRAINER_MAY_RUSTBORO_MUDKIP         600
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
-#define TRAINER_MAXIE_MT_CHIMNEY            602
+#define TRAINER_SIERRA_NEW_MAUVILLE            602
 #define TRAINER_TIANA                       603
 #define TRAINER_HALEY_1                     604
 #define TRAINER_JANICE                      605

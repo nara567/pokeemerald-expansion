@@ -141,12 +141,9 @@ NewMauville_Inside_EventScript_SetBarrierStateGreenButton::
 	return
 
 NewMauville_Inside_EventScript_RedButton::
-	lockall
 	msgbox gText_DoorOpenedFarAway, MSGBOX_DEFAULT
 	call NewMauville_Inside_EventScript_SetGeneratorOffMetatiles
 	setvar VAR_NEW_MAUVILLE_STATE, 2
-	releaseall
-	end
 
 NewMauville_Inside_EventScript_SetGeneratorOffMetatiles::
 	setmetatile 33, 6, METATILE_BikeShop_Button_Pressed, FALSE
@@ -293,4 +290,65 @@ script NewMauville_Inside_EventScript_GaiaGrunt7 {
 
 script NewMauville_Inside_EventScript_GaiaGrunt8 {
     trainerbattle_single(TRAINER_NEWMAUVILLE_GRUNT8, Route106_Text_NedIntro, Route106_Text_NedDefeated)
+}
+
+script NewMauville_Inside_Trigger1 {
+	call(NewMauville_Inside_EventScript_Sierra)
+}
+
+script NewMauville_Inside_Trigger2 {
+	call(NewMauville_Inside_EventScript_Sierra)
+}
+
+script NewMauville_Inside_Trigger3 {
+	call(NewMauville_Inside_EventScript_Sierra)
+}
+
+script NewMauville_Inside_Trigger4 {
+	call(NewMauville_Inside_EventScript_Sierra)
+}
+
+script NewMauville_Inside_Trigger5 {
+	call(NewMauville_Inside_EventScript_Sierra)
+}
+
+script NewMauville_Inside_EventScript_Sierra {
+	lock
+	applymovement(LOCALID_SIERRA, moves(
+		emote_exclamation_mark
+		delay_16
+		face_left
+	))
+	waitmovement(0)
+	setspeaker("Sierra")
+	msgbox(format("So you're the one Adam spoke of..."))
+	msgbox(format("But you're too late."))
+	applymovement(LOCALID_SIERRA, moves(
+		walk_right
+	))
+	waitmovement(0)
+	call(NewMauville_Inside_EventScript_RedButton)
+	applymovement(LOCALID_SIERRA, moves(
+		face_left
+	))
+	waitmovement(0)
+	msgbox(format("Now, let's deal with the rabble."))
+	trainerbattle_single(TRAINER_SIERRA_NEW_MAUVILLE, Route106_Text_NedIntro, Route106_Text_NedDefeated)
+	switch(var(VAR_RESULT)){
+		case 1: goto(NewMauville_Inside_EventScript_DefeatedSierra)
+	}
+	fadescreen(FADE_TO_BLACK)
+    special(SetCB2WhiteOut)
+}
+
+script NewMauville_Inside_EventScript_DefeatedSierra{
+	setspeaker("Sierra")
+	msgbox(format("It matters not! I stalled you enough for Adam to do what he needs. Later, loser."))
+	fadedefaultbgm
+    fadescreen(FADE_TO_BLACK)
+	removeobject(LOCALID_SIERRA)
+    fadescreen(FADE_FROM_BLACK)
+	delay(30)
+	setflag(FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA)
+	release
 }

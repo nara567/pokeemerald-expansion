@@ -32,46 +32,46 @@ MtChimney_EventScript_ArchieBusyFighting::
 	return
 
 MtChimney_EventScript_Maxie::
-	lockall
-	playbgm MUS_ENCOUNTER_MAGMA, FALSE
-	msgbox MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT
-	applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_FacePlayer
-	waitmovement 0
-	playse SE_PIN
-	applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_Delay48
-	waitmovement 0
-	msgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
-	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
-	closemessage
-	delay 30
-	fadescreenswapbuffers FADE_TO_BLACK
-	removeobject LOCALID_MT_CHIMNEY_MAXIE
-	removeobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_1
-	removeobject LOCALID_MT_CHIMNEY_TABITHA
-	removeobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_2
-	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
-	fadescreenswapbuffers FADE_FROM_BLACK
-	setobjectxyperm LOCALID_MT_CHIMNEY_ARCHIE, 10, 12
-	addobject LOCALID_MT_CHIMNEY_ARCHIE
-	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieApproachPlayerEast
-	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieApproachPlayerNorth
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	msgbox MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT
-	closemessage
-	call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast
-	call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieExitNorth
-	removeobject LOCALID_MT_CHIMNEY_ARCHIE
-	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA
-	setflag FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
-	clearflag FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO
-	setflag FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO
-	clearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY
-	releaseall
-	end
+	// lockall
+	// playbgm MUS_ENCOUNTER_MAGMA, FALSE
+	// msgbox MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT
+	// applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_FacePlayer
+	// waitmovement 0
+	// playse SE_PIN
+	// applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_ExclamationMark
+	// waitmovement 0
+	// applymovement LOCALID_MT_CHIMNEY_MAXIE, Common_Movement_Delay48
+	// waitmovement 0
+	// msgbox MtChimney_Text_MaxieIntro, MSGBOX_DEFAULT
+	// trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
+	// msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
+	// closemessage
+	// delay 30
+	// fadescreenswapbuffers FADE_TO_BLACK
+	// removeobject LOCALID_MT_CHIMNEY_MAXIE
+	// removeobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_1
+	// removeobject LOCALID_MT_CHIMNEY_TABITHA
+	// removeobject LOCALID_MT_CHIMNEY_MAGMA_GRUNT_2
+	// setflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
+	// fadescreenswapbuffers FADE_FROM_BLACK
+	// setobjectxyperm LOCALID_MT_CHIMNEY_ARCHIE, 10, 12
+	// addobject LOCALID_MT_CHIMNEY_ARCHIE
+	// call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieApproachPlayerEast
+	// call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieApproachPlayerNorth
+	// applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	// waitmovement 0
+	// msgbox MtChimney_Text_ArchieThankYou, MSGBOX_DEFAULT
+	// closemessage
+	// call_if_eq VAR_FACING, DIR_EAST, MtChimney_EventScript_ArchieExitEast
+	// call_if_eq VAR_FACING, DIR_NORTH, MtChimney_EventScript_ArchieExitNorth
+	// removeobject LOCALID_MT_CHIMNEY_ARCHIE
+	// setflag FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA
+	// setflag FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
+	// clearflag FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO
+	// setflag FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO
+	// clearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY
+	// releaseall
+	// end
 
 MtChimney_EventScript_ArchieApproachPlayerEast::
 	applymovement LOCALID_MT_CHIMNEY_ARCHIE, MtChimney_Movement_ArchieApproachPlayerEast
