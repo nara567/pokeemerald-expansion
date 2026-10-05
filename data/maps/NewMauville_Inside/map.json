@@ -127,7 +127,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "NewMauville_Inside_EventScript_GaiaGrunt1",
       "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     },
@@ -140,7 +140,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "NewMauville_Inside_EventScript_GaiaGrunt5",
       "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     },
@@ -153,7 +153,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "NewMauville_Inside_EventScript_GaiaGrunt3",
       "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     },
@@ -166,7 +166,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "NewMauville_Inside_EventScript_GaiaGrunt4",
       "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     },
@@ -179,7 +179,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "NewMauville_Inside_EventScript_GaiaGrunt6",
       "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     },
@@ -192,7 +192,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "NewMauville_Inside_EventScript_GaiaGrunt7",
       "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     },
@@ -205,7 +205,7 @@
       "movement_range_x": 2,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "NewMauville_Inside_EventScript_GaiaGrunt8",
       "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     },
@@ -232,7 +232,7 @@
       "movement_range_x": 1,
       "movement_range_y": 8,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "5",
       "script": "NewMauville_Inside_EventScript_GaiaGrunt2",
       "flag": "FLAG_HIDE_NEW_MAUVILLE_TEAM_GAIA"
     }
@@ -339,7 +339,7 @@
     },
     {
       "type": "trigger",
-      "x": 30,
+      "x": 31,
       "y": 4,
       "elevation": 0,
       "var": "VAR_NEW_MAUVILLE_STATE",
@@ -348,7 +348,7 @@
     },
     {
       "type": "trigger",
-      "x": 30,
+      "x": 31,
       "y": 5,
       "elevation": 0,
       "var": "VAR_NEW_MAUVILLE_STATE",
@@ -357,7 +357,7 @@
     },
     {
       "type": "trigger",
-      "x": 30,
+      "x": 31,
       "y": 6,
       "elevation": 0,
       "var": "VAR_NEW_MAUVILLE_STATE",
@@ -366,7 +366,7 @@
     },
     {
       "type": "trigger",
-      "x": 30,
+      "x": 31,
       "y": 7,
       "elevation": 0,
       "var": "VAR_NEW_MAUVILLE_STATE",
@@ -375,7 +375,7 @@
     },
     {
       "type": "trigger",
-      "x": 30,
+      "x": 31,
       "y": 8,
       "elevation": 0,
       "var": "VAR_NEW_MAUVILLE_STATE",

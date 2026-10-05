@@ -37,6 +37,7 @@ NewMauville_Inside_EventScript_ShowVoltorb3::
 	return
 
 NewMauville_Inside_OnLoad:
+	setflashlevel 4
 	call_if_eq VAR_NEW_MAUVILLE_STATE, 2, NewMauville_Inside_EventScript_SetGeneratorOffMetatiles
 	end
 
@@ -314,6 +315,7 @@ script NewMauville_Inside_Trigger5 {
 
 script NewMauville_Inside_EventScript_Sierra {
 	lock
+	playse(SE_PIN)
 	applymovement(LOCALID_SIERRA, moves(
 		emote_exclamation_mark
 		delay_16
@@ -327,13 +329,19 @@ script NewMauville_Inside_EventScript_Sierra {
 		walk_right
 	))
 	waitmovement(0)
+	setspeaker(NULL)
 	call(NewMauville_Inside_EventScript_RedButton)
 	applymovement(LOCALID_SIERRA, moves(
 		face_left
 	))
 	waitmovement(0)
+	setspeaker("Sierra")
 	msgbox(format("Now, let's deal with the rabble."))
-	trainerbattle_single(TRAINER_SIERRA_NEW_MAUVILLE, Route106_Text_NedIntro, Route106_Text_NedDefeated)
+	call(NewMauville_Inside_EventScript_SierraBattle)
+}
+
+script NewMauville_Inside_EventScript_SierraBattle {
+	trainerbattle_no_intro(TRAINER_SIERRA_NEW_MAUVILLE, Route106_Text_NedDefeated)
 	switch(var(VAR_RESULT)){
 		case 1: goto(NewMauville_Inside_EventScript_DefeatedSierra)
 	}

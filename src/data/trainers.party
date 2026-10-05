@@ -1114,7 +1114,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Hyper Voice
 
 === TRAINER_LOLA_1 ===
-Name: LOLA
+Name: Lola
 Class: Tuber F
 Pic: Tuber F
 Gender: Female
@@ -1123,12 +1123,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Azurill
-Level: 6
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 8
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Mudkip
-Level: 7
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 9
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_AUSTINA ===
 Name: AUSTINA
@@ -1139,12 +1139,12 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Electrike
 Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_GWEN ===
-Name: GWEN
+Name: Gwen
 Class: Tuber F
 Pic: Tuber F
 Gender: Female
@@ -1152,9 +1152,9 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Maschiff
+Yamper
 Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LOLA_2 ===
 Name: LOLA
@@ -1225,7 +1225,7 @@ Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_RICKY_1 ===
-Name: RICKY
+Name: Ricky
 Class: Tuber M
 Pic: Tuber M
 Gender: Male
@@ -1234,8 +1234,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Slowpoke
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 10
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Confusion
 - Water Gun
 - Curse
@@ -1251,11 +1251,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Azurill
-Level: 8
+Level: 10
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Marill
-Level: 10
+Level: 12
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_CHARLIE ===
@@ -4950,7 +4950,8 @@ Items: Potion / Potion
 Double Battle: No
 AI: Basic Trainer / Ace Pokemon / Smart Switching / Smart Mon Choices
 
-Wiglett 
+Wiglett
+Ability: Gooey
 Level: 14
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Aqua Jet
@@ -4959,6 +4960,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Water Gun
 
 Wattrel
+Ability: Wind Power
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Spark
@@ -4966,7 +4968,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Quick Attack
 - Growl
 
-Sandygast @ Groundium Z
+Sandygast @ Grassium Z
 Level: 17
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Absorb
@@ -5894,8 +5896,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 9
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_ISABEL_2 ===
 Name: ISABEL
@@ -6179,7 +6181,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSH ===
-Name: JOSH
+Name: Josh
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6200,7 +6202,7 @@ Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TOMMY ===
-Name: TOMMY
+Name: Tommy
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6590,15 +6592,15 @@ AI: Check Bad Move
 
 Magikarp
 Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Tentacool
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 10
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Clauncher
 Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === Route106_GaiaGrunt ===
 Name: Grunt
@@ -6611,11 +6613,11 @@ AI: Check Bad Move
 
 Pikipek
 Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Chimchar
 Level: 10
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_DALE ===
 Name: DALE
@@ -9170,7 +9172,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Helping Hand
 
 === TRAINER_HUEY ===
-Name: HUEY
+Name: Hhuey
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -9179,12 +9181,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 6
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 8
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Wattrel
-Level: 7
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Level: 9
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_EDMOND ===
 Name: EDMOND
@@ -9227,15 +9229,15 @@ AI: Check Bad Move
 
 Wingull
 Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Machop
 Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Corsola
 Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_PHILLIP ===
 Name: Phillip
@@ -12192,8 +12194,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Mareanie
-Level: 11
-IVs: 0 HP / 0 Atk / 20 Def / 0 SpA / 20 SpD / 0 Spe
+Level: 12
+IVs: 20 HP / 0 Atk / 20 Def / 0 SpA / 20 SpD / 0 Spe
 
 === TRAINER_GERALD ===
 Name: GERALD
@@ -13336,7 +13338,7 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHANDLER ===
-Name: CHANDLER
+Name: Chandler
 Class: Tuber M
 Pic: Tuber M
 Gender: Male
@@ -13345,12 +13347,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacool
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 8
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Staryu
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 9
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_KALEB ===
 Name: Kaleb
@@ -13362,8 +13364,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Maschiff
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 9
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_JOSEPH ===
 Name: JOSEPH
