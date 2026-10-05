@@ -12,6 +12,7 @@
 #include "fieldmap.h"
 #include "party_menu.h"
 #include "fldeff.h"
+#include "bike.h"
 
 EWRAM_DATA static bool8 sIsRegisteelPuzzle = 0;
 
@@ -255,6 +256,42 @@ static void DoBrailleRegisteelEffect(void)
     FlagSet(FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED);
     UnlockPlayerFieldControls();
     UnfreezeObjectEvents();
+}
+
+bool8 IsLeadPokemonFastest(void)
+{
+    u8 i;
+    u16 leadSpeed, currentSpeed;
+    u8 partyCount = CalculatePlayerPartyCount();
+
+    if (partyCount <= 1)
+        return TRUE;
+
+    leadSpeed = GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPEED, NULL);
+
+    for (i = 1; i < partyCount; i++)
+    {
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES, NULL) != SPECIES_NONE && !GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG, NULL))
+            {
+                currentSpeed = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPEED, NULL);
+                if (currentSpeed > leadSpeed)
+                    return FALSE;
+            }
+    }
+
+    return TRUE;
+}
+
+bool8 ShouldDoBrailleRegielekiEffect(void)
+{
+    if (FlagGet(FLAG_SYS_REGIELEKI_PUZZLE_COMPLETED))
+        return FALSE;
+
+    if ((gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_VOLTAIC_CAVE) || gSaveBlock1Ptr->location.mapNum != MAP_NUM(MAP_VOLTAIC_CAVE)))
+    {
+        return FALSE;
+    }
+    return IsLeadPokemonFastest();
 }
 
 // this used to be FldEff_UseFlyAncientTomb . why did GF merge the 2 functions?

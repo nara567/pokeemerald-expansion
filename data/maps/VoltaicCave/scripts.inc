@@ -138,6 +138,30 @@ VoltaticCave_EventScript_BigHoleInWall::
 	return
 
 
-VoltaicCave_EventScript_CheckPuzzle::
-	return
+VoltaicCave_EventScript_OnPuzzleSolved::
+# 74 "data/maps/VoltaicCave/scripts.pory"
+	lock
+# 75 "data/maps/VoltaicCave/scripts.pory"
+	playse SE_BANG
+# 76 "data/maps/VoltaicCave/scripts.pory"
+	setvar VAR_0x8004, 1
+# 77 "data/maps/VoltaicCave/scripts.pory"
+	setvar VAR_0x8005, 1
+# 78 "data/maps/VoltaicCave/scripts.pory"
+	setvar VAR_0x8006, 8
+# 79 "data/maps/VoltaicCave/scripts.pory"
+	special ShakeCamera
+# 80 "data/maps/VoltaicCave/scripts.pory"
+	waitstate
+# 81 "data/maps/VoltaicCave/scripts.pory"
+	playse SE_DOOR
+# 82 "data/maps/VoltaicCave/scripts.pory"
+	setflag FLAG_SYS_REGIELEKI_PUZZLE_COMPLETED
+# 83 "data/maps/VoltaicCave/scripts.pory"
+	setmetatile 7, 2, METATILE_Cave_SealedChamberEntrance, FALSE
+# 84 "data/maps/VoltaicCave/scripts.pory"
+	special DrawWholeMapView
+# 85 "data/maps/VoltaicCave/scripts.pory"
+	releaseall
+	end
 

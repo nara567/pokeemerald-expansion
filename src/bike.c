@@ -11,6 +11,10 @@
 #include "wild_encounter.h"
 #include "wild_encounter_ow.h"
 #include "constants/songs.h"
+#include "braille_puzzles.h"
+#include "script.h"
+
+extern const u8 VoltaicCave_EventScript_OnPuzzleSolved[];
 
 // this file's functions
 static void MovePlayerOnMachBike(enum Direction, u16, u16);
@@ -697,6 +701,10 @@ static enum AcroTransition AcroBikeHandleInputBunnyHop(enum Direction *newDirect
 
     if (*newDirection == DIR_NONE)
     {
+        if(ShouldDoBrailleRegielekiEffect())
+        {
+            ScriptContext_SetupScript(VoltaicCave_EventScript_OnPuzzleSolved);
+        }
         // we did not move, so keep hopping in place without moving.
         *newDirection = direction;
         gPlayerAvatar.runningState = NOT_MOVING;

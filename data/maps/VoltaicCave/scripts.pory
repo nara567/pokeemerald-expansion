@@ -70,5 +70,18 @@ script VoltaticCave_EventScript_BigHoleInWall {
 	release
 }
 
-script VoltaicCave_EventScript_CheckPuzzle {
+script(global) VoltaicCave_EventScript_OnPuzzleSolved {
+	lock
+	playse(SE_BANG)
+	setvar(VAR_0x8004, 1) // intensity
+    setvar(VAR_0x8005, 1) // duration
+    setvar(VAR_0x8006, 8) // frequency
+    special(ShakeCamera)
+    waitstate
+	playse(SE_DOOR)
+    setflag(FLAG_SYS_REGIELEKI_PUZZLE_COMPLETED)
+    setmetatile(7, 2, METATILE_Cave_SealedChamberEntrance, FALSE)
+    special(DrawWholeMapView)
+    releaseall
+    end
 }
