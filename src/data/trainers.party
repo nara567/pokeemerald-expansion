@@ -644,27 +644,57 @@ Mightyena
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_ARCHIE ===
-Name: ARCHIE
+=== TRAINER_ADAM_VOLTAIC_CAVE ===
+Name: Adam
 Class: Aqua Leader
 Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Smart Switching / Smart Mon Choices / Omniscient
 
-Mightyena
-Level: 41
+Clobbopus
+Level: 26
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Circle Throw
+- Brick Break
+- Ice Punch
+- Detect
 
-Crobat
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Cetoddle @ Chesto Berry
+Level: 27
+Ability: Thick Fat
+IVs: 18 HP / 18 Atk / 25 Def / 18 SpA / 25 SpD / 0 Spe
+- Avalanche
+- Rest
+- Flail
+- Ice Shard
 
-Sharpedo
-Level: 43
+Pawniard
+Level: 28
+Ability: Defiant
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Metal Claw
+- Fury Cutter
+- Torment
+- Sucker Punch
+
+Charcadet
+Level: 29
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Flame Charge
+- Night Shade
+- Will-o-Wisp
+- Clear Smog
+
+Toedscruel @ Groundium Z
+Level: 30
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Mega Drain
+- Mud Shot
+- Poisonpowder
+- Hex
 
 === TRAINER_LEAH ===
 Name: Leah
