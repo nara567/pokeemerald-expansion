@@ -3016,3 +3016,8 @@
 	applymovement \localId, \movements
 	waitmovement \localId
 	.endm
+
+  @@ Unbound Start Menu
+  .macro initusm
+  callnative Usm_InitStartMenu
+  .endm
