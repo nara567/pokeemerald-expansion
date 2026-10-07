@@ -69,3 +69,86 @@ script VoltaticCave_EventScript_BigHoleInWall {
 	msgbox(gText_BigHoleInTheWall)
 	release
 }
+
+script VoltaicCave_EventScript_AdamTrigger_Left {
+	if(!flag(FLAG_HIDE_VOLTAIC_CAVE_ADAM)){
+		lock
+		applymovement(LOCALID_PLAYER, moves(
+			walk_up * 2
+			walk_right
+			face_up
+		))
+		waitmovement(0)
+		goto(VoltaicCave_EventScript_Adam)
+	}
+}
+
+script VoltaicCave_EventScript_AdamTrigger_Right {
+	if(!flag(FLAG_HIDE_VOLTAIC_CAVE_ADAM)){
+		lock
+		applymovement(LOCALID_PLAYER, moves(
+			walk_up * 2
+			walk_left
+			face_up
+		))
+		waitmovement(0)
+		goto(VoltaicCave_EventScript_Adam)
+	}
+}
+
+script VoltaicCave_EventScript_AdamTrigger_Up {
+	if(!flag(FLAG_HIDE_VOLTAIC_CAVE_ADAM)){
+		lock
+		applymovement(LOCALID_PLAYER, moves(
+			walk_up
+		))
+		waitmovement(0)
+		goto(VoltaicCave_EventScript_Adam)
+	}
+}
+
+script VoltaicCave_EventScript_Adam {
+	lock
+	applymovement(LOCALID_ADAM, moves(
+		jump_in_place_up
+	))
+	playmoncry(SPECIES_REGIELEKI, CRY_MODE_NORMAL)
+	waitmoncry
+	playse(SE_FAINT)
+	waitse
+	removeobject(LOCALID_REGIELEKI)
+	setflag(FLAG_HIDE_REGIELEKI)
+	waitmovement(0)
+	setspeaker("Adam")
+	msgbox(format("At last..."))
+	msgbox(format("The power of this Tera Orb is just what we're looking for. Awakening Regigigas..."))
+	playse(SE_PIN)
+	applymovement(LOCALID_ADAM, moves(
+		emote_exclamation_mark
+		delay_8
+		face_down
+	))
+	waitmovement(0)
+	msgbox(format("It's you, from the museum. I guess Sierra needs more training."))
+	msgbox(format("I've already gotten what I've come for. But why not give you a taste of power!"))
+	trainerbattle_no_intro(TRAINER_ADAM_VOLTAIC_CAVE, VoltaicCave_Text_AdamLose)
+	msgbox(format("It doesn't matter! Once we've collected the energy from the golems, Regigigas will be mine!"))
+	applymovement(LOCALID_ADAM, moves(
+		walk_down
+		walk_down
+		walk_down
+	))
+	applymovement(LOCALID_PLAYER, moves(
+		delay_8
+		walk_left
+	))
+	waitmovement(LOCALID_ADAM)
+	removeobject(LOCALID_ADAM)
+	setflag(FLAG_HIDE_VOLTAIC_CAVE_ADAM)
+	playse(SE_RG_DOOR)
+	release
+}
+
+text VoltaicCave_Text_AdamLose {
+	format("Fascinating.")
+}

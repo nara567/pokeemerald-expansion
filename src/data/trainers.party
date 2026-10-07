@@ -652,7 +652,7 @@ Gender: Male
 Music: Aqua
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Basic Trainer / Smart Switching / Smart Mon Choices / Omniscient
+AI: Basic Trainer / Smart Switching / Smart Mon Choices / Omniscient / Ace Pokemon
 
 Clobbopus
 Level: 26
@@ -689,6 +689,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Clear Smog
 
 Toedscruel @ Groundium Z
+Tera Type: Electric
 Level: 30
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Mega Drain

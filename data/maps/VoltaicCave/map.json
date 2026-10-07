@@ -15,7 +15,8 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_REGISTEEL",
+      "local_id": "LOCALID_REGIELEKI",
+      "graphics_id": "OBJ_EVENT_GFX_REGIROCK",
       "x": 8,
       "y": 7,
       "elevation": 3,
@@ -25,9 +26,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "AncientTomb_EventScript_Registeel",
-      "flag": "FLAG_HIDE_REGISTEEL"
+      "flag": "FLAG_HIDE_REGIELEKI"
     },
     {
+      "local_id": "LOCALID_ADAM",
       "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
       "x": 8,
       "y": 8,
@@ -38,7 +40,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_VOLTAIC_CAVE_ADAM"
     }
   ],
   "warp_events": [
@@ -64,7 +66,35 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VoltaicCave_EventScript_AdamTrigger_Up"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VoltaicCave_EventScript_AdamTrigger_Left"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VoltaicCave_EventScript_AdamTrigger_Right"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

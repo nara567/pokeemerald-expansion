@@ -137,3 +137,207 @@ VoltaticCave_EventScript_BigHoleInWall::
 	release
 	return
 
+
+VoltaicCave_EventScript_AdamTrigger_Left::
+# 74 "data/maps/VoltaicCave/scripts.pory"
+	goto_if_unset FLAG_HIDE_VOLTAIC_CAVE_ADAM, VoltaicCave_EventScript_AdamTrigger_Left_1
+	return
+
+VoltaicCave_EventScript_AdamTrigger_Left_1:
+# 75 "data/maps/VoltaicCave/scripts.pory"
+	lock
+# 76 "data/maps/VoltaicCave/scripts.pory"
+	applymovement LOCALID_PLAYER, VoltaicCave_EventScript_AdamTrigger_Left_Movement_0
+# 81 "data/maps/VoltaicCave/scripts.pory"
+	waitmovement 0
+# 82 "data/maps/VoltaicCave/scripts.pory"
+	goto VoltaicCave_EventScript_Adam
+	return
+
+
+VoltaicCave_EventScript_AdamTrigger_Right::
+# 87 "data/maps/VoltaicCave/scripts.pory"
+	goto_if_unset FLAG_HIDE_VOLTAIC_CAVE_ADAM, VoltaicCave_EventScript_AdamTrigger_Right_1
+	return
+
+VoltaicCave_EventScript_AdamTrigger_Right_1:
+# 88 "data/maps/VoltaicCave/scripts.pory"
+	lock
+# 89 "data/maps/VoltaicCave/scripts.pory"
+	applymovement LOCALID_PLAYER, VoltaicCave_EventScript_AdamTrigger_Right_Movement_0
+# 94 "data/maps/VoltaicCave/scripts.pory"
+	waitmovement 0
+# 95 "data/maps/VoltaicCave/scripts.pory"
+	goto VoltaicCave_EventScript_Adam
+	return
+
+
+VoltaicCave_EventScript_AdamTrigger_Up::
+# 100 "data/maps/VoltaicCave/scripts.pory"
+	goto_if_unset FLAG_HIDE_VOLTAIC_CAVE_ADAM, VoltaicCave_EventScript_AdamTrigger_Up_1
+	return
+
+VoltaicCave_EventScript_AdamTrigger_Up_1:
+# 101 "data/maps/VoltaicCave/scripts.pory"
+	lock
+# 102 "data/maps/VoltaicCave/scripts.pory"
+	applymovement LOCALID_PLAYER, VoltaicCave_EventScript_AdamTrigger_Up_Movement_0
+# 105 "data/maps/VoltaicCave/scripts.pory"
+	waitmovement 0
+# 106 "data/maps/VoltaicCave/scripts.pory"
+	goto VoltaicCave_EventScript_Adam
+	return
+
+
+VoltaicCave_EventScript_Adam::
+# 111 "data/maps/VoltaicCave/scripts.pory"
+	lock
+# 112 "data/maps/VoltaicCave/scripts.pory"
+	applymovement LOCALID_ADAM, VoltaicCave_EventScript_Adam_Movement_0
+# 115 "data/maps/VoltaicCave/scripts.pory"
+	playmoncry SPECIES_REGIELEKI, CRY_MODE_NORMAL
+# 116 "data/maps/VoltaicCave/scripts.pory"
+	waitmoncry
+# 117 "data/maps/VoltaicCave/scripts.pory"
+	playse SE_FAINT
+# 118 "data/maps/VoltaicCave/scripts.pory"
+	waitse
+# 119 "data/maps/VoltaicCave/scripts.pory"
+	removeobject LOCALID_REGIELEKI
+# 120 "data/maps/VoltaicCave/scripts.pory"
+	setflag FLAG_HIDE_REGIELEKI
+# 121 "data/maps/VoltaicCave/scripts.pory"
+	waitmovement 0
+# 122 "data/maps/VoltaicCave/scripts.pory"
+	setspeaker VoltaicCave_EventScript_Adam_Text_0
+# 123 "data/maps/VoltaicCave/scripts.pory"
+	msgbox VoltaicCave_EventScript_Adam_Text_1
+# 124 "data/maps/VoltaicCave/scripts.pory"
+	msgbox VoltaicCave_EventScript_Adam_Text_2
+# 125 "data/maps/VoltaicCave/scripts.pory"
+	playse SE_PIN
+# 126 "data/maps/VoltaicCave/scripts.pory"
+	applymovement LOCALID_ADAM, VoltaicCave_EventScript_Adam_Movement_1
+# 131 "data/maps/VoltaicCave/scripts.pory"
+	waitmovement 0
+# 132 "data/maps/VoltaicCave/scripts.pory"
+	msgbox VoltaicCave_EventScript_Adam_Text_3
+# 133 "data/maps/VoltaicCave/scripts.pory"
+	msgbox VoltaicCave_EventScript_Adam_Text_4
+# 134 "data/maps/VoltaicCave/scripts.pory"
+	trainerbattle_no_intro TRAINER_ADAM_VOLTAIC_CAVE, VoltaicCave_Text_AdamLose
+# 135 "data/maps/VoltaicCave/scripts.pory"
+	msgbox VoltaicCave_EventScript_Adam_Text_5
+# 136 "data/maps/VoltaicCave/scripts.pory"
+	applymovement LOCALID_ADAM, VoltaicCave_EventScript_Adam_Movement_2
+# 141 "data/maps/VoltaicCave/scripts.pory"
+	applymovement LOCALID_PLAYER, VoltaicCave_EventScript_Adam_Movement_3
+# 145 "data/maps/VoltaicCave/scripts.pory"
+	waitmovement LOCALID_ADAM
+# 146 "data/maps/VoltaicCave/scripts.pory"
+	removeobject LOCALID_ADAM
+# 147 "data/maps/VoltaicCave/scripts.pory"
+	setflag FLAG_HIDE_VOLTAIC_CAVE_ADAM
+# 148 "data/maps/VoltaicCave/scripts.pory"
+	playse SE_RG_DOOR
+# 149 "data/maps/VoltaicCave/scripts.pory"
+	release
+	return
+
+
+# 76 "data/maps/VoltaicCave/scripts.pory"
+VoltaicCave_EventScript_AdamTrigger_Left_Movement_0:
+# 77 "data/maps/VoltaicCave/scripts.pory"
+	walk_up
+# 77 "data/maps/VoltaicCave/scripts.pory"
+	walk_up
+# 78 "data/maps/VoltaicCave/scripts.pory"
+	walk_right
+# 79 "data/maps/VoltaicCave/scripts.pory"
+	face_up
+	step_end
+
+# 89 "data/maps/VoltaicCave/scripts.pory"
+VoltaicCave_EventScript_AdamTrigger_Right_Movement_0:
+# 90 "data/maps/VoltaicCave/scripts.pory"
+	walk_up
+# 90 "data/maps/VoltaicCave/scripts.pory"
+	walk_up
+# 91 "data/maps/VoltaicCave/scripts.pory"
+	walk_left
+# 92 "data/maps/VoltaicCave/scripts.pory"
+	face_up
+	step_end
+
+# 102 "data/maps/VoltaicCave/scripts.pory"
+VoltaicCave_EventScript_AdamTrigger_Up_Movement_0:
+# 103 "data/maps/VoltaicCave/scripts.pory"
+	walk_up
+	step_end
+
+# 112 "data/maps/VoltaicCave/scripts.pory"
+VoltaicCave_EventScript_Adam_Movement_0:
+# 113 "data/maps/VoltaicCave/scripts.pory"
+	jump_in_place_up
+	step_end
+
+# 126 "data/maps/VoltaicCave/scripts.pory"
+VoltaicCave_EventScript_Adam_Movement_1:
+# 127 "data/maps/VoltaicCave/scripts.pory"
+	emote_exclamation_mark
+# 128 "data/maps/VoltaicCave/scripts.pory"
+	delay_8
+# 129 "data/maps/VoltaicCave/scripts.pory"
+	face_down
+	step_end
+
+# 136 "data/maps/VoltaicCave/scripts.pory"
+VoltaicCave_EventScript_Adam_Movement_2:
+# 137 "data/maps/VoltaicCave/scripts.pory"
+	walk_down
+# 138 "data/maps/VoltaicCave/scripts.pory"
+	walk_down
+# 139 "data/maps/VoltaicCave/scripts.pory"
+	walk_down
+	step_end
+
+# 141 "data/maps/VoltaicCave/scripts.pory"
+VoltaicCave_EventScript_Adam_Movement_3:
+# 142 "data/maps/VoltaicCave/scripts.pory"
+	delay_8
+# 143 "data/maps/VoltaicCave/scripts.pory"
+	walk_left
+	step_end
+
+VoltaicCave_EventScript_Adam_Text_0:
+# 122 "data/maps/VoltaicCave/scripts.pory"
+	.string "Adam$"
+
+VoltaicCave_EventScript_Adam_Text_1:
+# 123 "data/maps/VoltaicCave/scripts.pory"
+	.string "At last...$"
+
+VoltaicCave_EventScript_Adam_Text_2:
+# 124 "data/maps/VoltaicCave/scripts.pory"
+	.string "The power of this Tera Orb is just what\n"
+	.string "we're looking for. Awakening Regigigas...$"
+
+VoltaicCave_EventScript_Adam_Text_3:
+# 132 "data/maps/VoltaicCave/scripts.pory"
+	.string "It's you, from the museum. I guess\n"
+	.string "Sierra needs more training.$"
+
+VoltaicCave_EventScript_Adam_Text_4:
+# 133 "data/maps/VoltaicCave/scripts.pory"
+	.string "I've already gotten what I've come for.\n"
+	.string "But why not give you a taste of power!$"
+
+VoltaicCave_EventScript_Adam_Text_5:
+# 135 "data/maps/VoltaicCave/scripts.pory"
+	.string "It doesn't matter! Once we've collected\n"
+	.string "the energy from the golems, Regigigas\l"
+	.string "will be mine!$"
+
+VoltaicCave_Text_AdamLose::
+# 152 "data/maps/VoltaicCave/scripts.pory"
+	.string "Fascinating.$"
