@@ -5605,7 +5605,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Feint Attack
 
 === TRAINER_ANNA_AND_MEG_1 ===
-Name: ANNA & MEG
+Name: Anna & Meg
 Class: Sr And Jr
 Pic: Sr And Jr
 Gender: Male
@@ -5613,20 +5613,21 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Zigzagoon
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Growl
-- Tail Whip
+Linoone-Galar
+Level: 25
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Night Slash
+- Pin Missile
 - Headbutt
-- Odor Sleuth
+- Snarl
 
-Makuhita
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Focus Energy
-- Arm Thrust
+Croagunk
+Level: 27
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Sucker Punch
+- Flatter
+- Low Kick
+- Venoshock
 
 === TRAINER_ANNA_AND_MEG_2 ===
 Name: ANNA & MEG
@@ -7054,7 +7055,7 @@ Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_DYLAN_1 ===
-Name: DYLAN
+Name: Dylan
 Class: Triathlete
 Pic: Running Triathlete M
 Gender: Male
@@ -7062,9 +7063,22 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Trumbeak
+Ability: Skill Link
+Level: 25
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Rock Blast
+- Fury Attack
+- Supersonic
+- Roost
+
+Toedscool
+Level: 25
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Rhyhorn
+Level: 27
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_DYLAN_2 ===
 Name: DYLAN
@@ -7119,7 +7133,7 @@ Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_MARIA_1 ===
-Name: MARIA
+Name: Maria
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -10129,7 +10143,7 @@ Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_ISAAC_1 ===
-Name: ISAAC
+Name: Isaac
 Class: Pkmn Breeder
 Pic: Pokemon Breeder M
 Gender: Male
@@ -10137,29 +10151,29 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Whismur
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Loudred
+Level: 21
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Zigzagoon
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Yamper
+Level: 21
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Aron
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 21
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Poochyena
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mightyena
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Taillow
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Swellow
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Makuhita
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Combusken
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_DAVIS ===
 Name: DAVIS
@@ -10332,7 +10346,7 @@ Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_LYDIA_1 ===
-Name: LYDIA
+Name: Lydia
 Class: Pkmn Breeder
 Pic: Pokemon Breeder F
 Gender: Female
@@ -10341,28 +10355,28 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 21
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Shroomish
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 21
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Marill
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 21
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Roselia
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Skitty
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Goldeen
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Grovyle
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HALLE ===
 Name: HALLE
@@ -14271,7 +14285,7 @@ Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MELINA ===
-Name: MELINA
+Name: Melina
 Class: Triathlete
 Pic: Running Triathlete F
 Gender: Female
@@ -14279,12 +14293,16 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ribombee
+Level: 26
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Ninjask
+Level: 26
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_BRANDI ===
-Name: BRANDI
+Name: Brandi
 Class: Psychic
 Pic: Psychic F
 Gender: Female
@@ -14292,12 +14310,16 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kirlia
+Level: 26
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Kadabra
+Level: 26
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_AISHA ===
-Name: AISHA
+Name: Aisha
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -14305,9 +14327,13 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
+Pancham
+Level: 26
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
 Meditite
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 26
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_MAKAYLA ===
 Name: MAKAYLA
