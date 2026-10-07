@@ -5060,35 +5060,43 @@ Double Battle: No
 AI: Basic Trainer / Ace Pokemon / Smart Switching / Prediction
 
 Glimmet
-Level: 20
+Level: 25
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Stealth Rock
 - Acid Spray
 - Ancient Power
 - Harden
 
-Skiploom @ Terrain Extender
-Level: 22
+Jumpluff @ Terrain Extender
+Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Leech Seed
 - Fairy Wind
 - Grassy Terrain
-- Poison Powder
+- Trailblaze
+
+Gloom
+Level: 28
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Toxic
+- Trailblaze
+- Giga Drain
+- Venoshock
 
 Floette
-Level: 24
+Level: 29
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Moonblast
 - Magical Leaf
 - Wish
-- Safeguard
+- Trailblaze
 
 Floragato @ Grass Gem
-Level: 26
+Level: 30
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Seed Bomb
 - Hone Claws
-- Quick Attack
+- Trailblaze
 - Grassy Glide
 
 === TRAINER_FLANNERY_1 ===
