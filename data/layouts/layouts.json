@@ -9430,6 +9430,16 @@
       "border_filepath": "data/layouts/VoltaicCave/border.bin",
       "blockdata_filepath": "data/layouts/VoltaicCave/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_VERDANTURF_TOWN_GYM",
+      "name": "VerdanturfTown_Gym_Layout",
+      "width": 24,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/VerdanturfTown_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanturfTown_Gym/map.bin"
     }
   ]
 }
