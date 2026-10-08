@@ -18,123 +18,123 @@ RusturfTunnel_EventScript_SetAquaGruntAndPeekoPos::
 	// return
 
 RusturfTunnel_EventScript_Wanda::
-	lock
-	faceplayer
-	msgbox RusturfTunnel_Text_BoyfriendOnOtherSideOfRock, MSGBOX_DEFAULT
-	closemessage
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
-	end
+	// lock
+	// faceplayer
+	// msgbox RusturfTunnel_Text_BoyfriendOnOtherSideOfRock, MSGBOX_DEFAULT
+	// closemessage
+	// applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	// waitmovement 0
+	// release
+	// end
 
 RusturfTunnel_EventScript_WandasBoyfriend::
-	lock
-	faceplayer
-	goto_if_set FLAG_TEMP_1, RusturfTunnel_EventScript_AlreadySpokenTo
-	setflag FLAG_TEMP_1
-	msgbox RusturfTunnel_Text_WhyCantTheyKeepDigging, MSGBOX_DEFAULT
-	closemessage
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
-	end
+	// lock
+	// faceplayer
+	// goto_if_set FLAG_TEMP_1, RusturfTunnel_EventScript_AlreadySpokenTo
+	// setflag FLAG_TEMP_1
+	// msgbox RusturfTunnel_Text_WhyCantTheyKeepDigging, MSGBOX_DEFAULT
+	// closemessage
+	// applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	// waitmovement 0
+	// release
+	// end
 
 RusturfTunnel_EventScript_AlreadySpokenTo::
-	msgbox RusturfTunnel_Text_ToGetToVerdanturf, MSGBOX_DEFAULT
-	closemessage
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
-	end
+	// msgbox RusturfTunnel_Text_ToGetToVerdanturf, MSGBOX_DEFAULT
+	// closemessage
+	// applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	// waitmovement 0
+	// release
+	// end
 
 RusturfTunnel_EventScript_ClearTunnelScene::
-	lockall
-	call_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_FaceWandasBoyfriend1
-	call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_FaceWandasBoyfriend2
-	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_FaceWandasBoyfriend3
-	call RusturfTunnel_EventScript_WandasBoyfriendNotice
-	msgbox RusturfTunnel_Text_YouShatteredBoulderTakeHM, MSGBOX_DEFAULT
-	call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
-	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
-	giveitem ITEM_HM_STRENGTH
-	setflag FLAG_RECEIVED_HM_STRENGTH
-	msgbox RusturfTunnel_Text_ExplainStrength, MSGBOX_DEFAULT
-	closemessage
-	call_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_BoyfriendApproachWanda1
-	call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_BoyfriendApproachWanda2
-	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_BoyfriendApproachWanda3
-	msgbox RusturfTunnel_Text_WandaReunion, MSGBOX_DEFAULT
-	closemessage
-	call_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_WandaAndBoyfriendExit1
-	call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandaAndBoyfriendExit
-	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandaAndBoyfriendExit
-	call RusturfTunnel_EventScript_SetRusturfTunnelOpen
-	releaseall
-	end
+	// lockall
+	// call_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_FaceWandasBoyfriend1
+	// call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_FaceWandasBoyfriend2
+	// call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_FaceWandasBoyfriend3
+	// call RusturfTunnel_EventScript_WandasBoyfriendNotice
+	// msgbox RusturfTunnel_Text_YouShatteredBoulderTakeHM, MSGBOX_DEFAULT
+	// call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
+	// call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
+	// giveitem ITEM_HM_STRENGTH
+	// setflag FLAG_RECEIVED_HM_STRENGTH
+	// msgbox RusturfTunnel_Text_ExplainStrength, MSGBOX_DEFAULT
+	// closemessage
+	// call_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_BoyfriendApproachWanda1
+	// call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_BoyfriendApproachWanda2
+	// call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_BoyfriendApproachWanda3
+	// msgbox RusturfTunnel_Text_WandaReunion, MSGBOX_DEFAULT
+	// closemessage
+	// call_if_eq VAR_TEMP_1, 1, RusturfTunnel_EventScript_WandaAndBoyfriendExit1
+	// call_if_eq VAR_TEMP_1, 2, RusturfTunnel_EventScript_WandaAndBoyfriendExit
+	// call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandaAndBoyfriendExit
+	// call RusturfTunnel_EventScript_SetRusturfTunnelOpen
+	// releaseall
+	// end
 
 RusturfTunnel_EventScript_BoyfriendApproachWanda1::
-	applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend1
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda1
-	waitmovement 0
-	return
+	// applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend1
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda1
+	// waitmovement 0
+	// return
 
 RusturfTunnel_EventScript_BoyfriendApproachWanda2::
-	applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda
-	waitmovement 0
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDA, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	return
+	// applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda
+	// waitmovement 0
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDA, Common_Movement_WalkInPlaceFasterDown
+	// waitmovement 0
+	// return
 
 RusturfTunnel_EventScript_BoyfriendApproachWanda3::
-	applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda
-	waitmovement 0
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDA, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	return
+	// applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchBoyfriend
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendApproachWanda
+	// waitmovement 0
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDA, Common_Movement_WalkInPlaceFasterDown
+	// waitmovement 0
+	// return
 
 RusturfTunnel_EventScript_FaceWandasBoyfriend1::
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_WalkInPlaceFasterUp
-	waitmovement 0
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-	waitmovement 0
-	return
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_WalkInPlaceFasterUp
+	// waitmovement 0
+	// applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	// waitmovement 0
+	// return
 
 RusturfTunnel_EventScript_FaceWandasBoyfriend2::
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendFaceRight
-	waitmovement 0
-	return
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_BoyfriendFaceRight
+	// waitmovement 0
+	// return
 
 RusturfTunnel_EventScript_FaceWandasBoyfriend3::
 	return
 
 RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer::
-	closemessage
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendApproachPlayer
-	waitmovement 0
-	return
+	// closemessage
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendApproachPlayer
+	// waitmovement 0
+	// return
 
 RusturfTunnel_EventScript_WandaAndBoyfriendExit1::
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDA, RusturfTunnel_Movement_WandaExit1
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit1
-	waitmovement 0
-	return
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDA, RusturfTunnel_Movement_WandaExit1
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit1
+	// waitmovement 0
+	// return
 
 RusturfTunnel_EventScript_WandaAndBoyfriendExit::
-	applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchWandaExit
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDA, RusturfTunnel_Movement_WandaExit
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit
-	waitmovement 0
-	return
+	// applymovement LOCALID_PLAYER, RusturfTunnel_Movement_PlayerWatchWandaExit
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDA, RusturfTunnel_Movement_WandaExit
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, RusturfTunnel_Movement_WandasBoyfriendExit
+	// waitmovement 0
+	// return
 
 RusturfTunnel_EventScript_WandasBoyfriendNotice::
-	playse SE_PIN
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_Delay48
-	waitmovement 0
-	return
+	// playse SE_PIN
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_ExclamationMark
+	// waitmovement 0
+	// applymovement LOCALID_RUSTURF_TUNNEL_WANDAS_BF, Common_Movement_Delay48
+	// waitmovement 0
+	// return
 
 RusturfTunnel_Movement_WandaExit1:
 	walk_right
