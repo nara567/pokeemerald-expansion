@@ -12324,7 +12324,7 @@ const struct ItemInfo gItemsInfo[] =
 
 // TMs/HMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
 
-    [ITEM_TM_FOCUS_PUNCH] =
+    [ITEM_TM_TRAILBLAZE] =
     {
         .name = ITEM_NAME("TM01"),
         .price = 3000,

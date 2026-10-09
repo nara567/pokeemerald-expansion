@@ -82,10 +82,12 @@ VerdanturfTown_Gym_EventScript_DaphneDefeated::
 	setvar VAR_0x8008, 1
 # 43 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	call Common_EventScript_SetGymTrainers
+# 44 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	giveitem ITEM_TM_TRAILBLAZE
 # 45 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 46 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	setflag FLAG_RECEIVED_TM_SHOCK_WAVE
+	setflag FLAG_RECEIVED_TM_TRAILBLAZE
 # 47 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
