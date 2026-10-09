@@ -2802,17 +2802,46 @@ Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARK ===
-Name: MARK
+Name: Mark
 Class: Pokemaniac
 Pic: Pokemaniac
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
-Rhyhorn
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Floette
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Moonblast
+- Wish
+- Safeguard
+- Magical Leaf
+
+Roselia
+Ability: Poison Point
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Pin Missile
+- Razor Leaf
+- Growth
+- Stun Spore
+
+Lombre
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fake Out
+- Knock Off
+- Bubble Beam
+- Mega Drain
+
+Cacnea
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Ingrain
+- Trailblaze
+- Power Trip
+- Growth
 
 === TRAINER_STEVE_2 ===
 Name: STEVE
@@ -5893,17 +5922,40 @@ Level: 17
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_VANESSA ===
-Name: VANESSA
+Name: Vanessa
 Class: Pokefan
 Pic: Pokefan F
 Gender: Female
 Music: Twins
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Force Setup First Turn
 
-Pikachu @ Oran Berry
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Roselia @ Oran Berry
+Ability: Poison Point
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Toxic Spikes
+- Leech Seed
+- Magical Leaf
+- Growth
+
+Gloom @ Oran Berry
+Ability: Stench
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Toxic
+- Stun Spore
+- Sleep Powder
+- Acid
+
+Breloom @ Oran Berry
+Ability: Effect Spore
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Counter
+- Toxic
+- Trailblaze
+- Mach Punch
 
 === TRAINER_BETHANY ===
 Name: BETHANY
@@ -9484,7 +9536,7 @@ Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JONAS ===
-Name: JONAS
+Name: Jonas
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
@@ -9492,13 +9544,29 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-Koffing
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bellossom
+Level: 28
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Petal Blizzard
+- Grassy Terrain
+- Moonblast
 - Toxic
-- Thunder
-- Self Destruct
-- Sludge Bomb
+
+Grovyle
+Level: 28
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Double Team
+- Detect
+- Leafage
+- Trailblaze
+
+Vileplume
+Level: 28
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Giga Drain
+- Stun Spore
+- Growth
+- Acid
 
 === TRAINER_KAYLEY ===
 Name: KAYLEY

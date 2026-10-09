@@ -5,16 +5,23 @@ VerdanturfTown_Gym_MapScripts::
 
 script VerdanturfTown_Gym_EventScript_Daphne {
     lock
+    setspeaker("Daphne")
     if (flag(FLAG_VERDANTURF_GYM_FLOWER_3)){
         call(VerdanturnTown_Gym_EventScript_DaphneBattle)
     } elif (flag(FLAG_DEFEATED_MAUVILLE_GYM)){
         msgbox("Post battle!")
+    } elif (flag(FLAG_VERDANTURF_GYM_TALKED_TO_DAPHNE)){
+        msgbox(format("Need the hint again?"))
+        msgbox(format("Start at the heart of the blooming array,"))
+        msgbox(format("Reach for the highest petals of the day,"))
+        msgbox(format("Then finish where the lowest roots lay."))
     } else {
         setspeaker("Daphne")
         msgbox(format("Welcome to the Verdanturf Town Gym! To challenge me, you'll have to give me three petals from the trees in the flower field below."))
         msgbox(format("Start at the heart of the blooming array,"))
         msgbox(format("Reach for the highest petals of the day,"))
         msgbox(format("Then finish where the lowest roots lay."))
+        setflag(FLAG_VERDANTURF_GYM_TALKED_TO_DAPHNE)
     }
     release
 }
@@ -97,5 +104,71 @@ script VerdanturfTown_Gym_EventScript_Flower3 {
         msgbox(format("You picked a petal from this flower. You have all three petals Daphne asked for!"))
         setflag(FLAG_VERDANTURF_GYM_FLOWER_3)
     }
+    release
+}
+
+script VerdanturfTown_Gym_EventScript_Vanessa {
+    trainerbattle_single(TRAINER_VANESSA, VerdanturfTown_Gym_Text_VanessaIntro,VerdanturfTown_Gym_Text_VanessaDefeat, VerdanturfTown_Gym_Text_VanessaPostBattle, NO_MUSIC)
+    setspeaker("Vanessa")
+    msgbox(format("Good Luck!"))
+    waitmessage
+    release
+}
+
+text VerdanturfTown_Gym_Text_VanessaIntro{
+    format("Don't take us Gym Trainers lightly! I'll show you why we're better!")
+}
+
+text VerdanturfTown_Gym_Text_VanessaDefeat{
+    format("You were too good for me...")
+}
+
+script VerdanturfTown_Gym_Text_VanessaPostBattle{
+    setspeaker("Vanessa")
+    msgbox(format("Post battle!"))
+    release
+}
+
+script VerdanturfTown_Gym_EventScript_Mark {
+    trainerbattle_single(TRAINER_MARK, VerdanturfTown_Gym_Text_MarkIntro,VerdanturfTown_Gym_Text_MarkDefeat, VerdanturfTown_Gym_Text_MarkPostBattle, NO_MUSIC)
+    setspeaker("Mark")
+    msgbox(format("Good Luck!"))
+    waitmessage
+    release
+}
+
+text VerdanturfTown_Gym_Text_MarkIntro{
+    format("Don't take us Gym Trainers lightly! I'll show you why we're better!")
+}
+
+text VerdanturfTown_Gym_Text_MarkDefeat{
+    format("You were too good for me...")
+}
+
+script VerdanturfTown_Gym_Text_MarkPostBattle{
+    setspeaker("Mark")
+    msgbox(format("Post battle!"))
+    release
+}
+
+script VerdanturfTown_Gym_EventScript_Jonas {
+    trainerbattle_single(TRAINER_JONAS, VerdanturfTown_Gym_Text_JonasIntro,VerdanturfTown_Gym_Text_JonasDefeat, VerdanturfTown_Gym_Text_JonasPostBattle, NO_MUSIC)
+    setspeaker("Jonas")
+    msgbox(format("Good Luck!"))
+    waitmessage
+    release
+}
+
+text VerdanturfTown_Gym_Text_JonasIntro{
+    format("Don't take us Gym Trainers lightly! I'll show you why we're better!")
+}
+
+text VerdanturfTown_Gym_Text_JonasDefeat{
+    format("You were too good for me...")
+}
+
+script VerdanturfTown_Gym_Text_JonasPostBattle{
+    setspeaker("Jonas")
+    msgbox(format("Post battle!"))
     release
 }
