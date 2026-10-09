@@ -479,6 +479,7 @@ const u16 gObjectEventPal_NpcGreenReflection[] = INCGFX_U16("graphics/object_eve
 const u16 gObjectEventPic_MomFrlg[] = INCGFX_U16("graphics/object_events/pics/people/mom_frlg.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPic_Misty[] = INCGFX_U16("graphics/object_events/pics/people/misty.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPic_Pokedex[] = INCGFX_U16("graphics/object_events/pics/misc/pokedex.png", ".4bpp");
+const u16 gObjectEventPic_GymSign[] = INCGFX_U16("graphics/object_events/pics/misc/gym_sign.png", ".4bpp");
 
 #if IS_FRLG
 
@@ -580,7 +581,6 @@ const u32 gObjectEventPic_FossilFrlg[] = INCGFX_U32("graphics/object_events/pics
 const u16 gObjectEventPic_Ruby[] = INCGFX_U16("graphics/object_events/pics/misc/ruby.png", ".4bpp");
 const u16 gObjectEventPic_Sapphire[] = INCGFX_U16("graphics/object_events/pics/misc/sapphire.png", ".4bpp");
 const u16 gObjectEventPic_OldAmber[] = INCGFX_U16("graphics/object_events/pics/misc/old_amber.png", ".4bpp");
-const u16 gObjectEventPic_GymSign[] = INCGFX_U16("graphics/object_events/pics/misc/gym_sign.png", ".4bpp");
 const u16 gObjectEventPic_Sign[] = INCGFX_U16("graphics/object_events/pics/misc/sign.png", ".4bpp");
 const u16 gObjectEventPic_WoodenSign[] = INCGFX_U16("graphics/object_events/pics/misc/wooden_sign.png", ".4bpp");
 const u16 gObjectEventPic_Clipboard[] = INCGFX_U16("graphics/object_events/pics/misc/clipboard.png", ".4bpp");

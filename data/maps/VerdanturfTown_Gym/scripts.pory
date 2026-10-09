@@ -1,0 +1,101 @@
+raw`
+VerdanturfTown_Gym_MapScripts::
+	.byte 0
+`
+
+script VerdanturfTown_Gym_EventScript_Daphne {
+    lock
+    if (flag(FLAG_VERDANTURF_GYM_FLOWER_3)){
+        call(VerdanturnTown_Gym_EventScript_DaphneBattle)
+    } elif (flag(FLAG_DEFEATED_MAUVILLE_GYM)){
+        msgbox("Post battle!")
+    } else {
+        setspeaker("Daphne")
+        msgbox(format("Welcome to the Verdanturf Town Gym! To challenge me, you'll have to give me three petals from the trees in the flower field below."))
+        msgbox(format("Start at the heart of the blooming array,"))
+        msgbox(format("Reach for the highest petals of the day,"))
+        msgbox(format("Then finish where the lowest roots lay."))
+    }
+    release
+}
+
+script VerdanturnTown_Gym_EventScript_DaphneBattle {
+    trainerbattle_single(TRAINER_WATTSON_1,VerdanturfTown_Gym_Text_DaphneIntro,VerdanturfTown_Gym_Text_DaphneDefeat,VerdanturfTown_Gym_EventScript_DaphneDefeated,NO_MUSIC)
+    msgbox(VerdanturfTown_Gym_Text_DaphnePostBattle)
+}
+
+script VerdanturfTown_Gym_EventScript_DaphneDefeated {
+    lock
+    message(format("{PLAYER} received the Petal Badge from Daphne."))
+    waitmessage
+    call(Common_EventScript_PlayGymBadgeFanfare)
+    msgbox(format("Take this TM."))
+    setflag(FLAG_DEFEATED_MAUVILLE_GYM)
+    setflag(FLAG_BADGE03_GET)
+    setvar(VAR_0x8008,1)
+    call(Common_EventScript_SetGymTrainers)
+    //giveitem(ITEM_TM_TRAILBLAZE)
+    goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
+    setflag(FLAG_RECEIVED_TM_SHOCK_WAVE) //change to trailblaze
+    release
+}
+
+text VerdanturfTown_Gym_Text_DaphneIntro {
+    format("I'm Daphne!")
+}
+
+text VerdanturfTown_Gym_Text_DaphneDefeat {
+    format("You got me!")
+}
+
+text VerdanturfTown_Gym_Text_DaphnePostBattle {
+    format("I'm beaten.")
+}
+
+script VerdanturfTown_Gym_EventScript_Flower1 {
+    lock
+    if(!flag(FLAG_VERDANTURF_GYM_FLOWER_2)){
+        msgbox(format("You picked a petal, but all the petals in the gym grew back and yours withered away!"))
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_3)
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_2)
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_1)
+    } elif(flag(FLAG_VERDANTURF_GYM_FLOWER_1)){
+        msgbox(format("You already have this petal."))
+    } elif (flag(FLAG_VERDANTURF_GYM_FLOWER_2)){
+        msgbox(format("You picked a petal from this flower."))
+        setflag(FLAG_VERDANTURF_GYM_FLOWER_1)
+    }
+    release
+}
+
+script VerdanturfTown_Gym_EventScript_Flower2 {
+    lock
+    if(flag(FLAG_VERDANTURF_GYM_FLOWER_2)){
+        msgbox(format("You already have this petal."))
+    } else {
+        msgbox(format("You picked a petal from this flower."))
+        setflag(FLAG_VERDANTURF_GYM_FLOWER_2)
+    }
+    release
+}
+
+script VerdanturfTown_Gym_EventScript_Flower3 {
+    lock
+    if(!flag(FLAG_VERDANTURF_GYM_FLOWER_2) && !flag(FLAG_VERDANTURF_GYM_FLOWER_1)){
+        msgbox(format("You picked a petal, but all the petals in the gym grew back and yours withered away!"))
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_3)
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_2)
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_1)
+    } elif (flag(FLAG_VERDANTURF_GYM_FLOWER_2) && !flag(FLAG_VERDANTURF_GYM_FLOWER_1)){
+        msgbox(format("You picked a petal, but all the petals in the gym grew back and yours withered away!"))
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_3)
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_2)
+        clearflag(FLAG_VERDANTURF_GYM_FLOWER_1)
+    } elif (flag(FLAG_VERDANTURF_GYM_FLOWER_3)){
+        msgbox(format("You already have this petal."))
+    } else {
+        msgbox(format("You picked a petal from this flower. You have all three petals Daphne asked for!"))
+        setflag(FLAG_VERDANTURF_GYM_FLOWER_3)
+    }
+    release
+}

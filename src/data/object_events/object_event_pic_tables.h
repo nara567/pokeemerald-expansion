@@ -1387,6 +1387,10 @@ static const struct SpriteFrameImage sPicTable_Pokedex[] = {
     overworld_frame(gObjectEventPic_Pokedex, 2, 2, 0),
 };
 
+static const struct SpriteFrameImage sPicTable_GymSign[] = {
+    overworld_frame(gObjectEventPic_GymSign, 2, 4, 0),
+};
+
 #if IS_FRLG
 
 static const struct SpriteFrameImage sPicTable_RedNormal[] = {
@@ -1975,10 +1979,6 @@ static const struct SpriteFrameImage sPicTable_Sapphire[] = {
 
 static const struct SpriteFrameImage sPicTable_OldAmber[] = {
     overworld_frame(gObjectEventPic_OldAmber, 2, 2, 0),
-};
-
-static const struct SpriteFrameImage sPicTable_GymSign[] = {
-    overworld_frame(gObjectEventPic_GymSign, 2, 4, 0),
 };
 
 static const struct SpriteFrameImage sPicTable_Sign[] = {
