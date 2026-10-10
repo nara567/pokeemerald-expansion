@@ -589,21 +589,21 @@ Route103_Text_MayRoute103Pokemon:
 # 295 "data/maps/Route103/scripts.pory"
 
 # 296 "data/maps/Route103/scripts.pory"
-Route103_Text_MayLetsBattle:
+// Route103_Text_MayLetsBattle:
 # 297 "data/maps/Route103/scripts.pory"
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
+// 	.string "Oh, hi, {PLAYER}{KUN}!\p"
 # 298 "data/maps/Route103/scripts.pory"
-	.string "…Oh, I see, my dad gave you\n"
+// 	.string "…Oh, I see, my dad gave you\n"
 # 299 "data/maps/Route103/scripts.pory"
-	.string "a POKéMON as a gift.\p"
+// 	.string "a POKéMON as a gift.\p"
 # 300 "data/maps/Route103/scripts.pory"
-	.string "Since we're here, let's have a quick\n"
+// 	.string "Since we're here, let's have a quick\n"
 # 301 "data/maps/Route103/scripts.pory"
-	.string "battle!\p"
+// 	.string "battle!\p"
 # 302 "data/maps/Route103/scripts.pory"
-	.string "I'll give you a taste of what being\n"
+// 	.string "I'll give you a taste of what being\n"
 # 303 "data/maps/Route103/scripts.pory"
-	.string "a TRAINER is like.$"
+// 	.string "a TRAINER is like.$"
 # 304 "data/maps/Route103/scripts.pory"
 
 # 305 "data/maps/Route103/scripts.pory"
@@ -615,23 +615,23 @@ Route103_Text_MayDefeated:
 # 308 "data/maps/Route103/scripts.pory"
 
 # 309 "data/maps/Route103/scripts.pory"
-Route103_Text_MayTimeToHeadBack:
+// Route103_Text_MayTimeToHeadBack:
 # 310 "data/maps/Route103/scripts.pory"
-	.string "MAY: I think I know why my dad has\n"
+// 	.string "MAY: I think I know why my dad has\n"
 # 311 "data/maps/Route103/scripts.pory"
-	.string "an eye out for you now.\p"
+// 	.string "an eye out for you now.\p"
 # 312 "data/maps/Route103/scripts.pory"
-	.string "I mean, you just got that POKéMON,\n"
+// 	.string "I mean, you just got that POKéMON,\n"
 # 313 "data/maps/Route103/scripts.pory"
-	.string "but it already likes you.\p"
+// 	.string "but it already likes you.\p"
 # 314 "data/maps/Route103/scripts.pory"
-	.string "You might be able to befriend any\n"
+// 	.string "You might be able to befriend any\n"
 # 315 "data/maps/Route103/scripts.pory"
-	.string "kind of POKéMON easily.\p"
+// 	.string "kind of POKéMON easily.\p"
 # 316 "data/maps/Route103/scripts.pory"
-	.string "Well, it's time to head back to\n"
+// 	.string "Well, it's time to head back to\n"
 # 317 "data/maps/Route103/scripts.pory"
-	.string "the LAB.$"
+// 	.string "the LAB.$"
 # 318 "data/maps/Route103/scripts.pory"
 
 # 319 "data/maps/Route103/scripts.pory"
@@ -787,3 +787,18 @@ Route103_EventScript_BlockedPath_Movement_2:
 	walk_right
 # 391 "data/maps/Route103/scripts.pory"
 	step_end
+
+Route103_Text_MayLetsBattle::
+# 397 "data/maps/Route103/scripts.pory"
+	.string "Oh, hey, {PLAYER}! The Professor's field\n"
+	.string "notes? I've got 'em right here! I see\l"
+	.string "you already got your gift, so let's have\l"
+	.string "a quick battle!$"
+
+Route103_Text_MayTimeToHeadBack::
+# 401 "data/maps/Route103/scripts.pory"
+	.string "Wow, you're battling like you've done it\n"
+	.string "for years. You just got that Pokémon\l"
+	.string "but it already likes you! Well, it's time\l"
+	.string "to head back. I think the party's about\l"
+	.string "to start!$"

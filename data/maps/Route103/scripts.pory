@@ -293,28 +293,28 @@ Route103_Text_MayRoute103Pokemon:
 	.string "MAY: Let's see… The POKéMON found\n"
 	.string "on ROUTE 103 include…$"
 
-Route103_Text_MayLetsBattle:
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, I see, my dad gave you\n"
-	.string "a POKéMON as a gift.\p"
-	.string "Since we're here, let's have a quick\n"
-	.string "battle!\p"
-	.string "I'll give you a taste of what being\n"
-	.string "a TRAINER is like.$"
+// Route103_Text_MayLetsBattle:
+// 	.string "Oh, hi, {PLAYER}{KUN}!\p"
+// 	.string "…Oh, I see, my dad gave you\n"
+// 	.string "a POKéMON as a gift.\p"
+// 	.string "Since we're here, let's have a quick\n"
+// 	.string "battle!\p"
+// 	.string "I'll give you a taste of what being\n"
+// 	.string "a TRAINER is like.$"
 
 Route103_Text_MayDefeated:
 	.string "Wow! That's great!\n"
 	.string "{PLAYER}{KUN}, you're pretty good!$"
 
-Route103_Text_MayTimeToHeadBack:
-	.string "MAY: I think I know why my dad has\n"
-	.string "an eye out for you now.\p"
-	.string "I mean, you just got that POKéMON,\n"
-	.string "but it already likes you.\p"
-	.string "You might be able to befriend any\n"
-	.string "kind of POKéMON easily.\p"
-	.string "Well, it's time to head back to\n"
-	.string "the LAB.$"
+// Route103_Text_MayTimeToHeadBack:
+// 	.string "MAY: I think I know why my dad has\n"
+// 	.string "an eye out for you now.\p"
+// 	.string "I mean, you just got that POKéMON,\n"
+// 	.string "but it already likes you.\p"
+// 	.string "You might be able to befriend any\n"
+// 	.string "kind of POKéMON easily.\p"
+// 	.string "Well, it's time to head back to\n"
+// 	.string "the LAB.$"
 
 Route103_Text_BrendanRoute103Pokemon:
 	.string "BRENDAN: Okay, so it's this one and\n"
@@ -394,3 +394,10 @@ script Route103_EventScript_BlockedPath {
     releaseall
 }
 
+text Route103_Text_MayLetsBattle {
+	format("Oh, hey, {PLAYER}! The Professor's field notes? I've got 'em right here! I see you already got your gift, so let's have a quick battle!")
+}
+
+text Route103_Text_MayTimeToHeadBack {
+	format("Wow, you're battling like you've done it for years. You just got that Pokémon but it already likes you! Well, it's time to head back. I think the party's about to start!")
+}
