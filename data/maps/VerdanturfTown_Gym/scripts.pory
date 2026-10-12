@@ -36,7 +36,7 @@ script VerdanturfTown_Gym_EventScript_DaphneDefeated {
     message(format("{PLAYER} received the Petal Badge from Daphne."))
     waitmessage
     call(Common_EventScript_PlayGymBadgeFanfare)
-    msgbox(format("Take this TM."))
+    msgbox(format("The Petal Badge unlocks the Rock Smash feature of your Pokenav. Take this TM too!"))
     setflag(FLAG_DEFEATED_MAUVILLE_GYM)
     setflag(FLAG_BADGE03_GET)
     setvar(VAR_0x8008,1)

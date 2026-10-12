@@ -321,7 +321,9 @@ VerdanturfTown_Gym_EventScript_DaphneDefeated_Text_0:
 
 VerdanturfTown_Gym_EventScript_DaphneDefeated_Text_1:
 # 39 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	.string "Take this TM.$"
+	.string "The Petal Badge unlocks the Rock Smash\n"
+	.string "feature of your Pokenav. Take this TM\l"
+	.string "too!$"
 
 VerdanturfTown_Gym_EventScript_Flower1_Text_0:
 # 65 "data/maps/VerdanturfTown_Gym/scripts.pory"
