@@ -5763,7 +5763,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Arm Thrust
 
 === TRAINER_VICTOR ===
-Name: VICTOR
+Name: Victor
 Class: Winstrate
 Pic: Pokefan M
 Gender: Male
@@ -5771,13 +5771,59 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Taillow @ Oran Berry
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Probopass @ Air Balloon
+Level: 40
+Ability: Sand Force
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Power Gem
+- Earth Power
+- Thunderbolt
+- Sandstorm
 
-Zigzagoon @ Oran Berry
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Armaldo @ Lum Berry
+Level: 40
+Ability: Sand Force
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- X-Scissor
+- Rock Polish
+- Earthquake
+- Rock Slide
+
+Cradily @ Air Balloon
+Level: 40
+Ability: Storm Drain
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rock Slide
+- Giga Drain
+- Amnesia
+- Toxic
+
+Aggron @ Aggronite
+Level: 40
+Ability: Heavy Metal
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Metal Burst
+- Heavy Slam
+- Avalanche
+- Head Smash
+
+Tyrantrum @ Weakness Policy
+Level: 40
+Ability: Strong Jaw
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dragon Claw
+- Dragon Tail
+- Rock Slide
+- Crunch
+
+Golem-Alola @ Electric Gem
+Level: 40
+Ability: Galvanize
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rock Blast
+- Discharge
+- Explosion
+- Rock Polish
 
 === TRAINER_MIGUEL_1 ===
 Name: Miguel
@@ -5909,7 +5955,7 @@ Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VICTORIA ===
-Name: VICTORIA
+Name: Victoria
 Class: Winstrate
 Pic: Pokefan F
 Gender: Female
@@ -5917,9 +5963,59 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Roselia @ Oran Berry
-Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Hariyama @ Chesto Berry
+Level: 50
+Ability: Thick Fat
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Rest
+- Bulk Up
+- Revenge
+- Stone Edge
+
+Breloom @ Focus Sash
+Level: 50
+Ability: Effect Spore
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spore
+- Focus Punch
+- Seed Bomb
+- Stone Edge
+
+Conkeldurr @ Choice Band
+Level: 50
+Ability: Sheer Force
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Stone Edge
+- Hammer Arm
+- Poison Jab
+- Ice Punch
+
+Grapploct @ Sitrus Berry
+Level: 50
+Ability: Technician
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Octolock
+- Power-Up Punch
+- Bulk UP
+- Topsy-Turvy
+
+Blaziken @ Blazikenite
+Level: 50
+Ability: Blaze
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Blaze Kick
+- Brick Break
+- Aerial Ace
+- Bulk Up
+
+Toxicroak @ Chesto Berry
+Level: 50
+Ability: Dry Skin
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Cross Chop
+- Poison Jab
+- Flatter
+- Sucker Punch
 
 === TRAINER_VANESSA ===
 Name: Vanessa
@@ -12089,7 +12185,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scary Face
 
 === TRAINER_MIKE_2 ===
-Name: MIKE
+Name: Mike
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -12097,17 +12193,21 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Loudred
+Level: 20
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
-Geodude
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rhyhorn
+Level: 22
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
-Machop
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Timburr
+Level: 20
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+- Low Kick
+- Rock Slide
+- Bulk Up
+- Mach Punch
 
 === TRAINER_TRENT_2 ===
 Name: TRENT
