@@ -6237,7 +6237,7 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Dig
 
 === TRAINER_VICKY ===
-Name: VICKY
+Name: Vicky
 Class: Winstrate
 Pic: Expert F
 Gender: Female
@@ -6245,13 +6245,59 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Meditite
-Level: 18
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- High Jump Kick
-- Meditate
-- Confusion
-- Detect
+Torkoal @ Heat Rock
+Level: 60
+Ability: Drought
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Overheat
+- Flamethrower
+- Curse
+- Scorching Sands
+
+Camerupt @ Cameruptite
+Level: 60
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Slide
+- Lava Plume
+- Earth Power
+- Take Down
+
+Skeledirge @ Expert Belt
+Level: 60
+Ability: Blaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Torch Song
+- Hex
+- Roar
+- Will-o-Wisp
+
+Armarouge @ Wide Lens
+Level: 60
+Ability: Flash Fire
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psyshock
+- Armor Cannon
+- Energy Ball
+- Dragon Pulse
+
+Infernape @ Sitrus Berry
+Level: 60
+Ability: Blaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat
+- Raging Fury
+- Acrobatics
+- U-Turn
+
+Salazzle @ Focus Sash
+Level: 60
+Ability: Corrosion
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Venoshock
+- Flamethrower
+- Swagger
 
 === TRAINER_SHELBY_1 ===
 Name: SHELBY
@@ -11670,7 +11716,7 @@ Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_VIVI ===
-Name: VIVI
+Name: Vivi
 Class: Winstrate
 Pic: Lass
 Gender: Female
@@ -11678,17 +11724,59 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Marill
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Magnezone @ Leftovers
+Level: 55
+Ability: Analytic
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Thunderbolt
+- Flash Cannon
+- Toxic
+- Protect
 
-Shroomish
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Electrode-Hisui @ Air Balloon
+Level: 55
+Ability: Static
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Energy Ball
+- Discharge
+- Electro Ball
+- Chloroblast
 
-Numel
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ampharos @ Expert Belt
+Level: 55
+Ability: Static
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Dazzling Gleam
+- Thunderbolt
+- Power Gem
+- Dragon Pulse
+
+Jolteon @ Wide Lens
+Level: 55
+Ability: Volt Absorb
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Thunder
+- Shadow Ball
+- Wish
+- Electric Terrain
+
+Manectric @ Manectite
+Level: 55
+Ability: Static
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Thunderbolt
+- Flamethrower
+- Thunder Wave
+- Double Team
+
+Boltund @ Focus Sash
+Level: 55
+Ability: Strong Jaw
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Psychic Fangs
+- Thunder Fang
+- Fire Fang
+- Crunch
 
 === TRAINER_HALEY_2 ===
 Name: HALEY
