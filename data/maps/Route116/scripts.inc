@@ -5,15 +5,12 @@ Route116_MapScripts::
 	.byte 0
 
 Route116_OnTransition:
-	call_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_SetWandasBoyfriendPos
+	//call_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_SetWandasBoyfriendPos
 	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_NORTH, AbnormalWeather_StartGroudonWeather
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_SOUTH, AbnormalWeather_StartGroudonWeather
 	end
 
-Route116_EventScript_SetWandasBoyfriendPos::
-	setobjectxyperm LOCALID_ROUTE116_WANDAS_BF, 38, 10
-	return
 
 Route116_OnLoad:
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_NORTH, AbnormalWeather_EventScript_PlaceTilesRoute116North
@@ -23,15 +20,6 @@ Route116_OnLoad:
 Route116_OnFrame:
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
-
-Route116_EventScript_WandasBoyfriend::
-	lock
-	faceplayer
-	goto_if_set FLAG_RECOVERED_DEVON_GOODS, Route116_EventScript_BoyfriendGruntLeftTunnel
-	goto_if_set FLAG_DEVON_GOODS_STOLEN, Route116_EventScript_BoyfriendGruntInTunnel
-	msgbox Route116_Text_WantToDigTunnel, MSGBOX_DEFAULT
-	release
-	end
 
 Route116_EventScript_BoyfriendGruntLeftTunnel::
 	msgbox Route116_Text_GoonHightailedItOutOfTunnel, MSGBOX_DEFAULT
@@ -44,48 +32,48 @@ Route116_EventScript_BoyfriendGruntInTunnel::
 	end
 
 Route116_EventScript_DevonEmployee::
-	lock
-	faceplayer
-	goto_if_set FLAG_MET_DEVON_EMPLOYEE, Route116_EventScript_TryGiveRepeatBallAgain
-	msgbox Route116_Text_ThankYouTokenOfAppreciation, MSGBOX_DEFAULT
-	goto Route116_EventScript_GiveRepeatBall
-	end
+	// lock
+	// faceplayer
+	// goto_if_set FLAG_MET_DEVON_EMPLOYEE, Route116_EventScript_TryGiveRepeatBallAgain
+	// msgbox Route116_Text_ThankYouTokenOfAppreciation, MSGBOX_DEFAULT
+	// goto Route116_EventScript_GiveRepeatBall
+	// end
 
 Route116_EventScript_GiveRepeatBall::
-	setflag FLAG_MET_DEVON_EMPLOYEE
-	giveitem ITEM_REPEAT_BALL
-	goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall
-	msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT
-	closemessage
-	call_if_eq VAR_FACING, DIR_NORTH, Route116_EventScript_DevonEmployeeExit
-	call_if_eq VAR_FACING, DIR_SOUTH, Route116_EventScript_DevonEmployeeExit
-	call_if_eq VAR_FACING, DIR_WEST, Route116_EventScript_DevonEmployeeExit
-	call_if_eq VAR_FACING, DIR_EAST, Route116_EventScript_DevonEmployeeExitEast
-	removeobject VAR_LAST_TALKED
-	clearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE
-	setflag FLAG_RECEIVED_REPEAT_BALL
-	release
-	end
+	// setflag FLAG_MET_DEVON_EMPLOYEE
+	// giveitem ITEM_REPEAT_BALL
+	// goto_if_eq VAR_RESULT, FALSE, Route116_EventScript_NoRoomForRepeatBall
+	// msgbox Route116_Text_NewBallAvailableAtMart, MSGBOX_DEFAULT
+	// closemessage
+	// call_if_eq VAR_FACING, DIR_NORTH, Route116_EventScript_DevonEmployeeExit
+	// call_if_eq VAR_FACING, DIR_SOUTH, Route116_EventScript_DevonEmployeeExit
+	// call_if_eq VAR_FACING, DIR_WEST, Route116_EventScript_DevonEmployeeExit
+	// call_if_eq VAR_FACING, DIR_EAST, Route116_EventScript_DevonEmployeeExitEast
+	// removeobject VAR_LAST_TALKED
+	// clearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE
+	// setflag FLAG_RECEIVED_REPEAT_BALL
+	// release
+	// end
 
 Route116_EventScript_DevonEmployeeExit::
-	applymovement VAR_LAST_TALKED, Route116_Movement_DevonEmployeeExit
-	waitmovement 0
-	return
+	// applymovement VAR_LAST_TALKED, Route116_Movement_DevonEmployeeExit
+	// waitmovement 0
+	// return
 
 Route116_EventScript_DevonEmployeeExitEast::
-	applymovement VAR_LAST_TALKED, Route116_Movement_DevonEmployeeExitEast
-	waitmovement 0
-	return
+	// applymovement VAR_LAST_TALKED, Route116_Movement_DevonEmployeeExitEast
+	// waitmovement 0
+	// return
 
 Route116_EventScript_TryGiveRepeatBallAgain::
-	msgbox Route116_Text_TokenOfAppreciation, MSGBOX_DEFAULT
-	goto Route116_EventScript_GiveRepeatBall
-	end
+	// msgbox Route116_Text_TokenOfAppreciation, MSGBOX_DEFAULT
+	// goto Route116_EventScript_GiveRepeatBall
+	// end
 
 Route116_EventScript_NoRoomForRepeatBall::
-	msgbox Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT
-	release
-	end
+	// msgbox Route116_Text_BagIsJamPacked, MSGBOX_DEFAULT
+	// release
+	// end
 
 Route116_Movement_DevonEmployeeExit:
 	walk_left
@@ -131,23 +119,23 @@ Route116_EventScript_TrainerTipsBagHasPockets::
 	msgbox Route116_Text_TrainerTipsBagHasPockets, MSGBOX_SIGN
 	end
 
-Route116_EventScript_Briney::
-	lock
-	faceplayer
-	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
-	setvar VAR_ROUTE116_STATE, 2
-	release
-	end
+// Route116_EventScript_Briney::
+// 	lock
+// 	faceplayer
+// 	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
+// 	setvar VAR_ROUTE116_STATE, 2
+// 	release
+// 	end
 
-Route116_EventScript_BrineyTrigger::
-	lockall
-	applymovement LOCALID_ROUTE116_BRINEY, Common_Movement_WalkInPlaceFasterRight
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
-	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
-	setvar VAR_ROUTE116_STATE, 2
-	releaseall
-	end
+// Route116_EventScript_BrineyTrigger::
+// 	lockall
+// 	applymovement LOCALID_ROUTE116_BRINEY, Common_Movement_WalkInPlaceFasterRight
+// 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+// 	waitmovement 0
+// 	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
+// 	setvar VAR_ROUTE116_STATE, 2
+// 	releaseall
+// 	end
 
 Route116_EventScript_GlassesMan::
 	lock
