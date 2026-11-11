@@ -1650,6 +1650,10 @@
     {
       "id": "MAPSEC_VOLTAIC_CAVE",
       "name": "Voltaic Cave"
+    },
+    {
+      "id": "MAPSEC_ROUTE_103A",
+      "name": "Route 103A"
     }
   ]
 }

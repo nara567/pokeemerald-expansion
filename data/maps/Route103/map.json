@@ -12,23 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_OLDALE_TOWN",
-      "offset": 0,
-      "direction": "down"
-    },
-    {
-      "map": "MAP_ROUTE103_2",
-      "offset": 0,
-      "direction": "right"
-    },
-    {
-      "map": "MAP_OLDALE_RUINS",
-      "offset": 20,
-      "direction": "down"
-    }
-  ],
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -46,8 +30,8 @@
     {
       "local_id": "LOCALID_ROUTE103_RIVAL",
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 10,
-      "y": 3,
+      "x": 7,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -150,8 +134,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 20,
-      "y": 10,
+      "x": 11,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -163,8 +147,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
-      "x": 7,
-      "y": 3,
+      "x": 4,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -294,8 +278,8 @@
     {
       "local_id": "LOCALID_103_FOOTPRINTS_MAN",
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
-      "x": 23,
-      "y": 9,
+      "x": 18,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -318,8 +302,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 24,
-      "y": 10,
+      "x": 19,
+      "y": 22,
       "elevation": 0,
       "var": "VAR_OLDALE_TOWN_STATE",
       "var_value": "0",
@@ -329,8 +313,8 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 11,
-      "y": 9,
+      "x": 7,
+      "y": 22,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route103_EventScript_RouteSign"

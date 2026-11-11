@@ -1331,3 +1331,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/VoltaicCave/scripts.inc"
 
 	.include "data/maps/VerdanturfTown_Gym/scripts.inc"
+
+	.include "data/maps/Route103A/scripts.inc"
