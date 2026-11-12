@@ -1333,3 +1333,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/VerdanturfTown_Gym/scripts.inc"
 
 	.include "data/maps/Route103A/scripts.inc"
+
+	.include "data/maps/Route104North/scripts.inc"
+
+	.include "data/maps/Route104_South/scripts.inc"

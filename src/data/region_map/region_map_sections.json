@@ -1654,6 +1654,14 @@
     {
       "id": "MAPSEC_ROUTE_103A",
       "name": "Route 103A"
+    },
+    {
+      "id": "MAPSEC_ROUTE_104_NORTH",
+      "name": "Route 104 North"
+    },
+    {
+      "id": "MAPSEC_ROUTE_104_SOUTH",
+      "name": "Route 104 South"
     }
   ]
 }

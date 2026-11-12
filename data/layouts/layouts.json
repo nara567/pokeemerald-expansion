@@ -214,7 +214,7 @@
       "id": "LAYOUT_ROUTE104",
       "name": "Route104_Layout",
       "width": 40,
-      "height": 80,
+      "height": 94,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route104/border.bin",
@@ -9440,6 +9440,28 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/VerdanturfTown_Gym/border.bin",
       "blockdata_filepath": "data/layouts/VerdanturfTown_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE104NORTH",
+      "name": "Route104North_Layout",
+      "width": 40,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route104North/border.bin",
+      "blockdata_filepath": "data/layouts/Route104North/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ROUTE104_SOUTH",
+      "name": "Route104_South_Layout",
+      "width": 40,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Route104_South/border.bin",
+      "blockdata_filepath": "data/layouts/Route104_South/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }
