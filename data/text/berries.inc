@@ -3,14 +3,14 @@ PetalburgCity_Gym_Text_GiveEnigmaBerry:
 	.string "I just received a very rare BERRY.\n"
 	.string "I'd like you to have it.$"
 
-Route104_Text_PlantBerriesInSoilTakeThis:
+Route104North_Text_PlantBerriesInSoilTakeThis:
 	.string "If you see BERRIES growing in loamy\n"
 	.string "soil, feel free to take them.\p"
 	.string "But make sure you plant a BERRY in the\n"
 	.string "same spot. That's common courtesy.\p"
 	.string "Here, I'll share this with you.$"
 
-Route104_Text_TrainersOftenMakeMonHoldBerries:
+Route104North_Text_TrainersOftenMakeMonHoldBerries:
 	.string "The way you look, you must be a\n"
 	.string "TRAINER, no?\p"
 	.string "TRAINERS often make POKéMON hold\n"
