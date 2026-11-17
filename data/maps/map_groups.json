@@ -98,7 +98,8 @@
     "OldaleRuins",
     "Route103A",
     "Route104North",
-    "Route104_South"
+    "Route104_South",
+    "NewPrimaryTesting"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

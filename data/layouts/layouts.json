@@ -9462,6 +9462,16 @@
       "border_filepath": "data/layouts/Route104_South/border.bin",
       "blockdata_filepath": "data/layouts/Route104_South/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_NEW_PRIMARY_TESTING",
+      "name": "NewPrimaryTesting_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_NewPrimary",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewPrimaryTesting/border.bin",
+      "blockdata_filepath": "data/layouts/NewPrimaryTesting/map.bin"
     }
   ]
 }
