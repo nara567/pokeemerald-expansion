@@ -10224,7 +10224,7 @@ Marshtomp
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_MUDKIP ===
+=== TRAINER_RIVAL_ROUTE_103 ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -10284,7 +10284,7 @@ Grovyle
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_TREECKO ===
+=== TRAINER_RIVAL_RUSTBORO_CITY ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -10293,11 +10293,35 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Happiny
+Golbat
+Level: 25
+IVs: 20 HP / 10 Atk / 15 Def / 10 SpA / 15 SpD / 10 Spe
+-Poison Fang
+-Air Cutter
+-Absorb
+-Steel Wing
+
+Trapinch
+Level: 25
+IVs: 20 HP / 10 Atk / 15 Def / 10 SpA / 15 SpD / 10 Spe
+-Bulldoze
+-Dig
+-Bite
+-Mud Slap
+
+Vigoroth
+Level: 25
+IVs: 20 HP / 10 Atk / 15 Def / 10 SpA / 15 SpD / 10 Spe
+-Slash
+-Focus Energy
+-Metal Claw
+-Aerial Ace
+
+Chansey
 Calm Nature
 Ball: Love
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 25
+IVs: 20 HP / 10 Atk / 15 Def / 10 SpA / 15 SpD / 10 Spe
 -Pound
 -Defense Curl
 -Heal Bell

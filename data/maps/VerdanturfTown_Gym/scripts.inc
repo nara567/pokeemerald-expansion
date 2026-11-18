@@ -89,194 +89,196 @@ VerdanturfTown_Gym_EventScript_DaphneDefeated::
 # 46 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	setflag FLAG_RECEIVED_TM_TRAILBLAZE
 # 47 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	setvar VAR_RUSTBORO_CITY_STATE, 1
+# 48 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 
 VerdanturfTown_Gym_EventScript_Flower1::
-# 63 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	lock
 # 64 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	lock
+# 65 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_unset FLAG_VERDANTURF_GYM_FLOWER_2, VerdanturfTown_Gym_EventScript_Flower1_2
-# 69 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 70 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_set FLAG_VERDANTURF_GYM_FLOWER_1, VerdanturfTown_Gym_EventScript_Flower1_3
-# 71 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 72 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_set FLAG_VERDANTURF_GYM_FLOWER_2, VerdanturfTown_Gym_EventScript_Flower1_4
 VerdanturfTown_Gym_EventScript_Flower1_1:
-# 75 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 76 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 VerdanturfTown_Gym_EventScript_Flower1_2:
-# 65 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_0
 # 66 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	clearflag FLAG_VERDANTURF_GYM_FLOWER_3
+	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_0
 # 67 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	clearflag FLAG_VERDANTURF_GYM_FLOWER_2
+	clearflag FLAG_VERDANTURF_GYM_FLOWER_3
 # 68 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	clearflag FLAG_VERDANTURF_GYM_FLOWER_2
+# 69 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	clearflag FLAG_VERDANTURF_GYM_FLOWER_1
 	goto VerdanturfTown_Gym_EventScript_Flower1_1
 
 VerdanturfTown_Gym_EventScript_Flower1_3:
-# 70 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 71 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_1
 	goto VerdanturfTown_Gym_EventScript_Flower1_1
 
 VerdanturfTown_Gym_EventScript_Flower1_4:
-# 72 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_2
 # 73 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_2
+# 74 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	setflag FLAG_VERDANTURF_GYM_FLOWER_1
 	goto VerdanturfTown_Gym_EventScript_Flower1_1
 
 
 VerdanturfTown_Gym_EventScript_Flower2::
-# 79 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	lock
 # 80 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	lock
+# 81 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_set FLAG_VERDANTURF_GYM_FLOWER_2, VerdanturfTown_Gym_EventScript_Flower2_2
-# 83 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_2
 # 84 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_2
+# 85 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	setflag FLAG_VERDANTURF_GYM_FLOWER_2
 VerdanturfTown_Gym_EventScript_Flower2_1:
-# 86 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 87 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 VerdanturfTown_Gym_EventScript_Flower2_2:
-# 81 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 82 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_1
 	goto VerdanturfTown_Gym_EventScript_Flower2_1
 
 
 VerdanturfTown_Gym_EventScript_Flower3::
-# 90 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	lock
 # 91 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	lock
+# 92 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_unset FLAG_VERDANTURF_GYM_FLOWER_2, VerdanturfTown_Gym_EventScript_Flower3_10
 VerdanturfTown_Gym_EventScript_Flower3_8:
-# 96 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 97 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_set FLAG_VERDANTURF_GYM_FLOWER_2, VerdanturfTown_Gym_EventScript_Flower3_7
 VerdanturfTown_Gym_EventScript_Flower3_6:
-# 101 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 102 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_set FLAG_VERDANTURF_GYM_FLOWER_3, VerdanturfTown_Gym_EventScript_Flower3_4
-# 104 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Flower3_Text_0
 # 105 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	msgbox VerdanturfTown_Gym_EventScript_Flower3_Text_0
+# 106 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	setflag FLAG_VERDANTURF_GYM_FLOWER_3
 VerdanturfTown_Gym_EventScript_Flower3_1:
-# 107 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 108 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 VerdanturfTown_Gym_EventScript_Flower3_2:
-# 92 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_0
 # 93 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	clearflag FLAG_VERDANTURF_GYM_FLOWER_3
+	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_0
 # 94 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	clearflag FLAG_VERDANTURF_GYM_FLOWER_2
+	clearflag FLAG_VERDANTURF_GYM_FLOWER_3
 # 95 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	clearflag FLAG_VERDANTURF_GYM_FLOWER_2
+# 96 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	clearflag FLAG_VERDANTURF_GYM_FLOWER_1
 	goto VerdanturfTown_Gym_EventScript_Flower3_1
 
 VerdanturfTown_Gym_EventScript_Flower3_3:
-# 97 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_0
 # 98 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	clearflag FLAG_VERDANTURF_GYM_FLOWER_3
+	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_0
 # 99 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	clearflag FLAG_VERDANTURF_GYM_FLOWER_2
+	clearflag FLAG_VERDANTURF_GYM_FLOWER_3
 # 100 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	clearflag FLAG_VERDANTURF_GYM_FLOWER_2
+# 101 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	clearflag FLAG_VERDANTURF_GYM_FLOWER_1
 	goto VerdanturfTown_Gym_EventScript_Flower3_1
 
 VerdanturfTown_Gym_EventScript_Flower3_4:
-# 102 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 103 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	msgbox VerdanturfTown_Gym_EventScript_Flower1_Text_1
 	goto VerdanturfTown_Gym_EventScript_Flower3_1
 
 VerdanturfTown_Gym_EventScript_Flower3_7:
-# 96 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 97 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_unset FLAG_VERDANTURF_GYM_FLOWER_1, VerdanturfTown_Gym_EventScript_Flower3_3
 	goto VerdanturfTown_Gym_EventScript_Flower3_6
 
 VerdanturfTown_Gym_EventScript_Flower3_10:
-# 91 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 92 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	goto_if_unset FLAG_VERDANTURF_GYM_FLOWER_1, VerdanturfTown_Gym_EventScript_Flower3_2
 	goto VerdanturfTown_Gym_EventScript_Flower3_8
 
 
 VerdanturfTown_Gym_EventScript_Vanessa::
-# 111 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_VANESSA, VerdanturfTown_Gym_Text_VanessaIntro, VerdanturfTown_Gym_Text_VanessaDefeat, VerdanturfTown_Gym_Text_VanessaPostBattle, NO_MUSIC
 # 112 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	setspeaker VerdanturfTown_Gym_EventScript_Vanessa_Text_0
+	trainerbattle_single TRAINER_VANESSA, VerdanturfTown_Gym_Text_VanessaIntro, VerdanturfTown_Gym_Text_VanessaDefeat, VerdanturfTown_Gym_Text_VanessaPostBattle, NO_MUSIC
 # 113 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Vanessa_Text_1
+	setspeaker VerdanturfTown_Gym_EventScript_Vanessa_Text_0
 # 114 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	waitmessage
+	msgbox VerdanturfTown_Gym_EventScript_Vanessa_Text_1
 # 115 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	waitmessage
+# 116 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 
 VerdanturfTown_Gym_Text_VanessaPostBattle::
-# 127 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	setspeaker VerdanturfTown_Gym_EventScript_Vanessa_Text_0
 # 128 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Daphne_Text_1
+	setspeaker VerdanturfTown_Gym_EventScript_Vanessa_Text_0
 # 129 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	msgbox VerdanturfTown_Gym_EventScript_Daphne_Text_1
+# 130 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 
 VerdanturfTown_Gym_EventScript_Mark::
-# 133 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_MARK, VerdanturfTown_Gym_Text_MarkIntro, VerdanturfTown_Gym_Text_MarkDefeat, VerdanturfTown_Gym_Text_MarkPostBattle, NO_MUSIC
 # 134 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	setspeaker VerdanturfTown_Gym_EventScript_Mark_Text_0
+	trainerbattle_single TRAINER_MARK, VerdanturfTown_Gym_Text_MarkIntro, VerdanturfTown_Gym_Text_MarkDefeat, VerdanturfTown_Gym_Text_MarkPostBattle, NO_MUSIC
 # 135 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Vanessa_Text_1
+	setspeaker VerdanturfTown_Gym_EventScript_Mark_Text_0
 # 136 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	waitmessage
+	msgbox VerdanturfTown_Gym_EventScript_Vanessa_Text_1
 # 137 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	waitmessage
+# 138 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 
 VerdanturfTown_Gym_Text_MarkPostBattle::
-# 149 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	setspeaker VerdanturfTown_Gym_EventScript_Mark_Text_0
 # 150 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Daphne_Text_1
+	setspeaker VerdanturfTown_Gym_EventScript_Mark_Text_0
 # 151 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	msgbox VerdanturfTown_Gym_EventScript_Daphne_Text_1
+# 152 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 
 VerdanturfTown_Gym_EventScript_Jonas::
-# 155 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	trainerbattle_single TRAINER_JONAS, VerdanturfTown_Gym_Text_JonasIntro, VerdanturfTown_Gym_Text_JonasDefeat, VerdanturfTown_Gym_Text_JonasPostBattle, NO_MUSIC
 # 156 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	setspeaker VerdanturfTown_Gym_EventScript_Jonas_Text_0
+	trainerbattle_single TRAINER_JONAS, VerdanturfTown_Gym_Text_JonasIntro, VerdanturfTown_Gym_Text_JonasDefeat, VerdanturfTown_Gym_Text_JonasPostBattle, NO_MUSIC
 # 157 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Vanessa_Text_1
+	setspeaker VerdanturfTown_Gym_EventScript_Jonas_Text_0
 # 158 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	waitmessage
+	msgbox VerdanturfTown_Gym_EventScript_Vanessa_Text_1
 # 159 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	waitmessage
+# 160 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
 
 VerdanturfTown_Gym_Text_JonasPostBattle::
-# 171 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	setspeaker VerdanturfTown_Gym_EventScript_Jonas_Text_0
 # 172 "data/maps/VerdanturfTown_Gym/scripts.pory"
-	msgbox VerdanturfTown_Gym_EventScript_Daphne_Text_1
+	setspeaker VerdanturfTown_Gym_EventScript_Jonas_Text_0
 # 173 "data/maps/VerdanturfTown_Gym/scripts.pory"
+	msgbox VerdanturfTown_Gym_EventScript_Daphne_Text_1
+# 174 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	release
 	return
 
@@ -326,75 +328,75 @@ VerdanturfTown_Gym_EventScript_DaphneDefeated_Text_1:
 	.string "too!$"
 
 VerdanturfTown_Gym_EventScript_Flower1_Text_0:
-# 65 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 66 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "You picked a petal, but all the petals in\n"
 	.string "the gym grew back and yours withered\l"
 	.string "away!$"
 
 VerdanturfTown_Gym_EventScript_Flower1_Text_1:
-# 70 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 71 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "You already have this petal.$"
 
 VerdanturfTown_Gym_EventScript_Flower1_Text_2:
-# 72 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 73 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "You picked a petal from this flower.$"
 
 VerdanturfTown_Gym_EventScript_Flower3_Text_0:
-# 104 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 105 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "You picked a petal from this flower. You\n"
 	.string "have all three petals Daphne asked for!$"
 
 VerdanturfTown_Gym_EventScript_Vanessa_Text_0:
-# 112 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 113 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "Vanessa$"
 
 VerdanturfTown_Gym_EventScript_Vanessa_Text_1:
-# 113 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 114 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "Good Luck!$"
 
 VerdanturfTown_Gym_EventScript_Mark_Text_0:
-# 134 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 135 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "Mark$"
 
 VerdanturfTown_Gym_EventScript_Jonas_Text_0:
-# 156 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 157 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "Jonas$"
 
 VerdanturfTown_Gym_Text_DaphneIntro::
-# 50 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 51 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "I'm Daphne!$"
 
 VerdanturfTown_Gym_Text_DaphneDefeat::
-# 54 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 55 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "You got me!$"
 
 VerdanturfTown_Gym_Text_DaphnePostBattle::
-# 58 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 59 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "I'm beaten.$"
 
 VerdanturfTown_Gym_Text_VanessaIntro::
-# 118 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 119 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "Don't take us Gym Trainers lightly! I'll\n"
 	.string "show you why we're better!$"
 
 VerdanturfTown_Gym_Text_VanessaDefeat::
-# 122 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 123 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "You were too good for me...$"
 
 VerdanturfTown_Gym_Text_MarkIntro::
-# 140 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 141 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "Don't take us Gym Trainers lightly! I'll\n"
 	.string "show you why we're better!$"
 
 VerdanturfTown_Gym_Text_MarkDefeat::
-# 144 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 145 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "You were too good for me...$"
 
 VerdanturfTown_Gym_Text_JonasIntro::
-# 162 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 163 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "Don't take us Gym Trainers lightly! I'll\n"
 	.string "show you why we're better!$"
 
 VerdanturfTown_Gym_Text_JonasDefeat::
-# 166 "data/maps/VerdanturfTown_Gym/scripts.pory"
+# 167 "data/maps/VerdanturfTown_Gym/scripts.pory"
 	.string "You were too good for me...$"

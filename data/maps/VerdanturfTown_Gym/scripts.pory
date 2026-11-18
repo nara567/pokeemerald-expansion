@@ -44,6 +44,7 @@ script VerdanturfTown_Gym_EventScript_DaphneDefeated {
     giveitem(ITEM_TM_TRAILBLAZE)
     goto_if_eq(VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull)
     setflag(FLAG_RECEIVED_TM_TRAILBLAZE)
+    setvar(VAR_RUSTBORO_CITY_STATE, 1)
     release
 }
 
