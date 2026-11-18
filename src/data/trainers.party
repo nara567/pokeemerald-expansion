@@ -201,27 +201,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Skitty
-Level: 18
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-
-Poochyena
-Level: 18
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-
-Zigzagoon
-Level: 18
+Level: 15
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Lotad
-Level: 18
+Level: 15
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Seedot
-Level: 18
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-
-Taillow
-Level: 18
+Level: 15
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_GRUNT_OCEANIC_MUSEUM_1F ===
@@ -236,11 +224,11 @@ AI: Check Bad Move
 Voltorb Hisui
 Ability: Static
 Nature: Jolly
-Level: 10
+Level: 12
 IVs: 18 HP / 5 Atk / 13 Def / 14 SpA / 10 SpD / 11 Spe
 
 Morpeko
-Level: 12
+Level: 13
 IVs: 21 HP / 3 Atk / 15 Def / 22 SpA / 23 SpD / 6 Spe
 
 === TRAINER_MARCEL ===
@@ -270,15 +258,6 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Charge
 - Stun Spore
 
-Roggenrola
-Ability: Sturdy
-Level: 18
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Iron Defense
-- Smack Down
-- Mud Slap
-- Rock Tomb
-
 === TRAINER_ALBERTO ===
 Name: ALBERTO
 Class: Bird Keeper
@@ -304,14 +283,6 @@ Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
-
-Minun
-Level: 17
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Spark
-- Quick Attack
-- Helping Hand
-- Switcheroo
 
 Karrablast
 Ability: Shed Skin
@@ -594,7 +565,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Greavard
-Level: 19
+Level: 16
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Smokescreen
 - Lick
@@ -603,7 +574,7 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Makuhita
 Ability: Thick Fat
-Level: 19
+Level: 18
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Knock Off
 - Force Palm
@@ -708,7 +679,7 @@ AI: Check Bad Move
 
 Spoink
 Ability: Thick Fat
-Level: 19
+Level: 16
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Psybeam
 - Psych Up
@@ -716,7 +687,7 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Confusion
 
 Sableye
-Level: 19
+Level: 18
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Fake Out
 - Shadow Sneak
@@ -734,13 +705,13 @@ AI: Basic Trainer
 
 Hoppip
 Sassy Nature
-Level: 6
+Level: 5
 Ball: Nest
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Flabebe
 Gentle Nature
-Level: 8
+Level: 6
 Ball: Nest
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -762,7 +733,7 @@ Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Roselia
-Level: 21
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_FELIX ===
@@ -1448,7 +1419,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Swellow
-Level: 22
+Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Energy
 - Quick Attack
@@ -1456,7 +1427,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Endeavor
 
 Drilbur
-Level: 22
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Metal Claw
 - Hone Claws
@@ -1464,28 +1435,12 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rapid Spin
 
 Wailmer
-Level: 23
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rollout
 - Whirlpool
 - Astonish
 - Water Pulse
-
-Emolga
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Acrobatics
-- Thunder Shock
-- Nuzzle
-- Charge
-
-Lycanroc-Midnight
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Counter
-- Bite
-- Rock Tomb
-- Howl
 
 === TRAINER_VINCENT ===
 Name: VINCENT
@@ -1821,7 +1776,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
 Mawile
-Level: 21
+Level: 19
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Baton Pass
 - Feint Attack
@@ -1829,7 +1784,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bite
 
 Roselia
-Level: 22
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Mega Drain
 - Magical Leaf
@@ -1837,7 +1792,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leech Seed
 
 Kilowattrel
-Level: 25
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fly
 - Roost
@@ -2102,14 +2057,6 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Plusle
-Level: 17
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Swift
-- Helping Hand
-- Spark
-- Growl
-
 Shelmet
 Level: 17
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
@@ -2153,10 +2100,6 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Sableye
-Level: 18
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-
 Dreepy
 Level: 19
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
@@ -2179,7 +2122,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Shuppet
-Level: 19
+Level: 17
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Duskull
@@ -2708,7 +2651,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Tadbulb @ Nugget
-Level: 15
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WINSTON_2 ===
@@ -2818,17 +2761,8 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Safeguard
 - Magical Leaf
 
-Roselia
-Ability: Poison Point
-Level: 24
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Pin Missile
-- Razor Leaf
-- Growth
-- Stun Spore
-
 Lombre
-Level: 24
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Fake Out
 - Knock Off
@@ -2836,7 +2770,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Mega Drain
 
 Cacnea
-Level: 24
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Ingrain
 - Trailblaze
@@ -3341,7 +3275,7 @@ Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Corsola
-Level: 9
+Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_HITOSHI ===
@@ -3520,7 +3454,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 18
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Timburr
@@ -3629,15 +3563,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnemite
-Level: 22
+Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Morpeko
-Level: 22
+Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Whismur
-Level: 22
+Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DALTON_2 ===
@@ -4536,14 +4470,6 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Tickle
 - Confusion
 
-Espeon
-Level: 19
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Confusion
-- Bite
-- Covet
-- Take Down
-
 === TRAINER_ALEXIS ===
 Name: ALEXIS
 Class: Psychic
@@ -4656,7 +4582,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Kadabra
-Level: 18
+Level: 16
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Reflect
 - Disable
@@ -4681,11 +4607,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Salandit
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Spoink
-Level: 14
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_THOMAS ===
@@ -4698,7 +4624,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Zangoose
-Level: 17
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALTER_2 ===
@@ -5012,7 +4938,7 @@ AI: Basic Trainer / Ace Pokemon / Smart Switching / Smart Mon Choices
 
 Wiglett
 Ability: Gooey
-Level: 14
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Aqua Jet
 - Mud Slap
@@ -5021,7 +4947,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Wattrel
 Ability: Wind Power
-Level: 15
+Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Spark
 - Pluck
@@ -5029,7 +4955,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Growl
 
 Sandygast @ Grassium Z
-Level: 17
+Level: 18
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Absorb
 - Sand Tomb
@@ -5047,7 +4973,7 @@ Double Battle: No
 AI: Basic Trainer / Ace Pokemon / Smart Switching
 
 Zorua-Hisui
-Level: 23
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Taunt
 - Shadow Sneak
@@ -5055,7 +4981,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Hex
 
 Greavard
-Level: 23
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Hex
 - Dig
@@ -5063,7 +4989,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bite
 
 Chimecho
-Level: 24
+Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Disarming Voice
 - Confusion
@@ -5071,7 +4997,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Screech
 
 Spiritomb @ Shell Bell
-Level: 25
+Level: 22
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Hex
 - Spite
@@ -5097,7 +5023,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Harden
 
 Jumpluff @ Terrain Extender
-Level: 27
+Level: 26
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Leech Seed
 - Fairy Wind
@@ -5105,7 +5031,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Trailblaze
 
 Gloom
-Level: 28
+Level: 26
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Toxic
 - Trailblaze
@@ -5113,7 +5039,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Venoshock
 
 Floette
-Level: 29
+Level: 27
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Moonblast
 - Magical Leaf
@@ -5121,7 +5047,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Trailblaze
 
 Floragato @ Grass Gem
-Level: 30
+Level: 27
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Seed Bomb
 - Hone Claws
@@ -5655,7 +5581,7 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Linoone-Galar
-Level: 25
+Level: 23
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Night Slash
 - Pin Missile
@@ -5663,7 +5589,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Snarl
 
 Croagunk
-Level: 27
+Level: 23
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Sucker Punch
 - Flatter
@@ -5890,14 +5816,6 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tail Whip
 - Growl
 
-Skitty @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Assist
-- Charm
-- Feint Attack
-- Heal Bell
-
 Delcatty @ Oran Berry
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -6032,7 +5950,7 @@ AI: Check Bad Move / Force Setup First Turn
 
 Roselia @ Oran Berry
 Ability: Poison Point
-Level: 26
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Toxic Spikes
 - Leech Seed
@@ -6041,7 +5959,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Gloom @ Oran Berry
 Ability: Stench
-Level: 26
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Toxic
 - Stun Spore
@@ -6428,7 +6346,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wimpod
-Level: 12
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Defense Curl
 - Sand Attack
@@ -6436,7 +6354,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Wingull
 Ability: Keen Eye
-Level: 12
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TOMMY ===
@@ -6449,12 +6367,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Wiglett
-Level: 11
+Level: 15
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Binacle
 Ability: Tough Claws
-Level: 12
+Level: 16
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_JOEY ===
@@ -6862,11 +6780,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Pikipek
-Level: 9
+Level: 10
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Chimchar
-Level: 10
+Level: 11
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_DALE ===
@@ -6917,11 +6835,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Arrokuda
-Level: 22
+Level: 19
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 Carvanha
-Level: 22
+Level: 20
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_WADE ===
@@ -7311,7 +7229,7 @@ AI: Check Bad Move
 
 Trumbeak
 Ability: Skill Link
-Level: 25
+Level: 22
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Rock Blast
 - Fury Attack
@@ -7319,11 +7237,11 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Roost
 
 Toedscool
-Level: 25
+Level: 20
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Rhyhorn
-Level: 27
+Level: 21
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_DYLAN_2 ===
@@ -8359,7 +8277,7 @@ Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Glimmet
-Level: 11
+Level: 14
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_LAURA ===
@@ -8372,11 +8290,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Aron
-Level: 8
+Level: 10
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Roggenrola
-Level: 8
+Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CYNDY_1 ===
@@ -9180,10 +9098,6 @@ Dottler
 Level: 18
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
-Spoink
-Level: 19
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-
 Chimecho
 Level: 20
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
@@ -9489,7 +9403,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 7
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ERNEST_1 ===
@@ -9543,7 +9457,7 @@ Tentacool
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Timburr
+Meditite
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9557,10 +9471,6 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wattrel
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10438,11 +10348,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Loudred
-Level: 21
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Yamper
-Level: 21
+Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Aron
@@ -10450,7 +10360,7 @@ Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Mightyena
-Level: 22
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Swellow
@@ -10458,7 +10368,7 @@ Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Combusken
-Level: 22
+Level: 24
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_DAVIS ===
@@ -11141,11 +11051,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 8
+Level: 10
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Clobbopus
-Level: 8
+Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_LILITH ===
@@ -11158,7 +11068,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Aron
-Level: 10
+Level: 13
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CRISTIAN ===
@@ -11171,15 +11081,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Roggenrola
-Level: 8
+Level: 10
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Roggenrola
-Level: 8
+Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Roggenrola
-Level: 8
+Level: 12
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_SYLVIA ===
@@ -11333,16 +11243,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Marowak
-Level: 24
+Level: 20
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Trapinch
-Level: 24
+Level: 22
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Kilowattrel
 Ability: Volt Absorb
-Level: 24
+Level: 22
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 === TRAINER_NEWMAUVILLE_GRUNT2 ===
@@ -11355,11 +11265,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Numel
-Level: 25
+Level: 21
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Graveler
-Level: 26
+Level: 23
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 === TRAINER_NEWMAUVILLE_GRUNT3 ===
@@ -11372,12 +11282,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Baltoy
-Level: 22
+Level: 18
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Electrike
 Ability: Lightning Rod
-Level: 22
+Level: 21
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 === TRAINER_NEWMAUVILLE_GRUNT4 ===
@@ -11407,19 +11317,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Cubone
-Level: 22
+Level: 19
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Sandygast
-Level: 22
+Level: 19
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Drilbur
-Level: 22
+Level: 20
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Numel
-Level: 22
+Level: 20
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Toedscool
@@ -11436,7 +11346,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Drilbur
-Level: 27
+Level: 13
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 === TRAINER_NEWMAUVILLE_GRUNT7 ===
@@ -11449,7 +11359,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Hippopotas
-Level: 27
+Level: 23
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 === TRAINER_NEWMAUVILLE_GRUNT8 ===
@@ -11462,16 +11372,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Barboach
-Level: 24
+Level: 19
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Jolteon
-Level: 23
+Level: 20
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 Chinchou
 Ability: Volt Absorb
-Level: 24
+Level: 21
 IVs: 11 HP / 11 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_7 ===
@@ -12354,15 +12264,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Loudred
-Level: 20
-IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
-
-Rhyhorn
 Level: 22
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
+Rhyhorn
+Level: 23
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
+
 Timburr
-Level: 20
+Level: 24
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Low Kick
 - Rock Slide
@@ -12501,11 +12411,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Volbeat
-Level: 12
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Illumise
-Level: 12
+Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KIRA_AND_DAN_1 ===
@@ -14031,12 +13941,12 @@ AI: Check Bad Move
 Multi Party: Half
 
 Nincada
-Level: 11
+Level: 13
 IVs: 29 HP / 13 Atk / 29 Def / 30 SpA / 22 SpD / 12 Spe
 
 Trapinch
 Ability: Arena Trap
-Level: 12
+Level: 13
 IVs: 3 HP / 15 Atk / 16 Def / 16 SpA / 5 SpD / 23 Spe
 - Laser Focus
 - Sand Attack
@@ -14678,11 +14588,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Ribombee
-Level: 26
+Level: 24
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Ninjask
-Level: 26
+Level: 25
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_BRANDI ===
@@ -14695,11 +14605,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Kirlia
-Level: 26
+Level: 22
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Kadabra
-Level: 26
+Level: 24
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_AISHA ===
@@ -14712,11 +14622,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Pancham
-Level: 26
+Level: 22
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Meditite
-Level: 26
+Level: 24
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_MAKAYLA ===
@@ -14841,7 +14751,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Nincada
-Level: 16
+Level: 14
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Bug Bite
 - Gust
@@ -14850,46 +14760,12 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Shelmet
 Ability: Shell Armor
-Level: 16
+Level: 14
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Struggle Bug
 - Mega Drain
 - Curse
 - Acid
-
-Poochyena
-Level: 16
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Poison Fang
-- Covet
-- Astonish
-- Bite
-
-Shroomish
-Ability: Effect Spore
-Level: 16
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Fake Tears
-- Leech Seed
-- Headbutt
-- Stun Spore
-
-Zigzagoon-Galar
-Ability: Gluttony
-Level: 16
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Tickle
-- Snarl
-- Baby-Doll Eyes
-- Lick
-
-Beautifly
-Level: 16
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Gust
-- Poison Sting
-- Bug Bite
-- Absorb
 
 === TRAINER_PAT ===
 Name: Pat
@@ -14900,56 +14776,21 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Maschiff
-Ability: Intimidate
-Level: 16
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Endeavor
-- Hone Claws
-- Bite
-- Lick
-
-Gulpin @ Grepa Berry
-Ability: Liquid Ooze
-Level: 16
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Smog
-- Stuff Cheeks
-- Yawn
-- Sludge
-
 Froakie
-Level: 16
+Level: 14
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Spikes
 - Water Pulse
 - Lick
 - Quick Attack
 
-Tadbulb
-Ability: Static
-Level: 16
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Soak
-- Thunder Shock
-- Tackle
-- Mud-Slap
-
 Slakoth
-Level: 16
+Level: 14
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Slack Off
 - Yawn
 - Encore
 - Headbutt
-
-Dustox
-Level: 16
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Gust
-- Confusion
-- Poison Powder
-- Bug Bite
 
 === TRAINER_CRISTIN_1 ===
 Name: Cristin
@@ -14962,24 +14803,15 @@ AI: Basic Trainer
 
 Meowth
 Ability: Technician
-Level: 17
+Level: 15
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Taunt
 - Bite
 - Pay Day
 - Headbutt
 
-Taillow
-Ability: Scrappy
-Level: 17
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Wing Attack
-- Double Team
-- Focus Energy
-- Quick Attack
-
 Lombre
-Level: 18
+Level: 17
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Mega Drain
 - Water Gun
