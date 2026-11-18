@@ -177,9 +177,9 @@
     },
     {
       "local_id": "LOCALID_RUSTBORO_RIVAL",
-      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 16,
-      "y": 50,
+      "graphics_id": "OBJ_EVENT_GFX_MISTY",
+      "x": 5,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
