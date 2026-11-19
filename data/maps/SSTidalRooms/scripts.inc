@@ -71,7 +71,7 @@ SSTidalRooms_EventScript_Colton::
 # 36 "data/maps/SSTidalRooms/scripts.pory"
 SSTidalRooms_EventScript_Micah::
 # 37 "data/maps/SSTidalRooms/scripts.pory"
-	trainerbattle_single TRAINER_MICAH, SSTidalRooms_Text_MicahIntro, SSTidalRooms_Text_MicahDefeat
+	//trainerbattle_single TRAINER_MICAH, SSTidalRooms_Text_MicahIntro, SSTidalRooms_Text_MicahDefeat
 # 38 "data/maps/SSTidalRooms/scripts.pory"
 	msgbox SSTidalRooms_Text_MicahPostBattle, MSGBOX_AUTOCLOSE
 # 39 "data/maps/SSTidalRooms/scripts.pory"
@@ -121,7 +121,7 @@ SSTidalRooms_EventScript_Garret::
 # 61 "data/maps/SSTidalRooms/scripts.pory"
 SSTidalRooms_EventScript_Naomi::
 # 62 "data/maps/SSTidalRooms/scripts.pory"
-	trainerbattle_single TRAINER_NAOMI, SSTidalRooms_Text_NaomiIntro, SSTidalRooms_Text_NaomiDefeat
+	//trainerbattle_single TRAINER_NAOMI, SSTidalRooms_Text_NaomiIntro, SSTidalRooms_Text_NaomiDefeat
 # 63 "data/maps/SSTidalRooms/scripts.pory"
 	msgbox SSTidalRooms_Text_NaomiPostBattle, MSGBOX_AUTOCLOSE
 # 64 "data/maps/SSTidalRooms/scripts.pory"

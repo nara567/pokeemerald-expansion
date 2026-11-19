@@ -298,7 +298,7 @@ SlateportCity_Gym_EventScript_DefeatedSandygast3::
 
 SlateportCity_Gym_EventScript_Josh::
 # 151 "data/maps/SlateportCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_JOSH, SlateportCity_Gym_Text_JoshIntro, SlateportCity_Gym_Text_JoshDefeat, SlateportCity_Gym_Text_JoshPostBattle, NO_MUSIC
+	trainerbattle_single TRAINER_JOSH, SlateportCity_Gym_Text_JoshIntro, SlateportCity_Gym_Text_JoshDefeat, SlateportCity_Gym_Text_JoshPostBattle
 # 152 "data/maps/SlateportCity_Gym/scripts.pory"
 	setspeaker SlateportCity_Gym_EventScript_Josh_Text_0
 # 153 "data/maps/SlateportCity_Gym/scripts.pory"
@@ -322,7 +322,7 @@ SlateportCity_Gym_Text_JoshPostBattle::
 
 SlateportCity_Gym_EventScript_Tommy::
 # 178 "data/maps/SlateportCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_TOMMY, SlateportCity_Gym_Text_TommyIntro, SlateportCity_Gym_Text_TommyDefeat, SlateportCity_Gym_Text_TommyPostBattle, NO_MUSIC
+	trainerbattle_single TRAINER_TOMMY, SlateportCity_Gym_Text_TommyIntro, SlateportCity_Gym_Text_TommyDefeat, SlateportCity_Gym_Text_TommyPostBattle
 # 179 "data/maps/SlateportCity_Gym/scripts.pory"
 	setspeaker SlateportCity_Gym_EventScript_Tommy_Text_0
 # 180 "data/maps/SlateportCity_Gym/scripts.pory"

@@ -148,7 +148,7 @@ script SlateportCity_Gym_EventScript_DefeatedSandygast3 {
 
 script SlateportCity_Gym_EventScript_Josh {
     //setspeaker("Josh")
-    trainerbattle_single(TRAINER_JOSH, SlateportCity_Gym_Text_JoshIntro,SlateportCity_Gym_Text_JoshDefeat, SlateportCity_Gym_Text_JoshPostBattle, NO_MUSIC)
+    trainerbattle_single(TRAINER_JOSH, SlateportCity_Gym_Text_JoshIntro,SlateportCity_Gym_Text_JoshDefeat, SlateportCity_Gym_Text_JoshPostBattle)
     setspeaker("Josh")
     msgbox(format("Good Luck!"))
     waitmessage
@@ -175,7 +175,7 @@ text SlateportCity_Gym_Text_JoshPostDefeat{
 
 script SlateportCity_Gym_EventScript_Tommy {
     //setspeaker("Josh")
-    trainerbattle_single(TRAINER_TOMMY, SlateportCity_Gym_Text_TommyIntro,SlateportCity_Gym_Text_TommyDefeat, SlateportCity_Gym_Text_TommyPostBattle, NO_MUSIC)
+    trainerbattle_single(TRAINER_TOMMY, SlateportCity_Gym_Text_TommyIntro,SlateportCity_Gym_Text_TommyDefeat, SlateportCity_Gym_Text_TommyPostBattle)
     setspeaker("Tommy")
     msgbox(format("Good Luck!"))
     waitmessage

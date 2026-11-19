@@ -7,7 +7,7 @@ SSTidalLowerDeck_EventScript_Phillip::
 	end
 
 SSTidalLowerDeck_EventScript_Leonard::
-	trainerbattle_single TRAINER_LEONARD, SSTidalLowerDeck_Text_LeonardIntro, SSTidalLowerDeck_Text_LeonardDefeat
+	//trainerbattle_single TRAINER_LEONARD, SSTidalLowerDeck_Text_LeonardIntro, SSTidalLowerDeck_Text_LeonardDefeat
 	msgbox SSTidalLowerDeck_Text_LeonardPostBattle, MSGBOX_AUTOCLOSE
 	end
 

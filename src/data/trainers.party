@@ -224,11 +224,11 @@ AI: Check Bad Move
 Voltorb Hisui
 Ability: Static
 Nature: Jolly
-Level: 12
+Level: 13
 IVs: 18 HP / 5 Atk / 13 Def / 14 SpA / 10 SpD / 11 Spe
 
 Morpeko
-Level: 13
+Level: 14
 IVs: 21 HP / 3 Atk / 15 Def / 22 SpA / 23 SpD / 6 Spe
 
 === TRAINER_MARCEL ===
@@ -4938,7 +4938,7 @@ AI: Basic Trainer / Ace Pokemon / Smart Switching / Smart Mon Choices
 
 Wiglett
 Ability: Gooey
-Level: 15
+Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Aqua Jet
 - Mud Slap
@@ -4947,7 +4947,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Wattrel
 Ability: Wind Power
-Level: 16
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Spark
 - Pluck
@@ -4955,7 +4955,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Growl
 
 Sandygast @ Grassium Z
-Level: 17
+Level: 18
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Absorb
 - Sand Tomb
@@ -6346,7 +6346,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wimpod
-Level: 14
+Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Defense Curl
 - Sand Attack
@@ -6354,7 +6354,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Wingull
 Ability: Keen Eye
-Level: 15
+Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TOMMY ===
@@ -6367,12 +6367,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Wiglett
-Level: 14
+Level: 15
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Binacle
 Ability: Tough Claws
-Level: 15
+Level: 16
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_JOEY ===
@@ -8294,7 +8294,7 @@ Level: 9
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Roggenrola
-Level: 10
+Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CYNDY_1 ===
@@ -9377,7 +9377,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Helping Hand
 
 === TRAINER_HUEY ===
-Name: Hhuey
+Name: Huey
 Class: Sailor
 Pic: Sailor
 Gender: Male
@@ -11051,11 +11051,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 9
+Level: 10
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Clobbopus
-Level: 10
+Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_LILITH ===
@@ -13941,12 +13941,12 @@ AI: Check Bad Move
 Multi Party: Half
 
 Nincada
-Level: 13
+Level: 14
 IVs: 29 HP / 13 Atk / 29 Def / 30 SpA / 22 SpD / 12 Spe
 
 Trapinch
 Ability: Arena Trap
-Level: 13
+Level: 14
 IVs: 3 HP / 15 Atk / 16 Def / 16 SpA / 5 SpD / 23 Spe
 - Laser Focus
 - Sand Attack
@@ -14210,7 +14210,7 @@ AI: Basic Trainer / Smart Switching / Smart Mon Choices / Omniscient
 Multi Party: Half
 
 Toedscool
-Level: 14
+Level: 15
 IVs: 21 HP / 12 Atk / 28 Def / 17 SpA / 19 SpD / 25 Spe
 - Stun Spore
 - Mud-Slap
@@ -14218,7 +14218,7 @@ IVs: 21 HP / 12 Atk / 28 Def / 17 SpA / 19 SpD / 25 Spe
 - Wrap
 
 Marshtomp
-Level: 15
+Level: 16
 IVs: 8 HP / 31 Atk / 23 Def / 26 SpA / 27 SpD / 14 Spe
 - Mud Shot
 - Water Gun

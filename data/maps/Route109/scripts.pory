@@ -47,7 +47,7 @@ Route109_EventScript_DoSailToDewford::
 	waitmovement 0
 	addobject LOCALID_DEWFORD_BOAT
 	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
-	setobjectxyperm LOCALID_DEWFORD_BRINEY, 18, 9
+	setobjectxyperm LOCALID_DEWFORD_BRINEY, 18, 8
 	addobject LOCALID_DEWFORD_BRINEY
 	setobjectsubpriority LOCALID_DEWFORD_BRINEY, MAP_DEWFORD_TOWN, 0
 	applymovement LOCALID_DEWFORD_BRINEY, Route109_Movement_BrineyExitBoat
@@ -235,7 +235,6 @@ Route109_Movement_SailToDewford:
 	walk_fast_left
 	walk_fast_left
 	walk_fast_left
-	walk_left
 	walk_left
 	walk_in_place_faster_down
 	step_end
@@ -462,27 +461,27 @@ Route109_Text_BrineySailToDewfordQuestion:
 	.string "DEWFORD, then?$"
 
 Route109_Text_BrineyDewfordItIs:
-	.string "MR. BRINEY: DEWFORD it is, then!\p"
+	.string "DEWFORD it is, then!\p"
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
 
 Route109_Text_BrineyDeliverDevonGoods:
-	.string "MR. BRINEY: Then you go on and deliver\n"
+	.string "Then you go on and deliver\n"
 	.string "the DEVON GOODS. I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInSlateport:
-	.string "MR. BRINEY: Ahoy! We've made land in\n"
+	.string "Ahoy! We've made land in\n"
 	.string "SLATEPORT!\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail again!$"
 
 Route109_Text_BrineyWhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "Ahoy!\n"
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
 Route109_Text_BrineyTellMeWhenYouNeedToSail:
-	.string "MR. BRINEY: You just tell me whenever\n"
+	.string "You just tell me whenever\n"
 	.string "you need to set sail again!$"
 
 Route109_Text_ChillAtMyPapasSpot:
@@ -549,6 +548,7 @@ script Route109_EventScript_MrBriney{
 	lock
     faceplayer
     if(flag(FLAG_HIDE_SLATEPORT_CITY_TEAM_GAIA) == false){
+		setspeaker("Mr.Briney")
     	msgbox(format("You need to head to Dewford? As it happens, I'm headed there now!"))
     }
     goto(Route109_EventScript_DeliveredDevonGoods)
