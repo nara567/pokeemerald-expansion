@@ -1125,11 +1125,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Azurill
-Level: 8
+Level: 7
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Mudkip
-Level: 9
+Level: 8
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_AUSTINA ===
@@ -1142,7 +1142,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Electrike
-Level: 9
+Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_GWEN ===
@@ -1155,7 +1155,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Yamper
-Level: 9
+Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LOLA_2 ===
@@ -1236,7 +1236,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Slowpoke
-Level: 10
+Level: 8
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Confusion
 - Water Gun
@@ -3271,11 +3271,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Luvdisc
-Level: 9
+Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Corsola
-Level: 10
+Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_HITOSHI ===
@@ -4955,7 +4955,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Growl
 
 Sandygast @ Grassium Z
-Level: 18
+Level: 17
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Absorb
 - Sand Tomb
@@ -6006,7 +6006,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Poochyena
-Level: 9
+Level: 7
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_ISABEL_2 ===
@@ -6346,7 +6346,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Wimpod
-Level: 15
+Level: 14
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Defense Curl
 - Sand Attack
@@ -6367,12 +6367,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Wiglett
-Level: 15
+Level: 14
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Binacle
 Ability: Tough Claws
-Level: 16
+Level: 15
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_JOEY ===
@@ -6696,13 +6696,13 @@ AI: Basic Trainer
 
 Zigzagoon
 Ability: Gluttony
-Level: 5
+Level: 4
 Jolly Nature
 IVs: 0 HP / 0 Atk / 5 Def / 0 SpA / 5 SpD / 10 Spe
 
 Zigzagoon Galar
 Ability: Quick Feet
-Level: 6
+Level: 5
 Ball: Timer
 Lonely Nature
 IVs: 10 HP / 5 Atk / 0 Def / 5 SpA / 0 SpD / 0 Spe
@@ -6763,11 +6763,11 @@ Level: 10
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Tentacool
-Level: 10
+Level: 8
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Clauncher
-Level: 10
+Level: 9
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === Route106_GaiaGrunt ===
@@ -8277,7 +8277,7 @@ Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Glimmet
-Level: 14
+Level: 13
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_LAURA ===
@@ -8290,11 +8290,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Aron
-Level: 10
+Level: 9
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Roggenrola
-Level: 11
+Level: 10
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CYNDY_1 ===
@@ -9386,11 +9386,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Wingull
-Level: 8
+Level: 7
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Wattrel
-Level: 9
+Level: 8
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_EDMOND ===
@@ -11051,11 +11051,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Makuhita
-Level: 10
+Level: 9
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Clobbopus
-Level: 11
+Level: 10
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_LILITH ===
@@ -11068,7 +11068,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Aron
-Level: 13
+Level: 12
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_CRISTIAN ===
@@ -11089,7 +11089,7 @@ Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Roggenrola
-Level: 12
+Level: 11
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_SYLVIA ===
@@ -13670,11 +13670,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacool
-Level: 8
+Level: 7
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 Staryu
-Level: 9
+Level: 8
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_KALEB ===
@@ -13687,7 +13687,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Maschiff
-Level: 9
+Level: 7
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_JOSEPH ===
@@ -14218,7 +14218,7 @@ IVs: 21 HP / 12 Atk / 28 Def / 17 SpA / 19 SpD / 25 Spe
 - Wrap
 
 Marshtomp
-Level: 16
+Level: 15
 IVs: 8 HP / 31 Atk / 23 Def / 26 SpA / 27 SpD / 14 Spe
 - Mud Shot
 - Water Gun
