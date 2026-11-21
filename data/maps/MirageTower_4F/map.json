@@ -3,7 +3,6 @@
   "name": "MirageTower_4F",
   "layout": "LAYOUT_MIRAGE_TOWER_4F",
   "music": "MUS_MT_CHIMNEY",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MIRAGE_TOWER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -16,37 +15,9 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "LOCALID_MIRAGE_ROOT_FOSSIL",
-      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
-      "x": 5,
-      "y": 4,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "MirageTower_4F_EventScript_RootFossil",
-      "flag": "FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL"
-    },
-    {
-      "local_id": "LOCALID_MIRAGE_CLAW_FOSSIL",
-      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
-      "x": 7,
-      "y": 4,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "MirageTower_4F_EventScript_ClawFossil",
-      "flag": "FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 6,
-      "y": 7,
+      "x": 4,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -55,11 +26,50 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_11"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 15,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 4,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 1,
+      "x": 2,
       "y": 4,
       "elevation": 3,
       "dest_map": "MAP_MIRAGE_TOWER_3F",
@@ -67,5 +77,6 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

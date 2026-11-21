@@ -1339,3 +1339,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Route104_South/scripts.inc"
 
 	.include "data/maps/NewPrimaryTesting/scripts.inc"
+
+	.include "data/maps/Route111_Lower/scripts.inc"

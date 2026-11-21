@@ -4261,8 +4261,8 @@
     {
       "id": "LAYOUT_MIRAGE_TOWER_4F",
       "name": "MirageTower_4F_Layout",
-      "width": 13,
-      "height": 10,
+      "width": 21,
+      "height": 17,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_MirageTower",
       "border_filepath": "data/layouts/MirageTower_4F/border.bin",
@@ -9472,6 +9472,17 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/NewPrimaryTesting/border.bin",
       "blockdata_filepath": "data/layouts/NewPrimaryTesting/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE111_LOWER",
+      "name": "Route111_Lower_Layout",
+      "width": 50,
+      "height": 78,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route111_Lower/border.bin",
+      "blockdata_filepath": "data/layouts/Route111_Lower/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

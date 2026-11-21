@@ -99,7 +99,8 @@
     "Route103A",
     "Route104North",
     "Route104_South",
-    "NewPrimaryTesting"
+    "NewPrimaryTesting",
+    "Route111_Lower"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
